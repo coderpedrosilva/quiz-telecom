@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Telecom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+    <!-- Tela Inicial -->
+    <div id="start-screen" class="screen active">
+        <h1>Quiz Telecom</h1>
+        <p>Seja bem-vindo ao Quiz Telecom.<br>Podemos iniciar o desafio?</p>
+        <button onclick="startQuiz()">Iniciar desafio</button>
+    </div>
+
+    <!-- Tela do Quiz -->
+    <div id="quiz-screen" class="screen">
+
+        <!-- Placar -->
+        <div class="score-box">
+            <div>
+                <strong id="correct-count">0</strong>
+                <span>acertos</span>
+            </div>
+            <div>
+                <strong id="question-count">0</strong>
+                <span>respondidas</span>
+            </div>
+        </div>
+
+        <!-- Botão Encerrar -->
+        <button class="stop" onclick="finishQuiz()">Encerrar Quiz</button>
+
+        <!-- Timer -->
+        <div class="timer">
+            <div id="timer-bar"></div>
+        </div>
+
+        <h2 id="question"></h2>
+        <div id="answers"></div>
+
+        <button id="next" onclick="nextQuestion()">Próxima</button>
+    </div>
+
+    <!-- Tela Final -->
+    <div id="end-screen" class="screen">
+        <h1>Fim do Quiz 🎉</h1>
+        <p id="final-score"></p>
+        <button onclick="restartQuiz()">Reiniciar</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

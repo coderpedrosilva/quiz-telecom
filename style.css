@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.quiz-container {
+    max-width: 420px;
+    margin: auto;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+/* Placar */
+.score-box {
+    display: flex;
+    justify-content: space-around;
+    background: #2a2a2a;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.score-box div {
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+}
+
+.score-box strong {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Botão Encerrar */
+.stop {
+    width: 100%;
+    background: #dc3545;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Timer */
+.timer {
+    background: #333;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#timer-bar {
+    height: 100%;
+    width: 100%;
+    background: #28a745;
+    transition: width 1s linear;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.answer {
+    background: #2c2c2c;
+    color: #fff;
+}
+
+.correct {
+    background: #28a745 !important;
+}
+
+.wrong {
+    background: #dc3545 !important;
+}
+
+#next {
+    background: #007bff;
+    color: #fff;
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .quiz-container {
+        padding: 20px;
+    }
+}
