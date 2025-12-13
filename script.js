@@ -3,7 +3,15 @@ let timeLeft;
 let timerInterval;
 let answered = false;
 
-let questions = [
+let currentQuestion = 0;
+let correctAnswers = 0;
+let questions = [];
+
+/* =========================
+   BANCO DE PERGUNTAS
+========================= */
+
+const fiberQuestions = [
     {
         question: "O que é um cabo DROP na fibra óptica?",
         answers: [
@@ -31,6 +39,27 @@ let questions = [
             { text: "Cabo metálico blindado", correct: false }
         ]
     },
+    {
+        question: "Transcend é conhecida por:",
+        answers: [
+            { text: "Cabos ópticos", correct: true },
+            { text: "Memória e armazenamento", correct: false },
+            { text: "Switches", correct: false },
+            { text: "Roteadores Wi-Fi", correct: false }
+        ]
+    },
+    {
+        question: "Qual fibra é mais usada em FTTH?",
+        answers: [
+            { text: "Monomodo", correct: true },
+            { text: "Multimodo", correct: false },
+            { text: "Metálica", correct: false },
+            { text: "Coaxial", correct: false }
+        ]
+    }
+];
+
+const cablingQuestions = [
     {
         question: "Qual conector é usado em cabos de rede?",
         answers: [
@@ -68,24 +97,6 @@ let questions = [
         ]
     },
     {
-        question: "Transcend é conhecida por:",
-        answers: [
-            { text: "Cabos ópticos", correct: true },
-            { text: "Memória e armazenamento", correct: false },
-            { text: "Switches", correct: false },
-            { text: "Roteadores Wi-Fi", correct: false }
-        ]
-    },
-    {
-        question: "Qual fibra é mais usada em FTTH?",
-        answers: [
-            { text: "Monomodo", correct: true },
-            { text: "Multimodo", correct: false },
-            { text: "Metálica", correct: false },
-            { text: "Coaxial", correct: false }
-        ]
-    },
-    {
         question: "Ferramenta correta para RJ45:",
         answers: [
             { text: "Alicate de crimpagem", correct: true },
@@ -96,8 +107,9 @@ let questions = [
     }
 ];
 
-let currentQuestion = 0;
-let correctAnswers = 0;
+/* =========================
+   ELEMENTOS
+========================= */
 
 const startScreen = document.getElementById("start-screen");
 const quizScreen = document.getElementById("quiz-screen");
@@ -111,17 +123,30 @@ const questionCountEl = document.getElementById("question-count");
 const finalScoreEl = document.getElementById("final-score");
 const timerBar = document.getElementById("timer-bar");
 
+/* =========================
+   FUNÇÕES
+========================= */
+
 function shuffle(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
-function startQuiz() {
-    questions = shuffle(questions); // 🔀 embaralha perguntas
+function startQuiz(mode) {
+    if (mode === "fiber") {
+        questions = [...fiberQuestions];
+    } else if (mode === "cabling") {
+        questions = [...cablingQuestions];
+    } else {
+        questions = [...fiberQuestions, ...cablingQuestions];
+    }
+
+    questions = shuffle(questions);
     currentQuestion = 0;
     correctAnswers = 0;
 
     startScreen.classList.remove("active");
     quizScreen.classList.add("active");
+
     loadQuestion();
 }
 
@@ -150,9 +175,7 @@ function loadQuestion() {
     correctCountEl.innerText = correctAnswers;
     questionCountEl.innerText = currentQuestion;
 
-    const shuffledAnswers = shuffle([...questions[currentQuestion].answers]);
-
-    shuffledAnswers.forEach(answer => {
+    shuffle([...questions[currentQuestion].answers]).forEach(answer => {
         const btn = document.createElement("button");
         btn.innerText = answer.text;
         btn.classList.add("answer");
@@ -163,25 +186,20 @@ function loadQuestion() {
     startTimer();
 }
 
-function selectAnswer(selectedButton, isCorrect) {
+function selectAnswer(button, isCorrect) {
     if (answered) return;
     answered = true;
 
     clearInterval(timerInterval);
-    const buttons = document.querySelectorAll(".answer");
-    buttons.forEach(btn => btn.disabled = true);
+    document.querySelectorAll(".answer").forEach(btn => btn.disabled = true);
 
-    buttons.forEach(btn => {
-        const text = btn.innerText;
-        const correct = questions[currentQuestion].answers.find(a => a.text === text)?.correct;
+    document.querySelectorAll(".answer").forEach(btn => {
+        const correct = questions[currentQuestion].answers.find(a => a.text === btn.innerText)?.correct;
         if (correct) btn.classList.add("correct");
     });
 
-    if (isCorrect) {
-        correctAnswers++;
-    } else {
-        selectedButton.classList.add("wrong");
-    }
+    if (isCorrect) correctAnswers++;
+    else button.classList.add("wrong");
 
     nextBtn.style.display = "block";
 }
@@ -190,12 +208,9 @@ function timeExpired() {
     if (answered) return;
     answered = true;
 
-    const buttons = document.querySelectorAll(".answer");
-    buttons.forEach(btn => btn.disabled = true);
-
-    buttons.forEach(btn => {
-        const text = btn.innerText;
-        const correct = questions[currentQuestion].answers.find(a => a.text === text)?.correct;
+    document.querySelectorAll(".answer").forEach(btn => {
+        btn.disabled = true;
+        const correct = questions[currentQuestion].answers.find(a => a.text === btn.innerText)?.correct;
         if (correct) btn.classList.add("correct");
     });
 
@@ -204,11 +219,8 @@ function timeExpired() {
 
 function nextQuestion() {
     currentQuestion++;
-    if (currentQuestion < questions.length) {
-        loadQuestion();
-    } else {
-        finishQuiz();
-    }
+    if (currentQuestion < questions.length) loadQuestion();
+    else finishQuiz();
 }
 
 function finishQuiz() {
