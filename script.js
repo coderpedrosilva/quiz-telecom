@@ -1,4 +1,4 @@
-const TIME_LIMIT = 25;
+const TIME_LIMIT = 90;
 
 let timeLeft;
 let timerInterval;
