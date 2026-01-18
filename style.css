@@ -5,7 +5,7 @@
 body {
     font-family: Arial, sans-serif;
     background: #121212;
-    color: #fff;
+    color: #ffffff;
     margin: 0;
     padding: 20px;
 }
@@ -26,11 +26,80 @@ body {
     display: block;
 }
 
-h1, h2, p {
+h1, h2, h3, h4, p {
     text-align: center;
 }
 
-/* Placar */
+h3 {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+h4 {
+    margin: 5px 0 10px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* =====================
+   BOTÕES (PADRÃO CLARO)
+===================== */
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #f1f1f1;
+    color: #111;
+}
+
+button:hover {
+    background: #e0e0e0;
+}
+
+/* =====================
+   OPÇÕES DAS PERGUNTAS
+===================== */
+
+.answer {
+    background: #ffffff;
+    color: #111;
+    border: 1px solid #ddd;
+}
+
+.answer:hover {
+    background: #f5f5f5;
+}
+
+.correct {
+    background: #28a745 !important;
+    color: #ffffff !important;
+}
+
+.wrong {
+    background: #dc3545 !important;
+    color: #ffffff !important;
+}
+
+.stop {
+    background: #dc3545;
+    color: #fff;
+}
+
+#next {
+    background: #007bff;
+    color: #fff;
+    display: none;
+}
+
+/* =====================
+   PLACAR
+===================== */
+
 .score-box {
     display: flex;
     justify-content: space-around;
@@ -51,19 +120,10 @@ h1, h2, p {
     color: #fff;
 }
 
-/* Botão Encerrar */
-.stop {
-    width: 100%;
-    background: #dc3545;
-    color: #fff;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 14px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
+/* =====================
+   TIMER
+===================== */
 
-/* Timer */
 .timer {
     background: #333;
     height: 8px;
@@ -79,39 +139,80 @@ h1, h2, p {
     transition: width 1s linear;
 }
 
-/* Botões */
-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-}
+/* =====================
+   MODAL COM ROLAGEM
+===================== */
 
-.answer {
-    background: #2c2c2c;
-    color: #fff;
-}
-
-.correct {
-    background: #28a745 !important;
-}
-
-.wrong {
-    background: #dc3545 !important;
-}
-
-#next {
-    background: #007bff;
-    color: #fff;
+.modal {
     display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
 }
 
-/* Mobile */
+.modal-content {
+    background: #1e1e1e;
+    max-width: 420px;
+    margin: auto;
+    margin-top: 5vh;
+    height: 90vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER FIXO */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.modal-close {
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    width: auto;
+}
+
+/* BODY COM SCROLL */
+.modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+/* FOOTER FIXO */
+.modal-footer {
+    padding: 15px;
+    border-top: 1px solid #333;
+}
+
+/* Scroll mais suave */
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* =====================
+   MOBILE
+===================== */
+
 @media (max-width: 480px) {
     .quiz-container {
         padding: 20px;
+    }
+
+    .modal-content {
+        width: 95%;
+        height: 95vh;
     }
 }

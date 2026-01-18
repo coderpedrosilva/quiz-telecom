@@ -13,17 +13,25 @@
     <!-- Tela Inicial -->
     <div id="start-screen" class="screen active">
         <h1>Quiz Telecom</h1>
-        <p>Escolha o tema para iniciar o desafio:</p>
+        <p>Escolha o quiz:</p>
 
-        <button onclick="startQuiz('cabling')">Cabling</button>
-        <button onclick="startQuiz('fiber')">Fibra Óptica</button>
-        <button onclick="startQuiz('mixed')">Cabling + Fibra Óptica</button>
+        <!-- CABLING -->
+        <h3>Cabling</h3>
+        <button onclick="openModal('cabling')">Cabling (Por Produto)</button>
+        <button onclick="startQuiz({ type: 'cabling-general' })">Cabling (Geral)</button>
+
+        <!-- FIBRA -->
+        <h3>Fibra Óptica</h3>
+        <button onclick="openModal('fiber')">Fibra Óptica (Por Produto)</button>
+        <button onclick="startQuiz({ type: 'fiber-general' })">Fibra Óptica (Geral)</button>
+
+        <!-- GERAL -->
+        <h3>Geral</h3>
+        <button onclick="startQuiz({ type: 'all' })">Cabling + Fibra (Geralzão)</button>
     </div>
 
     <!-- Tela do Quiz -->
     <div id="quiz-screen" class="screen">
-
-        <!-- Placar -->
         <div class="score-box">
             <div>
                 <strong id="correct-count">0</strong>
@@ -35,14 +43,13 @@
             </div>
         </div>
 
-        <!-- Botão Encerrar -->
         <button class="stop" onclick="finishQuiz()">Encerrar Quiz</button>
 
-        <!-- Timer -->
         <div class="timer">
             <div id="timer-bar"></div>
         </div>
 
+        <h4 id="product-name"></h4>
         <h2 id="question"></h2>
         <div id="answers"></div>
 
@@ -56,6 +63,27 @@
         <button onclick="restartQuiz()">Reiniciar</button>
     </div>
 
+</div>
+
+<!-- MODAL COM SCROLL -->
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+
+        <!-- HEADER FIXO -->
+        <div class="modal-header">
+            <h3 id="modal-title"></h3>
+            <button class="modal-close" onclick="closeModal()">✕</button>
+        </div>
+
+        <!-- BODY COM ROLAGEM -->
+        <div id="modal-products" class="modal-body"></div>
+
+        <!-- FOOTER FIXO -->
+        <div class="modal-footer">
+            <button onclick="closeModal()">Fechar</button>
+        </div>
+
+    </div>
 </div>
 
 <script src="script.js"></script>
