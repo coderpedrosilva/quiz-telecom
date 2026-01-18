@@ -2333,15 +2333,2495 @@ const allQuestions = [
     
     {
         category: "fiber",
-        product: "Speed Star Mini Flat Drop",
-        question: "Qual é o tipo de fibra mais utilizada em FTTH?",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual é o material da capa externa do cabo óptico Speed Star Mini Flat Drop Dielétrico?",
         answers: [
-            { text: "Monomodo", correct: true },
-            { text: "Multimodo", correct: false },
-            { text: "Coaxial", correct: false },
-            { text: "Metálica", correct: false }
+            { text: "Material termoplástico LSZH, retardante à chama, com baixa emissão de fumaça e resistência aos raios UV", correct: true },
+            { text: "Polietileno de alta densidade com foco em resistência mecânica para ambientes enterrados", correct: false },
+            { text: "PVC flexível utilizado em instalações internas sem exigência de baixa fumaça", correct: false },
+            { text: "Material termofixo rígido aplicado em cabos industriais de potência", correct: false }
         ]
-    }
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual tipo de fibra óptica é utilizada no cabo Speed Star Mini Flat Drop?",
+        answers: [
+            { text: "Fibra monomodo ITU-T G.657 A2 com baixa sensibilidade à curvatura", correct: true },
+            { text: "Fibra monomodo ITU-T G.652 D voltada para enlaces de backbone de longa distância", correct: false },
+            { text: "Fibra multimodo OM3 utilizada em redes internas de curta distância", correct: false },
+            { text: "Fibra híbrida destinada a aplicações especiais FTTA", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Para qual tipo de aplicação o cabo Speed Star Mini Flat Drop Dielétrico foi projetado?",
+        answers: [
+            { text: "Redes FTTH para instalações internas e externas, incluindo vias aéreas", correct: true },
+            { text: "Redes de acesso óptico em ambientes controlados de data centers", correct: false },
+            { text: "Backbones ópticos subterrâneos de longa distância", correct: false },
+            { text: "Ambientes industriais com alto nível de interferência eletromagnética", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Quais são as opções de quantidade de fibras ópticas disponíveis neste cabo?",
+        answers: [
+            { text: "01 ou 02 fibras ópticas monomodo", correct: true },
+            { text: "Até 04 fibras ópticas conforme configuração personalizada", correct: false },
+            { text: "Apenas 01 fibra óptica para aplicações internas", correct: false },
+            { text: "Configurações acima de 12 fibras para redes de distribuição", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual material é utilizado como elemento de tração no cabo óptico Speed Star Mini Flat Drop?",
+        answers: [
+            { text: "Filamentos dielétricos em FRP (Fiber Reinforced Plastic)", correct: true },
+            { text: "Arames de aço galvanizado para aumento da resistência mecânica", correct: false },
+            { text: "Cordoalhas metálicas com revestimento anticorrosivo", correct: false },
+            { text: "Elementos híbridos condutores utilizados para aterramento", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual é a função e característica do elemento de sustentação presente no cabo?",
+        answers: [
+            { text: "Elemento metálico revestido responsável pela sustentação mecânica do cabo", correct: true },
+            { text: "Elemento dielétrico projetado apenas para absorção de impactos físicos", correct: false },
+            { text: "Elemento óptico adicional para redundância de sinal", correct: false },
+            { text: "Elemento condutor exclusivo para aterramento elétrico", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual é o vão máximo recomendado para instalação aérea do cabo Speed Star Mini Flat Drop?",
+        answers: [
+            { text: "Até 80 metros entre pontos de fixação", correct: true },
+            { text: "Até 120 metros com utilização de mensageiro adicional", correct: false },
+            { text: "Limitado a 40 metros devido à estrutura do cabo", correct: false },
+            { text: "Sem limitação definida desde que respeitado o raio de curvatura", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Quais são as dimensões aproximadas do cabo Speed Star Mini Flat Drop?",
+        answers: [
+            { text: "5,0 mm x 2,0 mm", correct: true },
+            { text: "6,5 mm x 3,0 mm", correct: false },
+            { text: "4,0 mm x 1,6 mm", correct: false },
+            { text: "8,0 mm x 4,0 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual é o raio mínimo de curvatura permitido durante a instalação do cabo?",
+        answers: [
+            { text: "30 mm", correct: true },
+            { text: "20 mm em instalações com baixa tração", correct: false },
+            { text: "60 mm em ambientes externos", correct: false },
+            { text: "10 vezes o diâmetro do cabo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual é o raio mínimo de curvatura permitido após a instalação do cabo?",
+        answers: [
+            { text: "15 mm", correct: true },
+            { text: "30 mm para preservar a integridade estrutural", correct: false },
+            { text: "20 mm em aplicações internas", correct: false },
+            { text: "6 vezes o diâmetro do cabo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual é a faixa de temperatura de operação do cabo Speed Star Mini Flat Drop?",
+        answers: [
+            { text: "-20 °C a +65 °C", correct: true },
+            { text: "0 °C a +70 °C para ambientes internos", correct: false },
+            { text: "-40 °C a +85 °C para aplicações industriais", correct: false },
+            { text: "-10 °C a +60 °C em instalações protegidas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual certificação regulamenta o cabo Speed Star Mini Flat Drop no Brasil?",
+        answers: [
+            { text: "ANATEL – Anexo A da Resolução 299", correct: true },
+            { text: "INMETRO para equipamentos ópticos ativos", correct: false },
+            { text: "ISO 9001 aplicada a processos de fabricação", correct: false },
+            { text: "IEC para cabos ópticos submarinos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Qual é o código de cores padrão das fibras ópticas neste cabo?",
+        answers: [
+            { text: "Verde para fibra 01 e amarelo para fibra 02", correct: true },
+            { text: "Azul para fibra primária e laranja para secundária", correct: false },
+            { text: "Vermelho para fibra principal e branco para reserva", correct: false },
+            { text: "Preto para fibra única e cinza para identificação", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.GFRP – Cabo Óptico Speed Star Mini Flat Drop Dielétrico",
+        question: "Como o cabo Speed Star Mini Flat Drop é fornecido logisticamente?",
+        answers: [
+            { text: "Bobinas de madeira com proteção ou caixas de papelão", correct: true },
+            { text: "Carretéis plásticos industriais próprios para lançamento mecanizado", correct: false },
+            { text: "Rolos flexíveis sem qualquer proteção estrutural", correct: false },
+            { text: "Carretéis metálicos reutilizáveis para cabos de alta tração", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é o tipo de construção estrutural do cabo óptico ASU80 Advantage?",
+        answers: [
+            { text: "Cabo óptico aéreo dielétrico autossustentado com tubo único do tipo loose tube", correct: true },
+            { text: "Cabo óptico metálico com múltiplos tubos e mensageiro externo", correct: false },
+            { text: "Cabo óptico subterrâneo com núcleo compacto preenchido com gel", correct: false },
+            { text: "Cabo óptico drop flat utilizado em redes FTTH internas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual material é utilizado como elemento central de sustentação no cabo ASU80 Advantage?",
+        answers: [
+            { text: "FRP (Fiber Reinforced Plastic), material dielétrico de alta resistência mecânica", correct: true },
+            { text: "Aço galvanizado com função estrutural e aterramento", correct: false },
+            { text: "Alma metálica de cobre estanhado para condução elétrica", correct: false },
+            { text: "Polímero flexível sem função de sustentação", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é a função do fio de rasgamento (rip cord) presente no cabo?",
+        answers: [
+            { text: "Facilitar a abertura controlada da capa externa durante a instalação", correct: true },
+            { text: "Atuar como elemento adicional de tração longitudinal do cabo", correct: false },
+            { text: "Servir como condutor para aterramento elétrico", correct: false },
+            { text: "Reduzir a atenuação óptica em curvas acentuadas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "O que caracteriza o núcleo seco do cabo ASU80 Advantage?",
+        answers: [
+            { text: "Uso de fios bloqueadores de água que impedem a propagação de umidade", correct: true },
+            { text: "Ausência de qualquer sistema de proteção contra água", correct: false },
+            { text: "Preenchimento total do núcleo com gel hidrofóbico", correct: false },
+            { text: "Revestimento metálico selado contra infiltração", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é a função do fio bloqueador de água (water blocking) no cabo?",
+        answers: [
+            { text: "Absorver água e impedir sua propagação longitudinal ao longo do cabo", correct: true },
+            { text: "Aumentar a resistência elétrica do núcleo óptico", correct: false },
+            { text: "Substituir a necessidade de capa externa resistente à umidade", correct: false },
+            { text: "Reduzir perdas ópticas causadas por emendas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é o tipo de fibra óptica utilizada no cabo ASU80 Advantage?",
+        answers: [
+            { text: "Fibra monomodo ITU-T G.652 D", correct: true },
+            { text: "Fibra monomodo ITU-T G.657 A2 para aplicações de alta curvatura", correct: false },
+            { text: "Fibra multimodo OM4 voltada para data centers", correct: false },
+            { text: "Fibra híbrida para aplicações FTTA", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é a capacidade máxima de fibras ópticas no cabo ASU80 Advantage?",
+        answers: [
+            { text: "Até 12 fibras ópticas organizadas em tubo único", correct: true },
+            { text: "Até 24 fibras distribuídas em múltiplos tubos", correct: false },
+            { text: "Limitado a 6 fibras devido ao núcleo seco", correct: false },
+            { text: "Quantidade fixa de 8 fibras por projeto", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Como é feita a identificação das fibras ópticas dentro do cabo?",
+        answers: [
+            { text: "Por código de cores padronizado conforme norma adotada no Brasil", correct: true },
+            { text: "Por numeração impressa individual em cada fibra", correct: false },
+            { text: "Por anéis metálicos espaçados ao longo do tubo", correct: false },
+            { text: "Por marcação química invisível ao olho humano", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é a aplicação principal do cabo ASU80 Advantage?",
+        answers: [
+            { text: "Instalações aéreas externas autossustentadas com vãos de até 80 metros", correct: true },
+            { text: "Instalações internas em eletrocalhas prediais", correct: false },
+            { text: "Instalações subterrâneas diretamente enterradas", correct: false },
+            { text: "Interligação de racks em data centers", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é o diâmetro externo aproximado do cabo ASU80 Advantage?",
+        answers: [
+            { text: "7,0 mm ± 0,3 mm", correct: true },
+            { text: "5,0 mm ± 0,2 mm", correct: false },
+            { text: "8,5 mm ± 0,5 mm", correct: false },
+            { text: "10,0 mm ± 1,0 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é o raio mínimo de curvatura durante a instalação do cabo?",
+        answers: [
+            { text: "20 vezes o diâmetro externo do cabo", correct: true },
+            { text: "10 vezes o diâmetro externo do cabo", correct: false },
+            { text: "15 vezes o diâmetro externo do cabo", correct: false },
+            { text: "Raio fixo de 30 mm independente do diâmetro", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é o raio mínimo de curvatura após a instalação do cabo?",
+        answers: [
+            { text: "15 vezes o diâmetro externo do cabo", correct: true },
+            { text: "20 vezes o diâmetro externo do cabo", correct: false },
+            { text: "10 vezes o diâmetro externo do cabo", correct: false },
+            { text: "Raio fixo de 25 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual é a faixa de temperatura de operação do cabo ASU80 Advantage?",
+        answers: [
+            { text: "-20 °C a +65 °C", correct: true },
+            { text: "0 °C a +60 °C para ambientes internos", correct: false },
+            { text: "-10 °C a +70 °C para uso urbano", correct: false },
+            { text: "-40 °C a +85 °C para aplicações industriais", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "O que significa a sigla ASU presente na marcação do cabo?",
+        answers: [
+            { text: "Autossustentado com tubo único", correct: true },
+            { text: "Aplicação Subterrânea Universal", correct: false },
+            { text: "Alta Sustentação Urbana", correct: false },
+            { text: "Aterramento Super Ultrarresistente", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "O que indica a sigla NR na identificação do cabo?",
+        answers: [
+            { text: "Não retardante à chama", correct: true },
+            { text: "Núcleo reforçado", correct: false },
+            { text: "Norma residencial", correct: false },
+            { text: "Nível reduzido de atenuação", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Quais são os comprimentos padrão de fornecimento do cabo ASU80 Advantage?",
+        answers: [
+            { text: "Bobinas de 2 km, 3 km e 4 km", correct: true },
+            { text: "Bobinas fixas de 1 km", correct: false },
+            { text: "Rolos contínuos de até 500 metros", correct: false },
+            { text: "Carretéis metálicos de 10 km", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.ADV.XF.ASU80 – Cabo Óptico ASU80 Advantage",
+        question: "Qual órgão regulamenta e certifica o cabo ASU80 Advantage no Brasil?",
+        answers: [
+            { text: "ANATEL – Anexo A da Resolução 299", correct: true },
+            { text: "INMETRO – Cabos de telecomunicações", correct: false },
+            { text: "IEC – Optical Fiber Cables", correct: false },
+            { text: "ISO – Sistemas de gestão da qualidade", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual é a principal finalidade do cabo óptico Speed Star AS80/AS120/AS200?",
+        answers: [
+            { text: "Instalações aéreas externas auto-sustentadas em vãos de até 80 m, 120 m e 200 m", correct: true },
+            { text: "Instalações aéreas externas com necessidade de mensageiro metálico adicional", correct: false },
+            { text: "Instalações subterrâneas diretamente enterradas sem dutos", correct: false },
+            { text: "Interligação óptica submarina de curta distância", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "O que diferencia os modelos AS80, AS120 e AS200 dentro da linha Speed Star?",
+        answers: [
+            { text: "O comprimento máximo do vão aéreo suportado pelo cabo", correct: true },
+            { text: "A capacidade mecânica de sustentação conforme o tipo de instalação aérea", correct: false },
+            { text: "O tipo de fibra óptica utilizado em cada modelo", correct: false },
+            { text: "A aplicação exclusiva para redes internas ou prediais", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual é o tipo de construção estrutural do cabo Speed Star AS80/AS120/AS200?",
+        answers: [
+            { text: "Cabo óptico aéreo auto-sustentável com loose tubes", correct: true },
+            { text: "Cabo óptico aéreo com tubos soltos e estrutura não metálica", correct: false },
+            { text: "Cabo drop flat com elemento de tração lateral", correct: false },
+            { text: "Cabo subterrâneo com múltiplos tubos encordoados", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual tecnologia estrutural é utilizada para proteger as fibras ópticas contra flexões e esmagamento?",
+        answers: [
+            { text: "Loose tubes que funcionam como elementos de proteção mecânica das fibras", correct: true },
+            { text: "Tubo solto que permite acomodação das fibras sob esforços mecânicos", correct: false },
+            { text: "Blindagem metálica contínua aplicada ao redor do núcleo", correct: false },
+            { text: "Camada interna rígida de PVC estrutural", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual é o material da capa externa do cabo Speed Star AS80/AS120/AS200?",
+        answers: [
+            { text: "Polietileno de alta resistência com proteção contra raios UV", correct: true },
+            { text: "Polietileno formulado para suportar intempéries e exposição solar", correct: false },
+            { text: "PVC flexível retardante à chama para uso interno", correct: false },
+            { text: "Polímero LSZH de baixa emissão de fumaça", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Por que o polietileno com proteção UV é utilizado na capa externa desse cabo?",
+        answers: [
+            { text: "Para resistir à exposição prolongada ao sol e às condições climáticas externas", correct: true },
+            { text: "Para garantir maior durabilidade em ambientes externos a céu aberto", correct: false },
+            { text: "Para permitir instalação exclusiva em ambientes internos", correct: false },
+            { text: "Para aumentar a condutividade elétrica do cabo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual tipo de fibra óptica é utilizado no cabo Speed Star AS80/AS120/AS200?",
+        answers: [
+            { text: "Fibra monomodo ITU-T G.652 D (Single Mode)", correct: true },
+            { text: "Fibra monomodo padrão para enlaces ópticos de longa distância", correct: false },
+            { text: "Fibra multimodo OM3 para redes corporativas", correct: false },
+            { text: "Fibra híbrida para aplicações FTTA", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual é o revestimento aplicado às fibras ópticas utilizadas neste cabo?",
+        answers: [
+            { text: "Acrilato curado por radiação UV", correct: true },
+            { text: "Revestimento acrílico aplicado para proteção mecânica das fibras", correct: false },
+            { text: "Polietileno de alta densidade", correct: false },
+            { text: "Camada metálica anticorrosiva", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual é a função da geléia presente dentro das loose tubes?",
+        answers: [
+            { text: "Permitir o livre movimento das fibras e reduzir esforços mecânicos", correct: true },
+            { text: "Proteger as fibras contra microcurvaturas durante a instalação", correct: false },
+            { text: "Atuar como isolante elétrico do núcleo óptico", correct: false },
+            { text: "Aumentar a rigidez estrutural do cabo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Quais faixas de quantidade de fibras ópticas são suportadas pelo cabo Speed Star AS80/AS120/AS200?",
+        answers: [
+            { text: "De 2 até 144 fibras ópticas, conforme a configuração do cabo", correct: true },
+            { text: "Quantidade variável de fibras de acordo com o projeto óptico", correct: false },
+            { text: "Limitado a no máximo 12 fibras por cabo", correct: false },
+            { text: "Quantidade fixa definida em fábrica", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Como o diâmetro externo do cabo varia em relação à quantidade de fibras?",
+        answers: [
+            { text: "Aumenta progressivamente conforme cresce o número de fibras ópticas", correct: true },
+            { text: "Varia de acordo com a quantidade de tubos e fibras internas", correct: false },
+            { text: "Permanece fixo independentemente da quantidade de fibras", correct: false },
+            { text: "Depende apenas do tipo de vão e não das fibras", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual é o raio mínimo de curvatura permitido durante a instalação?",
+        answers: [
+            { text: "20 vezes o diâmetro externo do cabo", correct: true },
+            { text: "Valor proporcional ao diâmetro do cabo conforme norma técnica", correct: false },
+            { text: "10 vezes o diâmetro externo do cabo", correct: false },
+            { text: "Raio fixo de 30 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual é o raio mínimo de curvatura permitido após a instalação?",
+        answers: [
+            { text: "10 vezes o diâmetro externo do cabo", correct: true },
+            { text: "Raio reduzido após estabilização mecânica do cabo", correct: false },
+            { text: "20 vezes o diâmetro externo do cabo", correct: false },
+            { text: "Raio fixo de 25 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual é a faixa de temperatura de operação do cabo Speed Star AS80/AS120/AS200?",
+        answers: [
+            { text: "-20 °C a +65 °C", correct: true },
+            { text: "Faixa típica para cabos ópticos de uso externo", correct: false },
+            { text: "0 °C a +50 °C", correct: false },
+            { text: "-40 °C a +85 °C", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "O que significa a sigla AS presente na identificação do cabo Speed Star?",
+        answers: [
+            { text: "Auto-Sustentável", correct: true },
+            { text: "Aplicação Subterrânea", correct: false },
+            { text: "Alta Sensibilidade óptica", correct: false },
+            { text: "Aterramento Superficial", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.AS80 / AS120 / AS200 – Cabo Óptico Speed Star Auto-Sustentável",
+        question: "Qual norma regulamenta este cabo no Brasil?",
+        answers: [
+            { text: "ANATEL – Anexo A da Resolução 299", correct: true },
+            { text: "Norma brasileira para cabos elétricos de potência", correct: false },
+            { text: "IEC para cabos ópticos submarinos", correct: false },
+            { text: "ISO 11801 para cabeamento estruturado interno", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual é a aplicação principal do cabo óptico Speed Star ASU80 / ASU120?",
+        answers: [
+            { text: "Instalações aéreas externas auto-sustentadas em vãos de até 80 m e 120 m", correct: true },
+            { text: "Instalações aéreas externas com necessidade de mensageiro metálico", correct: false },
+            { text: "Distribuição interna em edifícios e data centers", correct: false },
+            { text: "Interligação submarina de curta distância", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "O que diferencia o modelo ASU80 do ASU120 na linha Speed Star?",
+        answers: [
+            { text: "O comprimento máximo do vão aéreo suportado pelo cabo", correct: true },
+            { text: "A capacidade de sustentação mecânica conforme o vão de instalação", correct: false },
+            { text: "O tipo de fibra óptica utilizada em cada modelo", correct: false },
+            { text: "A composição do revestimento acrilato das fibras", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual é a configuração estrutural do cabo Speed Star ASU?",
+        answers: [
+            { text: "Cabo óptico aéreo dielétrico auto-sustentado com tubo único (loose tube)", correct: true },
+            { text: "Cabo óptico aéreo com tubo único e estrutura totalmente não metálica", correct: false },
+            { text: "Cabo drop flat com dois elementos de tração laterais", correct: false },
+            { text: "Cabo óptico subterrâneo com múltiplos tubos encordoados", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual é a função estrutural das loose tubes no cabo ASU?",
+        answers: [
+            { text: "Proteger as fibras contra flexões e atuar como elemento antiesmagamento", correct: true },
+            { text: "Permitir acomodação das fibras sem transferência direta de esforço mecânico", correct: false },
+            { text: "Servir como elemento principal de tração do cabo", correct: false },
+            { text: "Realizar o aterramento elétrico da estrutura", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual é o material da capa externa do cabo Speed Star ASU?",
+        answers: [
+            { text: "Polietileno de alto desempenho com proteção contra raios UV", correct: true },
+            { text: "Polietileno formulado para resistência climática em uso externo", correct: false },
+            { text: "PVC flexível retardante à chama para ambientes internos", correct: false },
+            { text: "LSZH com baixa emissão de fumaça", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Por que a proteção contra raios UV é essencial neste cabo?",
+        answers: [
+            { text: "Para garantir resistência à exposição solar contínua em ambientes externos", correct: true },
+            { text: "Para aumentar a durabilidade do revestimento em instalações aéreas", correct: false },
+            { text: "Para reduzir a atenuação óptica da fibra", correct: false },
+            { text: "Para eliminar a necessidade de geléia interna", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual material é utilizado como elemento central de força no cabo Speed Star ASU?",
+        answers: [
+            { text: "FRP (Fiber Reinforced Plastic), material dielétrico de alta resistência mecânica", correct: true },
+            { text: "Elemento dielétrico rígido projetado para absorver esforços de tração", correct: false },
+            { text: "Aço galvanizado com tratamento anticorrosivo", correct: false },
+            { text: "Cobre eletrolítico recozido", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual é a principal função do elemento central de força em FRP?",
+        answers: [
+            { text: "Absorver esforços mecânicos e prevenir alongamento longitudinal do cabo", correct: true },
+            { text: "Manter a estabilidade estrutural do cabo durante o vão aéreo", correct: false },
+            { text: "Atuar como caminho de aterramento elétrico", correct: false },
+            { text: "Reduzir a atenuação óptica em enlaces longos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual é a função da geléia presente dentro do tubo único?",
+        answers: [
+            { text: "Proteger as fibras contra umidade, impactos mecânicos e microcurvaturas", correct: true },
+            { text: "Permitir movimentação controlada das fibras dentro do tubo", correct: false },
+            { text: "Atuar como isolante elétrico do núcleo", correct: false },
+            { text: "Aumentar a rigidez estrutural do cabo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual é a função do fio de rasgamento (rip cord) no cabo?",
+        answers: [
+            { text: "Facilitar a abertura controlada da capa externa durante a instalação", correct: true },
+            { text: "Permitir remoção rápida do revestimento sem danificar o núcleo", correct: false },
+            { text: "Atuar como elemento de tração adicional", correct: false },
+            { text: "Servir como referência de identificação das fibras", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual tipo de fibra óptica é utilizado no cabo Speed Star ASU?",
+        answers: [
+            { text: "Fibra monomodo ITU-T G.652 D", correct: true },
+            { text: "Fibra monomodo padrão para enlaces ópticos de acesso e distribuição", correct: false },
+            { text: "Fibra multimodo OM3 para redes corporativas", correct: false },
+            { text: "Fibra multimodo OM4 para data centers", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual é a faixa de quantidade de fibras ópticas suportada pelo cabo Speed Star ASU?",
+        answers: [
+            { text: "De 1 até 144 fibras ópticas, conforme a configuração do cabo", correct: true },
+            { text: "Quantidade variável definida conforme projeto óptico", correct: false },
+            { text: "Limitado a no máximo 12 fibras ópticas", correct: false },
+            { text: "Quantidade fixa definida em fábrica", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.ASU80 / ASU120 – Cabo Óptico Speed Star ASU – Tubo Único – Auto-Sustentável",
+        question: "Qual norma brasileira regulamenta este cabo?",
+        answers: [
+            { text: "ANATEL – Anexo A da Resolução 299", correct: true },
+            { text: "Norma brasileira para cabos elétricos de potência", correct: false },
+            { text: "ISO 11801 para cabeamento estruturado interno", correct: false },
+            { text: "IEC para cabos ópticos submarinos", correct: false }
+        ]
+    },
+
+
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual é a principal aplicação do cabo óptico Speed Star Drop Figura 8?",
+        answers: [
+            { text: "Atendimento FTTH, interligando a última caixa de emenda aérea até o assinante", correct: true },
+            { text: "Conexão de acesso FTTH em trechos finais da rede de distribuição", correct: false },
+            { text: "Backbone óptico de longa distância entre centrais", correct: false },
+            { text: "Interligação interna de racks em data centers", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Por que o cabo Speed Star Drop Figura 8 é indicado para redes FTTH?",
+        answers: [
+            { text: "Porque possui dimensões compactas, resistência mecânica adequada e suporta instalação aérea até 80 m", correct: true },
+            { text: "Porque combina leveza estrutural com capacidade de instalação aérea de curto vão", correct: false },
+            { text: "Porque utiliza exclusivamente fibras multimodo para curta distância", correct: false },
+            { text: "Porque é projetado apenas para instalações internas prediais", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "O que caracteriza o formato Figura 8 neste cabo óptico?",
+        answers: [
+            { text: "A presença de um elemento de sustentação integrado ao corpo do cabo óptico", correct: true },
+            { text: "A integração física entre o cabo óptico e o mensageiro de sustentação", correct: false },
+            { text: "A utilização de dois tubos ópticos paralelos independentes", correct: false },
+            { text: "A aplicação de blindagem metálica dupla", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual é o material do elemento de sustentação do cabo Figura 8?",
+        answers: [
+            { text: "Fio de aço galvanizado com diâmetro nominal de 1,3 mm", correct: true },
+            { text: "Mensageiro metálico em aço tratado para uso aéreo", correct: false },
+            { text: "Elemento dielétrico em FRP", correct: false },
+            { text: "Cabo de aramida com revestimento polimérico", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual é o material da capa externa do cabo Speed Star Drop Figura 8?",
+        answers: [
+            { text: "Material termoplástico resistente aos raios UV, produtos químicos e umidade", correct: true },
+            { text: "Polímero externo formulado para resistir a intempéries em uso externo", correct: false },
+            { text: "PVC flexível retardante à chama para uso interno exclusivo", correct: false },
+            { text: "LSZH para ambientes confinados", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual característica da capa externa facilita a instalação do cabo?",
+        answers: [
+            { text: "Baixo atrito superficial, facilitando o manuseio e lançamento", correct: true },
+            { text: "Superfície lisa que reduz esforço durante o lançamento aéreo", correct: false },
+            { text: "Alta rugosidade para maior aderência manual", correct: false },
+            { text: "Revestimento metálico antiderrapante", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "O que significa a classificação COG do revestimento externo?",
+        answers: [
+            { text: "Revestimento não propagante à chama", correct: true },
+            { text: "Classificação de comportamento ao fogo do material externo", correct: false },
+            { text: "Capa óptica galvanizada", correct: false },
+            { text: "Classe de blindagem metálica", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual material é utilizado como elemento de tração do cabo?",
+        answers: [
+            { text: "Filamentos de fibras dielétricas de aramida", correct: true },
+            { text: "Fibras sintéticas de alta resistência mecânica", correct: false },
+            { text: "Fios de aço galvanizado trançados", correct: false },
+            { text: "Cabo de cobre eletrolítico recozido", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual é a função do elemento de tração em aramida neste cabo?",
+        answers: [
+            { text: "Absorver esforços mecânicos em instalações internas em dutos e canaletas", correct: true },
+            { text: "Proteger o cabo contra tração excessiva em lançamentos internos", correct: false },
+            { text: "Substituir o elemento de sustentação em aço", correct: false },
+            { text: "Reduzir a atenuação óptica em longas distâncias", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual é a função do loose tube no cabo Speed Star Drop Figura 8?",
+        answers: [
+            { text: "Proteger as fibras contra esmagamento, flexões e variações térmicas", correct: true },
+            { text: "Permitir acomodação das fibras sem transferência direta de esforços", correct: false },
+            { text: "Servir como elemento principal de sustentação mecânica", correct: false },
+            { text: "Eliminar a necessidade de geléia interna", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Quais tipos de fibra óptica podem ser utilizados neste cabo?",
+        answers: [
+            { text: "Monomodo ITU-T G.657 A1 e ITU-T G.652 D", correct: true },
+            { text: "Fibras monomodo padrão para redes de acesso FTTH", correct: false },
+            { text: "Somente fibra multimodo OM3", correct: false },
+            { text: "Fibra híbrida monomodo e multimodo no mesmo tubo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual é a quantidade de fibras ópticas suportada pelo cabo Speed Star Drop Figura 8?",
+        answers: [
+            { text: "De 1 até 12 fibras ópticas", correct: true },
+            { text: "Quantidade variável conforme aplicação FTTH", correct: false },
+            { text: "Quantidade fixa de 24 fibras", correct: false },
+            { text: "Somente 1 fibra óptica por cabo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual é o vão máximo recomendado para instalação aérea do cabo Figura 8?",
+        answers: [
+            { text: "80 metros", correct: true },
+            { text: "Vãos curtos compatíveis com redes de acesso FTTH", correct: false },
+            { text: "120 metros", correct: false },
+            { text: "200 metros", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual norma brasileira está associada ao cabo óptico de acesso ao assinante?",
+        answers: [
+            { text: "NBR 15596", correct: true },
+            { text: "Norma brasileira específica para cabos ópticos de acesso FTTH", correct: false },
+            { text: "NBR 5410 para instalações elétricas", correct: false },
+            { text: "NBR 5419 para sistemas de aterramento", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FIG8 – Cabo Óptico Speed Star Drop Figura 8 – Tubo Único – FTTH",
+        question: "Qual órgão certifica este cabo para uso no Brasil?",
+        answers: [
+            { text: "ANATEL – Anexo A da Resolução 299", correct: true },
+            { text: "Órgão regulador de telecomunicações para cabos ópticos", correct: false },
+            { text: "INMETRO – Cabos elétricos de potência", correct: false },
+            { text: "IEC – Cabos submarinos ópticos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Qual é a principal aplicação do cabo óptico Speed Star Mini Flat Drop Opti Ray?",
+        answers: [
+            { text: "Redes FTTH para atendimento final ao assinante em instalações internas e externas", correct: true },
+            { text: "Distribuição óptica de acesso em redes de última milha", correct: false },
+            { text: "Interligação de racks em data centers", correct: false },
+            { text: "Backbones ópticos metropolitanos de longa distância", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Por que o cabo Opti Ray é indicado para ambientes com espaço físico limitado?",
+        answers: [
+            { text: "Porque possui dimensões compactas e utiliza fibra de baixa sensibilidade à curvatura", correct: true },
+            { text: "Porque combina perfil reduzido com flexibilidade adequada para passagens estreitas", correct: false },
+            { text: "Porque elimina a necessidade de elementos de tração", correct: false },
+            { text: "Porque dispensa qualquer raio mínimo de curvatura", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Qual característica define o formato Mini Flat Drop do cabo Opti Ray?",
+        answers: [
+            { text: "Seção transversal plana e compacta, adequada para passagens discretas", correct: true },
+            { text: "Perfil físico otimizado para instalação embutida e aparente", correct: false },
+            { text: "Estrutura circular com blindagem metálica contínua", correct: false },
+            { text: "Dois tubos ópticos independentes paralelos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "O que diferencia o cabo Opti Ray de um Mini Flat Drop convencional?",
+        answers: [
+            { text: "A presença de elementos metálicos de tração e sustentação colados ao cabo", correct: true },
+            { text: "A integração de arames metálicos externos fixados ao corpo do cabo", correct: false },
+            { text: "A utilização exclusiva de elementos dielétricos", correct: false },
+            { text: "A ausência total de elementos de sustentação", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Qual é o material da capa externa do cabo Speed Star Mini Flat Drop Opti Ray?",
+        answers: [
+            { text: "Termoplástico LSZH retardante à chama, livre de halogênios e com baixo atrito", correct: true },
+            { text: "Material polimérico de baixa emissão de fumaça indicado para ambientes internos", correct: false },
+            { text: "PVC flexível com alta emissão de fumaça", correct: false },
+            { text: "Polietileno corrugado para uso subterrâneo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Qual é a principal vantagem do uso de capa LSZH neste cabo?",
+        answers: [
+            { text: "Baixa emissão de fumaça e gases tóxicos em caso de incêndio", correct: true },
+            { text: "Maior segurança em ambientes internos e áreas com circulação de pessoas", correct: false },
+            { text: "Redução da atenuação óptica da fibra", correct: false },
+            { text: "Eliminação da necessidade de aterramento", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "O que significa a denominação \"Opti Ray – Arame Colado\"?",
+        answers: [
+            { text: "Elementos metálicos de tração e sustentação revestidos e colados ao cabo", correct: true },
+            { text: "Arames de aço incorporados externamente ao corpo do cabo óptico", correct: false },
+            { text: "Blindagem metálica contínua ao redor da fibra", correct: false },
+            { text: "Camada metálica aplicada apenas para aterramento", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Qual benefício os elementos metálicos colados proporcionam ao cabo Opti Ray?",
+        answers: [
+            { text: "Maior rigidez estrutural e resistência mecânica em instalações aéreas", correct: true },
+            { text: "Aumento da estabilidade do cabo em vãos curtos", correct: false },
+            { text: "Redução do coeficiente de atenuação da fibra", correct: false },
+            { text: "Eliminação da necessidade de raio mínimo de curvatura", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Qual tipo de fibra óptica é utilizado no cabo Speed Star Mini Flat Drop Opti Ray?",
+        answers: [
+            { text: "Fibra monomodo ITU-T G.657 A2 com baixa sensibilidade à curvatura", correct: true },
+            { text: "Fibra monomodo otimizada para aplicações FTTH", correct: false },
+            { text: "Fibra multimodo OM3 para redes corporativas", correct: false },
+            { text: "Fibra híbrida monomodo/multimodo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Quais são as configurações de fibras disponíveis no cabo Opti Ray?",
+        answers: [
+            { text: "01 ou 02 fibras ópticas monomodo", correct: true },
+            { text: "Configurações simples voltadas para redes de acesso FTTH", correct: false },
+            { text: "Quantidade fixa de 4 fibras", correct: false },
+            { text: "Configurações acima de 24 fibras", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Qual é o peso nominal aproximado do cabo Opti Ray por quilômetro?",
+        answers: [
+            { text: "Cerca de 20 kg/km", correct: true },
+            { text: "Peso reduzido compatível com instalações aéreas de curto vão", correct: false },
+            { text: "Cerca de 80 kg/km", correct: false },
+            { text: "Cerca de 120 kg/km", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Qual é o vão máximo recomendado para instalação aérea do cabo Opti Ray?",
+        answers: [
+            { text: "Até 80 metros", correct: true },
+            { text: "Vãos curtos compatíveis com redes FTTH aéreas", correct: false },
+            { text: "Até 120 metros", correct: false },
+            { text: "Sem limitação de vão", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Como é realizada a marcação da capa externa do cabo Opti Ray?",
+        answers: [
+            { text: "Gravações a cada 1 metro com identificação do produto, norma e lote", correct: true },
+            { text: "Marcação sequencial contínua para controle de metragem", correct: false },
+            { text: "Etiqueta adesiva aplicada a cada 10 metros", correct: false },
+            { text: "Identificação eletrônica por RFID", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.OPTIRAY – Cabo Óptico Speed Star Mini Flat Drop Opti Ray – Arame Colado – FTTH",
+        question: "Qual órgão certifica o cabo Speed Star Mini Flat Drop Opti Ray no Brasil?",
+        answers: [
+            { text: "ANATEL – Anexo A da Resolução 299", correct: true },
+            { text: "Órgão regulador brasileiro de telecomunicações", correct: false },
+            { text: "INMETRO – Cabos elétricos de potência", correct: false },
+            { text: "IEC – Cabos submarinos ópticos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual é a principal aplicação do cabo óptico Speed Star Mini Flat Drop Compacto?",
+        answers: [
+            { text: "Atendimento FTTH em instalações internas, conectando a caixa óptica ao assinante", correct: true },
+            { text: "Backbone óptico externo para longas distâncias metropolitanas e interligação de redes públicas", correct: false },
+            { text: "Interligação de racks em data centers", correct: false },
+            { text: "Instalações subterrâneas diretamente enterradas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Por que o cabo Mini Flat Drop Compacto é indicado para ambientes com espaço limitado?",
+        answers: [
+            { text: "Devido às suas dimensões reduzidas, maior flexibilidade e uso de fibra com baixa sensibilidade à curvatura", correct: true },
+            { text: "Porque elimina totalmente restrições físicas e mecânicas relacionadas ao raio de curvatura", correct: false },
+            { text: "Porque possui blindagem metálica espessa", correct: false },
+            { text: "Porque utiliza fibras multimodo maiores", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "O que caracteriza o formato Mini Flat Drop Compacto deste cabo óptico?",
+        answers: [
+            { text: "Perfil plano e compacto que facilita passagens em canaletas, rodapés e dutos internos", correct: true },
+            { text: "Formato circular com múltiplos tubos ópticos e camadas adicionais de proteção", correct: false },
+            { text: "Perfil oval com mensageiro metálico", correct: false },
+            { text: "Estrutura híbrida com dois cabos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual vantagem prática o formato compacto oferece ao instalador?",
+        answers: [
+            { text: "Facilidade de manuseio, melhor acabamento estético e menor impacto visual", correct: true },
+            { text: "Maior resistência mecânica para aplicações aéreas com grandes vãos de sustentação", correct: false },
+            { text: "Capacidade de enterramento direto", correct: false },
+            { text: "Eliminação total de emendas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual é o material da capa externa do cabo Speed Star Mini Flat Drop Compacto?",
+        answers: [
+            { text: "Material termoplástico LSZH retardante à chama e de baixa emissão de fumaça", correct: true },
+            { text: "PVC flexível convencional com elevada emissão de fumaça e gases tóxicos", correct: false },
+            { text: "Polietileno de alta densidade", correct: false },
+            { text: "Elastômero termoplástico blindado", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual é a principal função da tecnologia LSZH neste cabo?",
+        answers: [
+            { text: "Reduzir a emissão de fumaça e gases tóxicos em caso de incêndio", correct: true },
+            { text: "Atender requisitos de segurança em ambientes fechados com circulação de pessoas", correct: false },
+            { text: "Aumentar a resistência elétrica", correct: false },
+            { text: "Permitir enterramento direto", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Quais materiais são utilizados como elementos de tração no cabo Mini Flat Drop Compacto?",
+        answers: [
+            { text: "Filamentos metálicos incorporados à estrutura do cabo", correct: true },
+            { text: "Fibras de aramida com função exclusiva de tração mecânica dielétrica", correct: false },
+            { text: "Aço galvanizado estrutural", correct: false },
+            { text: "Condutor de cobre estanhado", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual é a função principal dos elementos metálicos de tração neste cabo?",
+        answers: [
+            { text: "Absorver esforços mecânicos durante o lançamento e manuseio", correct: true },
+            { text: "Garantir sustentação aérea contínua em vãos extensos de rede externa", correct: false },
+            { text: "Atuar como blindagem eletromagnética", correct: false },
+            { text: "Substituir o cordão de ripagem", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual tipo de fibra óptica é utilizado no cabo Speed Star Mini Flat Drop Compacto?",
+        answers: [
+            { text: "Fibra monomodo BLI A/B conforme ITU-T G.657 A2", correct: true },
+            { text: "Fibra monomodo ITU-T G.652 D utilizada em enlaces ópticos de backbone", correct: false },
+            { text: "Fibra multimodo OM3", correct: false },
+            { text: "Fibra híbrida combinada", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual característica da fibra ITU-T G.657 A2 é essencial para este tipo de cabo?",
+        answers: [
+            { text: "Baixa sensibilidade à curvatura, permitindo instalações com curvas mais fechadas", correct: true },
+            { text: "Maior resistência mecânica para aplicações industriais severas", correct: false },
+            { text: "Maior diâmetro de núcleo", correct: false },
+            { text: "Uso exclusivo externo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Quais são as configurações de fibras disponíveis para o cabo Mini Flat Drop Compacto?",
+        answers: [
+            { text: "01 ou 02 fibras ópticas monomodo", correct: true },
+            { text: "Configurações variáveis que podem chegar até doze fibras ópticas", correct: false },
+            { text: "Quantidade fixa de quatro fibras", correct: false },
+            { text: "Configurações acima de vinte fibras", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Quais são as dimensões externas aproximadas do cabo Mini Flat Drop Compacto?",
+        answers: [
+            { text: "3,0 mm x 2,0 mm", correct: true },
+            { text: "Dimensões maiores para reforço estrutural em ambientes externos agressivos", correct: false },
+            { text: "5,2 mm x 2,0 mm", correct: false },
+            { text: "4,0 mm x 4,0 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual é o peso líquido aproximado do cabo por quilômetro?",
+        answers: [
+            { text: "7,8 kg/km", correct: true },
+            { text: "Peso elevado para aplicações externas com reforço metálico estrutural", correct: false },
+            { text: "15 kg/km", correct: false },
+            { text: "22 kg/km", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual é o raio mínimo de curvatura permitido durante a instalação do cabo?",
+        answers: [
+            { text: "30 mm", correct: true },
+            { text: "Raio variável conforme tipo de instalação e esforço mecânico aplicado", correct: false },
+            { text: "15 mm", correct: false },
+            { text: "60 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual é o raio mínimo de curvatura permitido após a instalação?",
+        answers: [
+            { text: "15 mm", correct: true },
+            { text: "Raio dependente das condições ambientais e do método de fixação", correct: false },
+            { text: "30 mm", correct: false },
+            { text: "20 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual norma técnica rege o ensaio de compressão deste cabo?",
+        answers: [
+            { text: "NBR 13507", correct: true },
+            { text: "Norma elétrica voltada para instalações prediais de baixa tensão", correct: false },
+            { text: "NBR 5410", correct: false },
+            { text: "IEC 60794-1", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual é a faixa de temperatura de operação do cabo Mini Flat Drop Compacto?",
+        answers: [
+            { text: "-20 °C até +65 °C", correct: true },
+            { text: "Faixa ampliada para ambientes industriais com variações térmicas extremas", correct: false },
+            { text: "0 °C até +50 °C", correct: false },
+            { text: "-40 °C até +85 °C", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Como é realizada a marcação da capa externa do cabo?",
+        answers: [
+            { text: "Gravação a cada 1 metro com identificação do produto, norma, lote e ano", correct: true },
+            { text: "Sistema de identificação contínua para rastreabilidade e controle de produção", correct: false },
+            { text: "Etiqueta adesiva periódica", correct: false },
+            { text: "Marcação apenas nas pontas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.1F.DROP.COMPACTO – Cabo Óptico Speed Star Mini Flat Drop Compacto – 1 km – Uso Interno (Indoor)",
+        question: "Qual órgão certifica o cabo Speed Star Mini Flat Drop Compacto para uso no Brasil?",
+        answers: [
+            { text: "ANATEL – Anexo A da Resolução 299", correct: true },
+            { text: "Órgão regulador voltado à certificação de equipamentos e produtos de telecomunicações", correct: false },
+            { text: "INMETRO – Cabos elétricos", correct: false },
+            { text: "IEC – Cabos submarinos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual é o principal diferencial do Cabo Óptico Speed Star Mini Flat Drop – versão Inovação?",
+        answers: [
+            { text: "Integração do carretel com o desbobinador, facilitando transporte, manuseio e lançamento do cabo", correct: true },
+            { text: "Solução logística integrada que otimiza o transporte, o armazenamento e o lançamento em campo", correct: false },
+            { text: "Uso exclusivo em instalações subterrâneas", correct: false },
+            { text: "Blindagem metálica contínua industrial", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Para quais cenários o Mini Flat Drop Inovação é indicado?",
+        answers: [
+            { text: "Redes FTTH internas e externas, inclusive vias aéreas com vãos de até 80 m", correct: true },
+            { text: "Aplicações de acesso óptico em ambientes internos, externos e instalações aéreas auto-sustentadas", correct: false },
+            { text: "Backbones ópticos de longa distância", correct: false },
+            { text: "Interligação de racks internos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "O que caracteriza o formato Mini Flat Drop deste cabo?",
+        answers: [
+            { text: "Perfil plano e compacto que facilita instalação em espaços limitados", correct: true },
+            { text: "Estrutura otimizada para passagens discretas em ambientes internos e externos", correct: false },
+            { text: "Estrutura circular com tubos ópticos", correct: false },
+            { text: "Perfil oval com mensageiro externo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual vantagem prática o formato Mini Flat oferece ao instalador?",
+        answers: [
+            { text: "Melhor acabamento estético, menor impacto visual e facilidade de passagem", correct: true },
+            { text: "Facilidade de instalação aliada a um visual mais discreto em ambientes residenciais", correct: false },
+            { text: "Maior capacidade de fibras", correct: false },
+            { text: "Dispensa caixas ópticas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual é o material da capa externa do Mini Flat Drop Inovação?",
+        answers: [
+            { text: "Material termoplástico LSZH, retardante à chama, com baixa emissão de fumaça e resistência UV", correct: true },
+            { text: "Composição termoplástica desenvolvida para segurança, durabilidade e uso interno e externo", correct: false },
+            { text: "PVC flexível para uso interno", correct: false },
+            { text: "Polietileno corrugado subterrâneo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual é a principal vantagem da tecnologia LSZH aplicada a este cabo?",
+        answers: [
+            { text: "Menor emissão de fumaça e gases tóxicos em caso de incêndio", correct: true },
+            { text: "Aumento da segurança em ambientes fechados com circulação de pessoas", correct: false },
+            { text: "Maior condutividade elétrica", correct: false },
+            { text: "Redução direta da atenuação", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Quais elementos estruturais garantem a resistência mecânica do cabo Mini Flat Drop Inovação?",
+        answers: [
+            { text: "Filamentos metálicos para tração e elemento metálico dedicado à sustentação", correct: true },
+            { text: "Estrutura mecânica projetada para suportar esforços de tração e instalação aérea", correct: false },
+            { text: "Somente fibras de aramida", correct: false },
+            { text: "Blindagem metálica corrugada", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual é a função do elemento metálico de sustentação neste cabo?",
+        answers: [
+            { text: "Permitir instalação aérea auto-sustentada em vãos de até 80 m", correct: true },
+            { text: "Garantir sustentação mecânica adequada em instalações aéreas de acesso óptico", correct: false },
+            { text: "Atuar como aterramento elétrico", correct: false },
+            { text: "Reduzir a atenuação óptica", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual tipo de fibra óptica é utilizada no Mini Flat Drop Inovação?",
+        answers: [
+            { text: "Fibra monomodo ITU-T G.657 A1 com baixa sensibilidade à curvatura", correct: true },
+            { text: "Fibra desenvolvida para suportar curvas reduzidas sem perdas significativas de desempenho", correct: false },
+            { text: "Fibra monomodo G.652 D", correct: false },
+            { text: "Fibra multimodo OM3", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Por que a fibra ITU-T G.657 A1 é adequada para este tipo de cabo?",
+        answers: [
+            { text: "Permite raios de curvatura menores sem aumento significativo de atenuação", correct: true },
+            { text: "Garante maior flexibilidade para instalações com curvas acentuadas em campo", correct: false },
+            { text: "Possui núcleo maior", correct: false },
+            { text: "Uso exclusivo externo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual é a configuração de fibras do Mini Flat Drop Inovação?",
+        answers: [
+            { text: "02 fibras ópticas monomodo", correct: true },
+            { text: "Configuração otimizada para aplicações FTTH com duas fibras monomodo", correct: false },
+            { text: "01 fibra óptica exclusiva", correct: false },
+            { text: "Até 12 fibras ópticas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Quais são as dimensões externas aproximadas do cabo?",
+        answers: [
+            { text: "5,0 mm x 2,0 mm (± 0,2 mm)", correct: true },
+            { text: "Dimensões projetadas para equilíbrio entre robustez mecânica e flexibilidade", correct: false },
+            { text: "3,0 mm x 2,0 mm", correct: false },
+            { text: "6,5 mm x 3,0 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual é o peso nominal aproximado do cabo por quilômetro?",
+        answers: [
+            { text: "Cerca de 20 kg/km", correct: true },
+            { text: "Peso compatível com aplicações aéreas e instalações FTTH de acesso", correct: false },
+            { text: "Cerca de 7,8 kg/km", correct: false },
+            { text: "Cerca de 45 kg/km", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual é o raio mínimo de curvatura permitido durante a instalação?",
+        answers: [
+            { text: "30 mm", correct: true },
+            { text: "Raio definido para garantir integridade mecânica e desempenho óptico durante o lançamento", correct: false },
+            { text: "15 mm", correct: false },
+            { text: "60 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual é o raio mínimo de curvatura permitido após a instalação?",
+        answers: [
+            { text: "15 mm", correct: true },
+            { text: "Raio reduzido compatível com instalações definitivas em ambientes residenciais", correct: false },
+            { text: "30 mm", correct: false },
+            { text: "20 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual norma técnica rege o ensaio de compressão do Mini Flat Drop Inovação?",
+        answers: [
+            { text: "NBR 13507", correct: true },
+            { text: "Norma aplicada a ensaios mecânicos de cabos ópticos para telecomunicações", correct: false },
+            { text: "NBR 5410", correct: false },
+            { text: "IEC 60794-1", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual é a faixa de temperatura de operação do cabo?",
+        answers: [
+            { text: "-20 °C a +65 °C", correct: true },
+            { text: "Faixa adequada para operação em ambientes internos e externos convencionais", correct: false },
+            { text: "0 °C a +50 °C", correct: false },
+            { text: "-40 °C a +85 °C", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Como é realizada a marcação da capa externa do cabo?",
+        answers: [
+            { text: "Gravação a cada 1 metro com identificação do produto, norma e lote", correct: true },
+            { text: "Sistema de marcação contínua para rastreabilidade e identificação em campo", correct: false },
+            { text: "Etiqueta adesiva periódica", correct: false },
+            { text: "Marcação apenas nas pontas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Como o Mini Flat Drop Inovação é fornecido logisticamente?",
+        answers: [
+            { text: "Carretel integrado ao desbobinador, em comprimentos padrão de 1000 m", correct: true },
+            { text: "Solução logística integrada que facilita transporte, armazenamento e lançamento em campo", correct: false },
+            { text: "Bobinas de madeira de 3000 m", correct: false },
+            { text: "Rolos flexíveis de 100 m", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF.FLAT.INOVAÇÃO – Cabo Óptico Speed Star Mini Flat Drop – Carretel + Desbobinador Integrados (Inovação)",
+        question: "Qual órgão certifica o cabo Speed Star Mini Flat Drop Inovação no Brasil?",
+        answers: [
+            { text: "ANATEL – Anexo A da Resolução 299", correct: true },
+            { text: "FECAP - Federação de Cabos", correct: false },
+            { text: "INMETRO – Cabos elétricos", correct: false },
+            { text: "IEC – Cabos submarinos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual é a principal aplicação do cabo Speed Star Mini Flat Drop com reforço metálico?",
+        answers: [
+            { text: "Redes FTTH para instalações internas e externas, incluindo vias aéreas com vãos de até 80 metros", correct: true },
+            { text: "Aplicações de backbone óptico para interligação de centrais metropolitanas de telecomunicações", correct: false },
+            { text: "Instalações submarinas de curta distância", correct: false },
+            { text: "Interligação interna de racks em data centers", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Por que este cabo é classificado como autossustentado?",
+        answers: [
+            { text: "Porque possui elemento metálico dedicado à sustentação mecânica do cabo", correct: true },
+            { text: "Porque foi projetado para suportar esforços mecânicos próprios em instalações aéreas", correct: false },
+            { text: "Porque utiliza apenas materiais dielétricos", correct: false },
+            { text: "Porque permite enterramento direto", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "O que caracteriza o formato Mini Flat Drop deste cabo?",
+        answers: [
+            { text: "Perfil plano e compacto, ideal para instalações em espaços reduzidos", correct: true },
+            { text: "Geometria otimizada para facilitar passagens discretas em ambientes internos e externos", correct: false },
+            { text: "Estrutura circular com tubos ópticos", correct: false },
+            { text: "Perfil oval com mensageiro externo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual vantagem prática o formato Mini Flat Drop oferece ao instalador?",
+        answers: [
+            { text: "Facilidade de passagem, melhor acabamento estético e menor impacto visual", correct: true },
+            { text: "Maior eficiência visual e organização em instalações residenciais e comerciais", correct: false },
+            { text: "Maior capacidade de fibras", correct: false },
+            { text: "Eliminação total de caixas ópticas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual é o material da capa externa do cabo Speed Star Mini Flat Drop com reforço metálico?",
+        answers: [
+            { text: "Material termoplástico LSZH, retardante à chama e com baixa emissão de fumaça", correct: true },
+            { text: "Composição termoplástica desenvolvida para segurança em ambientes internos e externos", correct: false },
+            { text: "PVC flexível convencional", correct: false },
+            { text: "Polietileno corrugado subterrâneo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual benefício o uso de LSZH proporciona neste cabo?",
+        answers: [
+            { text: "Redução da emissão de fumaça e gases tóxicos em caso de incêndio", correct: true },
+            { text: "Maior segurança para pessoas em ambientes fechados e áreas de circulação", correct: false },
+            { text: "Aumento da condutividade elétrica", correct: false },
+            { text: "Redução direta da atenuação óptica", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Quais elementos estruturais metálicos estão presentes neste cabo?",
+        answers: [
+            { text: "Filamentos metálicos para tração e elemento metálico dedicado à sustentação", correct: true },
+            { text: "Estrutura metálica projetada para suportar esforços mecânicos e instalação aérea", correct: false },
+            { text: "Blindagem metálica contínua", correct: false },
+            { text: "Mensageiro externo separado", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual é a função dos filamentos metálicos de tração?",
+        answers: [
+            { text: "Absorver esforços mecânicos durante o lançamento e manuseio do cabo", correct: true },
+            { text: "Garantir resistência mecânica durante a instalação e acomodação do cabo", correct: false },
+            { text: "Atuar como blindagem eletromagnética", correct: false },
+            { text: "Reduzir perdas ópticas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual é a função do elemento metálico de sustentação?",
+        answers: [
+            { text: "Permitir instalação aérea autossustentada em vãos de até 80 metros", correct: true },
+            { text: "Garantir suporte mecânico adequado em instalações aéreas de acesso FTTH", correct: false },
+            { text: "Atuar como aterramento elétrico", correct: false },
+            { text: "Substituir a capa LSZH", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual tipo de fibra óptica é utilizada no cabo Speed Star Mini Flat Drop com reforço metálico?",
+        answers: [
+            { text: "Fibra monomodo BLI A/B conforme ITU-T G.657 A2", correct: true },
+            { text: "Fibra desenvolvida para aplicações FTTH com maior tolerância à curvatura", correct: false },
+            { text: "Fibra monomodo G.652 D", correct: false },
+            { text: "Fibra multimodo OM3", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual característica da fibra ITU-T G.657 A2 é essencial para este cabo?",
+        answers: [
+            { text: "Baixa sensibilidade à curvatura, permitindo curvas mais fechadas", correct: true },
+            { text: "Maior flexibilidade óptica para instalações em espaços reduzidos", correct: false },
+            { text: "Maior diâmetro de núcleo", correct: false },
+            { text: "Uso exclusivo externo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Quais configurações de fibras estão disponíveis neste cabo?",
+        answers: [
+            { text: "01 ou 02 fibras ópticas monomodo", correct: true },
+            { text: "Configurações projetadas para aplicações FTTH de baixa densidade", correct: false },
+            { text: "Quantidade fixa de quatro fibras", correct: false },
+            { text: "Configurações acima de vinte fibras", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Quais são as dimensões externas aproximadas do cabo Mini Flat Drop com reforço metálico?",
+        answers: [
+            { text: "5,2 mm x 2,0 mm ± 0,10 mm", correct: true },
+            { text: "Dimensões balanceadas entre resistência mecânica e flexibilidade de instalação", correct: false },
+            { text: "3,0 mm x 2,0 mm", correct: false },
+            { text: "6,5 mm x 3,0 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual é o peso líquido aproximado do cabo por quilômetro?",
+        answers: [
+            { text: "18 kg/km ± 1,5 kg", correct: true },
+            { text: "Peso compatível com instalações aéreas autossustentadas de acesso óptico", correct: false },
+            { text: "7,8 kg/km", correct: false },
+            { text: "25 kg/km", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual é o raio mínimo de curvatura permitido durante a instalação?",
+        answers: [
+            { text: "30 mm", correct: true },
+            { text: "Raio definido para preservar a integridade mecânica e óptica do cabo", correct: false },
+            { text: "15 mm", correct: false },
+            { text: "60 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual é o raio mínimo de curvatura permitido após a instalação?",
+        answers: [
+            { text: "15 mm", correct: true },
+            { text: "Raio reduzido compatível com instalações definitivas em ambientes residenciais", correct: false },
+            { text: "30 mm", correct: false },
+            { text: "20 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual norma técnica rege o ensaio de compressão do cabo?",
+        answers: [
+            { text: "NBR 13507", correct: true },
+            { text: "Norma aplicada a ensaios mecânicos de cabos ópticos de telecomunicações", correct: false },
+            { text: "NBR 5410", correct: false },
+            { text: "IEC 60794-1", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual é a faixa de temperatura de operação especificada para este cabo?",
+        answers: [
+            { text: "-20 °C até +65 °C", correct: true },
+            { text: "Faixa adequada para operação em ambientes internos e externos convencionais", correct: false },
+            { text: "0 °C até +50 °C", correct: false },
+            { text: "-40 °C até +85 °C", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Como é realizada a marcação da capa externa do cabo?",
+        answers: [
+            { text: "Gravações a cada 1 metro com identificação do produto, norma, lote e ano", correct: true },
+            { text: "Sistema de marcação contínua para rastreabilidade e identificação em campo", correct: false },
+            { text: "Etiquetas adesivas periódicas", correct: false },
+            { text: "Marcação apenas nas extremidades", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FCB.XF – Cabo Óptico Speed Star Mini Flat Drop com Reforço Metálico (Compacto Metálico) – Uso Interno/Externo – FTTH",
+        question: "Qual órgão certifica o cabo Speed Star Mini Flat Drop com reforço metálico no Brasil?",
+        answers: [
+            { text: "ANATEL – Anexo A da Resolução 299", correct: true },
+            { text: "Órgão regulador responsável pela certificação de produtos de telecomunicações", correct: false },
+            { text: "INMETRO – Cabos elétricos", correct: false },
+            { text: "IEC – Cabos submarinos", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual é a principal finalidade do Conector Óptico Fast Crimp SC-UPC?",
+        answers: [
+            { text: "Realizar conectorizações rápidas e confiáveis em redes FTTH Single Mode", correct: true },
+            { text: "Permitir a terminação óptica em campo de forma prática e padronizada em redes de acesso", correct: false },
+            { text: "Executar emendas permanentes por fusão", correct: false },
+            { text: "Atuar como adaptador óptico", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Em quais cenários o conector Fast Crimp SC-UPC é mais utilizado?",
+        answers: [
+            { text: "Caixas de assinante, caixas de emenda aéreas e redes FTTH", correct: true },
+            { text: "Ambientes de acesso óptico onde é necessária terminação rápida e confiável em campo", correct: false },
+            { text: "Backbones ópticos de longa distância", correct: false },
+            { text: "Redes ópticas submarinas", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual é o tipo de polimento do Conector Óptico Fast Crimp apresentado?",
+        answers: [
+            { text: "UPC (Ultra Physical Contact)", correct: true },
+            { text: "Polimento físico reto utilizado em aplicações de acesso óptico padrão", correct: false },
+            { text: "APC com ângulo de 8 graus", correct: false },
+            { text: "PC sem polimento final", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual característica visual identifica um conector SC-UPC?",
+        answers: [
+            { text: "Cor azul do corpo do conector", correct: true },
+            { text: "Identificação visual padronizada para conectores com polimento UPC", correct: false },
+            { text: "Cor verde de conector angular", correct: false },
+            { text: "Cor preta para uso industrial", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual tipo de fibra óptica é suportado pelo Conector Fast Crimp SC-UPC?",
+        answers: [
+            { text: "Fibra óptica monomodo (Single Mode)", correct: true },
+            { text: "Fibra utilizada em redes FTTH e enlaces ópticos monomodo de acesso", correct: false },
+            { text: "Fibra óptica multimodo OM3", correct: false },
+            { text: "Fibra híbrida monomodo/multimodo", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Quais normas de fibra óptica são compatíveis com este conector?",
+        answers: [
+            { text: "ITU-T G.652 D e ITU-T G.657 A", correct: true },
+            { text: "Normas de fibra óptica monomodo utilizadas em redes de acesso FTTH", correct: false },
+            { text: "Somente fibras G.655", correct: false },
+            { text: "Apenas fibras OM3 e OM4", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Quais tipos de cabos ópticos são indicados para uso com este conector?",
+        answers: [
+            { text: "Cabos DROP e cordões ópticos de 2 a 3 mm", correct: true },
+            { text: "Cabos utilizados em redes FTTH de acesso com diâmetro compatível para conectorização", correct: false },
+            { text: "Cabos loose tube de múltiplos tubos", correct: false },
+            { text: "Cabos ADSS de grande diâmetro", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual é o material do ferrolho (ferrule) do Conector Óptico SC-UPC?",
+        answers: [
+            { text: "Cerâmica de zircônia", correct: true },
+            { text: "Material cerâmico de alta precisão utilizado para alinhamento óptico", correct: false },
+            { text: "Aço inoxidável polido", correct: false },
+            { text: "Alumínio anodizado", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual é o material predominante do corpo do conector?",
+        answers: [
+            { text: "Material termoplástico de alta resistência", correct: true },
+            { text: "Composto plástico projetado para suportar manuseio e esforço mecânico em campo", correct: false },
+            { text: "Metal fundido anticorrosivo", correct: false },
+            { text: "Borracha elastomérica flexível", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Quais são as dimensões aproximadas do Conector Fast Crimp SC-UPC?",
+        answers: [
+            { text: "8 mm × 7 mm × 58 mm", correct: true },
+            { text: "Dimensões compatíveis com conectores SC para aplicações FTTH em campo", correct: false },
+            { text: "10 mm × 10 mm × 60 mm", correct: false },
+            { text: "6 mm × 6 mm × 45 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual é a faixa de temperatura de operação do Conector SC-UPC?",
+        answers: [
+            { text: "-40 °C até +85 °C", correct: true },
+            { text: "Faixa adequada para operação em ambientes internos e externos de telecomunicações", correct: false },
+            { text: "0 °C até +50 °C", correct: false },
+            { text: "-20 °C até +65 °C", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual é a faixa de temperatura de armazenamento do conector?",
+        answers: [
+            { text: "-50 °C até +90 °C", correct: true },
+            { text: "Faixa ampliada para garantir integridade do conector durante estocagem", correct: false },
+            { text: "-20 °C até +60 °C", correct: false },
+            { text: "0 °C até +50 °C", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Quantas vezes o Conector Óptico Fast Crimp SC-UPC pode ser reutilizado?",
+        answers: [
+            { text: "Até 5 reutilizações, mantendo suas características iniciais", correct: true },
+            { text: "Quantidade limitada de reutilizações conforme boas práticas de instalação", correct: false },
+            { text: "Uso único", correct: false },
+            { text: "Reutilização ilimitada", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual é o comprimento correto para decapagem do cabo óptico compacto?",
+        answers: [
+            { text: "45 mm, removendo apenas a capa externa", correct: true },
+            { text: "Comprimento padronizado para garantir correta fixação do cabo no conector", correct: false },
+            { text: "30 mm removendo capa e fibra", correct: false },
+            { text: "20 mm apenas da fibra", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual é o comprimento correto para remoção do acrilato da fibra?",
+        answers: [
+            { text: "20 mm", correct: true },
+            { text: "Comprimento necessário para garantir correta inserção da fibra no ferrolho", correct: false },
+            { text: "12 mm", correct: false },
+            { text: "25 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual é o comprimento correto de clivagem da fibra para este conector?",
+        answers: [
+            { text: "12 mm", correct: true },
+            { text: "Valor padronizado para garantir alinhamento adequado da fibra no conector", correct: false },
+            { text: "10 mm", correct: false },
+            { text: "15 mm", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Quais são as principais partes do Conector Óptico SC-UPC?",
+        answers: [
+            { text: "Rosca de travamento, corpo do conector e capa do conector", correct: true },
+            { text: "Componentes responsáveis pela fixação mecânica e proteção da fibra óptica", correct: false },
+            { text: "Ferrolho, adaptador e sleeve metálico", correct: false },
+            { text: "Conector macho, conector fêmea e adaptador", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Quais ferramentas são necessárias para realizar a conectorização correta?",
+        answers: [
+            { text: "Clivador óptico, álcool e papel, decapador de cabo compacto e decapador de fibras", correct: true },
+            { text: "Ferramentas básicas de preparação e limpeza para terminação óptica em campo", correct: false },
+            { text: "Máquina de fusão", correct: false },
+            { text: "Equipamento OTDR", correct: false }
+        ]
+    },
+    {
+        category: "fiber",
+        product: "FC-SC-UPC – Conector Óptico Fast Crimp ROSCA SC-UPC – Redes FTTH / Single Mode",
+        question: "Qual órgão certifica o Conector Óptico Fast Crimp SC-UPC no Brasil?",
+        answers: [
+            { text: "ANATEL", correct: true },
+            { text: "FECAP", correct: false },
+            { text: "INMETRO", correct: false },
+            { text: "IEC", correct: false }
+        ]
+    },
+    {
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual é a principal finalidade do Conector Óptico Fast Crimp CLICK SC-UPC?",
+    answers: [
+        { text: "Realizar conectorizações rápidas e precisas em redes FTTH Single Mode", correct: true },
+        { text: "Permitir terminação óptica em campo de forma padronizada e eficiente em redes de acesso", correct: false },
+        { text: "Executar emendas ópticas por fusão", correct: false },
+        { text: "Interligar cabos backbone multifibras", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Em quais ambientes este conector foi projetado para ser utilizado?",
+    answers: [
+        { text: "Ambientes internos, áreas controladas, caixas de assinantes e caixas aéreas de emenda", correct: true },
+        { text: "Aplicações de acesso FTTH em ambientes protegidos e instalações ópticas de campo", correct: false },
+        { text: "Ambientes externos severos", correct: false },
+        { text: "Redes submarinas", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual é o principal diferencial da tecnologia Fast Crimp CLICK?",
+    answers: [
+        { text: "Sistema de travamento por clique que dispensa epóxi, polimento em campo e ferramentas especiais", correct: true },
+        { text: "Tecnologia que simplifica a conectorização ao eliminar processos manuais complexos", correct: false },
+        { text: "Uso obrigatório de máquina de fusão", correct: false },
+        { text: "Fixação por soldagem térmica", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual benefício prático a tecnologia CLICK traz ao instalador?",
+    answers: [
+        { text: "Redução do tempo de instalação e maior padronização da conectorização", correct: true },
+        { text: "Aumento de produtividade e repetibilidade no processo de instalação em campo", correct: false },
+        { text: "Eliminação da clivagem", correct: false },
+        { text: "Dispensa limpeza da fibra", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual é o tipo de conector e polimento deste produto?",
+    answers: [
+        { text: "SC-UPC (Ultra Physical Contact)", correct: true },
+        { text: "Conector SC com polimento físico reto para aplicações de acesso óptico", correct: false },
+        { text: "SC-APC angular", correct: false },
+        { text: "LC-UPC compacto", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual característica visual identifica um conector SC-UPC?",
+    answers: [
+        { text: "Cor azul no corpo ou na identificação do conector", correct: true },
+        { text: "Identificação visual padronizada utilizada para conectores com polimento UPC", correct: false },
+        { text: "Cor verde angular", correct: false },
+        { text: "Cor preta industrial", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Quais tipos de fibra óptica são compatíveis com o Conector Fast Crimp CLICK SC-UPC?",
+    answers: [
+        { text: "Fibras monomodo ITU-T G.652 D e ITU-T G.657 A", correct: true },
+        { text: "Fibras monomodo utilizadas em redes FTTH e enlaces ópticos de acesso", correct: false },
+        { text: "Somente fibras OM3", correct: false },
+        { text: "Fibras híbridas", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Quais tipos de cabos ópticos são indicados para este conector?",
+    answers: [
+        { text: "Cabos Mini Flat DROP Speed Star e cordões ópticos de 2 a 3 mm", correct: true },
+        { text: "Cabos de acesso FTTH com dimensões compatíveis para conectorização em campo", correct: false },
+        { text: "Cabos loose tube", correct: false },
+        { text: "Cabos ADSS", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual é o material do ferrolho (ferrule) utilizado neste conector?",
+    answers: [
+        { text: "Cerâmica de zircônia de alta precisão", correct: true },
+        { text: "Material cerâmico desenvolvido para alinhamento preciso da fibra óptica", correct: false },
+        { text: "Aço inoxidável", correct: false },
+        { text: "Alumínio anodizado", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual material é utilizado no corpo do conector Fast Crimp CLICK SC-UPC?",
+    answers: [
+        { text: "Material termoplástico de alta resistência mecânica", correct: true },
+        { text: "Composto plástico projetado para suportar esforços de instalação em campo", correct: false },
+        { text: "Metal fundido", correct: false },
+        { text: "Borracha flexível", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Quais são as dimensões aproximadas do Conector Fast Crimp CLICK SC-UPC?",
+    answers: [
+        { text: "8,9 mm × 7,4 mm × 53 mm", correct: true },
+        { text: "Dimensões compatíveis com conectores SC para uso em redes FTTH", correct: false },
+        { text: "10 mm × 10 mm × 60 mm", correct: false },
+        { text: "6 mm × 6 mm × 45 mm", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual é a faixa de temperatura de operação do conector Fast Crimp CLICK SC-UPC?",
+    answers: [
+        { text: "-40 °C até +80 °C", correct: true },
+        { text: "Faixa adequada para operação em ambientes internos e externos de telecomunicações", correct: false },
+        { text: "-20 °C até +65 °C", correct: false },
+        { text: "0 °C até +50 °C", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual é a faixa de temperatura de armazenamento do conector?",
+    answers: [
+        { text: "-40 °C até +80 °C", correct: true },
+        { text: "Faixa térmica especificada para preservar a integridade do conector durante estocagem", correct: false },
+        { text: "-20 °C até +60 °C", correct: false },
+        { text: "0 °C até +50 °C", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Quantas vezes o Conector Fast Crimp CLICK SC-UPC pode ser reutilizado?",
+    answers: [
+        { text: "Até 5 reutilizações mantendo as características de inserção", correct: true },
+        { text: "Quantidade limitada de reutilizações conforme boas práticas de instalação", correct: false },
+        { text: "Uso único", correct: false },
+        { text: "Reutilização ilimitada", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual é o comprimento correto para decapagem do cabo óptico DROP antes da conectorização?",
+    answers: [
+        { text: "50 mm de remoção da capa externa", correct: true },
+        { text: "Comprimento padronizado para correta fixação do cabo no conector", correct: false },
+        { text: "30 mm removendo capa e fibra", correct: false },
+        { text: "20 mm apenas da fibra", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual é o comprimento correto para remoção do acrilato da fibra óptica?",
+    answers: [
+        { text: "20 mm", correct: true },
+        { text: "Comprimento necessário para garantir correta inserção da fibra no ferrolho", correct: false },
+        { text: "10 mm", correct: false },
+        { text: "30 mm", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Após a clivagem, qual deve ser o comprimento total da fibra?",
+    answers: [
+        { text: "29,4 ± 0,1 mm", correct: true },
+        { text: "Valor definido para garantir alinhamento preciso da fibra no conector", correct: false },
+        { text: "25 ± 0,5 mm", correct: false },
+        { text: "32 ± 0,2 mm", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Quais são as principais partes do Conector Óptico Fast Crimp CLICK SC-UPC?",
+    answers: [
+        { text: "Corpo do conector, braçadeira removível, tampa de fixação, capa e grampo de abertura", correct: true },
+        { text: "Componentes responsáveis pela fixação mecânica e proteção da fibra óptica", correct: false },
+        { text: "Ferrolho e sleeve metálico", correct: false },
+        { text: "Conector macho e adaptador", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Quais ferramentas são necessárias para realizar a conectorização correta?",
+    answers: [
+        { text: "Decapador de DROP, decapador de acrilato, clivador óptico, álcool e papel", correct: true },
+        { text: "Ferramentas básicas de preparação e limpeza para terminação óptica em campo", correct: false },
+        { text: "Máquina de fusão", correct: false },
+        { text: "OTDR obrigatório", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FC-CK-SC-UPC – Conector Óptico Fast Crimp CLICK SC-UPC – Redes FTTH / Single Mode",
+    question: "Qual órgão certifica o Conector Óptico Fast Crimp CLICK SC-UPC no Brasil?",
+    answers: [
+        { text: "ANATEL", correct: true },
+        { text: "ITA", correct: false },
+        { text: "INMETRO", correct: false },
+        { text: "IEC", correct: false }
+    ]
+},    
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual é o objetivo principal do FT KIT PRO Transcend?",
+    answers: [
+        { text: "Oferecer um conjunto completo de ferramentas para instalação, conectorização e testes em redes FTTH", correct: true },
+        { text: "Disponibilizar uma solução integrada para atividades de campo em redes de acesso óptico FTTH", correct: false },
+        { text: "Executar fusões ópticas automáticas", correct: false },
+        { text: "Realizar medições OTDR de longa distância", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Para qual perfil de profissional o FT KIT PRO Transcend é indicado?",
+    answers: [
+        { text: "Técnicos, instaladores e provedores que atuam em redes FTTH e acesso óptico", correct: true },
+        { text: "Profissionais de telecomunicações que realizam instalações e ativações FTTH em campo", correct: false },
+        { text: "Engenheiros de redes submarinas", correct: false },
+        { text: "Usuários domésticos sem conhecimento técnico", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual característica define o FT KIT PRO Transcend como um kit profissional?",
+    answers: [
+        { text: "Reúne ferramentas de preparação, conectorização, inspeção e teste óptico em um único conjunto", correct: true },
+        { text: "Integra diferentes ferramentas essenciais para execução completa de atividades FTTH", correct: false },
+        { text: "Contém apenas ferramentas manuais básicas", correct: false },
+        { text: "É focado apenas em redes elétricas", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual é a principal vantagem de adquirir um kit completo em vez de ferramentas avulsas?",
+    answers: [
+        { text: "Padronização do processo de instalação e ganho de produtividade em campo", correct: true },
+        { text: "Maior eficiência operacional e redução do tempo de atendimento técnico", correct: false },
+        { text: "Substituição de equipamentos de fusão", correct: false },
+        { text: "Redução automática da atenuação", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual é a função do clivador óptico presente no FT KIT PRO Transcend?",
+    answers: [
+        { text: "Realizar o corte preciso da fibra óptica antes da conectorização", correct: true },
+        { text: "Garantir clivagem adequada da fibra para alinhamento correto no conector", correct: false },
+        { text: "Fundir fibras ópticas", correct: false },
+        { text: "Medir potência óptica", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Por que a qualidade do clivador é essencial em redes FTTH?",
+    answers: [
+        { text: "Porque influencia diretamente na perda de inserção do conector", correct: true },
+        { text: "Porque garante melhor desempenho óptico e redução de perdas no enlace", correct: false },
+        { text: "Porque define o comprimento do enlace", correct: false },
+        { text: "Porque elimina a refletância", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual é a principal função do medidor de potência óptica incluído no kit?",
+    answers: [
+        { text: "Medir a potência do sinal óptico recebido em enlaces FTTH", correct: true },
+        { text: "Avaliar o nível de sinal óptico durante testes e ativações em campo", correct: false },
+        { text: "Realizar clivagem automática", correct: false },
+        { text: "Atuar como VFL permanente", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual é a função da caneta localizadora visual (VFL) presente no kit?",
+    answers: [
+        { text: "Identificar quebras, microcurvaturas e conexões incorretas na fibra", correct: true },
+        { text: "Permitir inspeção visual do caminho óptico em curtas distâncias", correct: false },
+        { text: "Realizar fusões ópticas", correct: false },
+        { text: "Substituir o OTDR", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Por que a caneta óptica para teste de luz (VFL) é amplamente utilizada em instalações FTTH?",
+    answers: [
+        { text: "Porque permite inspeção visual rápida e prática em curtas distâncias", correct: true },
+        { text: "Porque facilita a identificação imediata de falhas visíveis na fibra", correct: false },
+        { text: "Porque mede potência com precisão", correct: false },
+        { text: "Porque elimina o medidor de potência", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual é a função do decapador de cabo DROP presente no FT KIT PRO Transcend?",
+    answers: [
+        { text: "Remover a capa externa do cabo óptico sem danificar a fibra", correct: true },
+        { text: "Preparar o cabo DROP para conectorização de forma segura e padronizada", correct: false },
+        { text: "Cortar a fibra óptica", correct: false },
+        { text: "Medir o diâmetro da fibra", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual é a função do decapador de acrilato incluído no kit?",
+    answers: [
+        { text: "Remover o revestimento acrilato da fibra óptica antes da clivagem", correct: true },
+        { text: "Preparar a fibra óptica para clivagem sem causar danos ao núcleo", correct: false },
+        { text: "Remover a capa do cabo DROP", correct: false },
+        { text: "Limpar a face do conector", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Por que o kit inclui itens de limpeza óptica?",
+    answers: [
+        { text: "Para evitar perdas de inserção causadas por sujeira na fibra ou no conector", correct: true },
+        { text: "Para garantir qualidade óptica e reduzir falhas por contaminação", correct: false },
+        { text: "Para eliminar a clivagem", correct: false },
+        { text: "Para substituir conectores pré-polidos", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Quais itens são comumente utilizados para limpeza óptica em campo?",
+    answers: [
+        { text: "Lenços sem fiapos, álcool isopropílico e caneta de limpeza", correct: true },
+        { text: "Itens específicos para limpeza e manutenção de conectores ópticos", correct: false },
+        { text: "Pano comum e detergente", correct: false },
+        { text: "Escova metálica e solvente", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual é a função da bolsa ou maleta que acompanha o FT KIT PRO Transcend?",
+    answers: [
+        { text: "Proteger, organizar e facilitar o transporte das ferramentas", correct: true },
+        { text: "Garantir organização e mobilidade durante atendimentos em campo", correct: false },
+        { text: "Atuar como EPI elétrico", correct: false },
+        { text: "Substituir caixas de emenda", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual vantagem a organização adequada do kit traz ao técnico em campo?",
+    answers: [
+        { text: "Agilidade no atendimento e redução de erros durante a instalação", correct: true },
+        { text: "Maior eficiência operacional e menor retrabalho em campo", correct: false },
+        { text: "Aumento automático da qualidade do sinal", correct: false },
+        { text: "Eliminação de testes finais", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Em qual etapa de uma instalação FTTH o FT KIT PRO Transcend é utilizado?",
+    answers: [
+        { text: "Desde a preparação do cabo até a conectorização e testes finais", correct: true },
+        { text: "Durante todas as etapas operacionais de instalação e ativação FTTH", correct: false },
+        { text: "Apenas na fase de projeto", correct: false },
+        { text: "Somente em backbone", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Por que um kit profissional é essencial para provedores FTTH?",
+    answers: [
+        { text: "Garante padronização, qualidade e repetibilidade nas instalações", correct: true },
+        { text: "Assegura consistência técnica e qualidade nas ativações de clientes", correct: false },
+        { text: "Elimina falhas humanas", correct: false },
+        { text: "Dispensa normas técnicas", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Qual diferencial comercial o FT KIT PRO Transcend oferece ao instalador ou provedor?",
+    answers: [
+        { text: "Solução completa pronta para uso em campo, reduzindo tempo de atendimento", correct: true },
+        { text: "Pacote profissional que agrega valor e produtividade aos serviços FTTH", correct: false },
+        { text: "Uso exclusivo com uma única marca", correct: false },
+        { text: "Dependência de software proprietário", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Quais são os dois itens opcionais que podem ser adquiridos separadamente para complementar o FT KIT PRO Transcend?",
+    answers: [
+        { text: "Decapador circular para cabos ópticos e decapador horizontal para sangria de cabos ópticos", correct: true },
+        { text: "Ferramentas adicionais para preparação avançada de cabos ópticos em campo", correct: false },
+        { text: "Conectores SC-APC e LC-UPC", correct: false },
+        { text: "OTDR portátil e microscópio óptico", correct: false }
+    ]
+}, 
+{
+    category: "fiber",
+    product: "FT KIT PRO TRANSCEND – Kit Profissional de Ferramentas para Redes FTTH",
+    question: "Quais itens estão inclusos no FT KIT PRO Transcend – Kit Profissional para fibra óptica?",
+    answers: [
+        {
+            text: "Mala para transporte, medidor de potência óptica (Power Meter), caneta óptica para teste de luz, clivador óptico, decapador de cabo óptico Mini Flat Drop, decapador de acrilato, alicate de corte de arame, álcool isopropílico, decapador horizontal para sangria de loose tube, tesoura para corte de aramida, caneta de limpeza, bastões de limpeza para conectores, tubetes para proteção da fusão das fibras ópticas",
+            correct: true
+        },
+        {
+            text: "Maleta rígida para transporte, máquina de fusão óptica de alta precisão, OTDR portátil para medições avançadas, clivador óptico automático profissional, decapador circular de cabos ópticos, decapador de acrilato, álcool etílico técnico, tesoura universal reforçada, alicate universal isolado, conectores SC-APC, adaptadores ópticos diversos, caneta VFL de alta potência, bastões de limpeza e protetores de conector",
+            correct: false
+        },
+        {
+            text: "Bolsa de ferramentas, medidor de potência óptica básico, localizador visual VFL, clivador óptico simples, decapador de cabo DROP convencional, decapador circular, álcool isopropílico, pano sem fiapos, tesoura comum, alicate de crimpar RJ45, adaptadores SC-UPC, conectores rápidos, protetores de emenda e estojo plástico",
+            correct: false
+        },
+        {
+            text: "Mala de transporte, analisador OTDR, fonte de luz óptica, microscópio de inspeção, clivador óptico automático, decapador de acrilato, decapador longitudinal, álcool isopropílico, tesoura de precisão, alicate de corte, conectores LC-UPC, adaptadores híbridos, bastões de limpeza e estojo metálico",
+            correct: false
+        }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual é o objetivo principal do FT KIT Básico?",
+    answers: [
+        { text: "Atender instalações e manutenções básicas em redes FTTH com ferramentas essenciais", correct: true },
+        { text: "Fornecer um conjunto inicial de ferramentas para operações FTTH simples em campo com baixo custo operacional", correct: false },
+        { text: "Executar certificações ópticas de backbone", correct: false },
+        { text: "Atuar exclusivamente em redes de data center", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Para qual perfil de profissional o FT KIT Básico é mais indicado?",
+    answers: [
+        { text: "Instaladores FTTH iniciantes ou operações de campo com baixa complexidade", correct: true },
+        { text: "Profissionais em início de atuação que realizam instalações FTTH simples e atendimentos de rotina", correct: false },
+        { text: "Equipes especializadas em backbone", correct: false },
+        { text: "Ambientes laboratoriais", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "O que diferencia o FT KIT Básico de um kit profissional completo?",
+    answers: [
+        { text: "A presença apenas das ferramentas essenciais para instalação e testes básicos", correct: true },
+        { text: "A composição reduzida focada em tarefas básicas de instalação e verificação FTTH em campo", correct: false },
+        { text: "A inclusão de equipamentos de fusão", correct: false },
+        { text: "O foco em redes elétricas", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual é a principal vantagem de um kit básico em operações FTTH?",
+    answers: [
+        { text: "Agilidade, menor custo e praticidade para atendimentos simples", correct: true },
+        { text: "Maior rapidez operacional e redução de investimento para serviços FTTH de baixa complexidade", correct: false },
+        { text: "Maior precisão em enlaces longos", correct: false },
+        { text: "Eliminação do treinamento", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual é a função do medidor de potência óptica presente no FT KIT Básico?",
+    answers: [
+        { text: "Medir o nível de potência óptica recebido no ponto de atendimento", correct: true },
+        { text: "Permitir a verificação básica do sinal óptico recebido durante ativações FTTH em campo", correct: false },
+        { text: "Localizar falhas por reflexão", correct: false },
+        { text: "Atuar como fonte de luz", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual é a principal função da caneta óptica (VFL) no FT KIT Básico?",
+    answers: [
+        { text: "Identificar quebras, microcurvaturas e conexões incorretas na fibra", correct: true },
+        { text: "Permitir inspeção visual rápida do caminho óptico em enlaces curtos", correct: false },
+        { text: "Executar fusões ópticas", correct: false },
+        { text: "Substituir OTDR", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Por que o VFL é considerado uma ferramenta essencial em kits básicos FTTH?",
+    answers: [
+        { text: "Permite diagnóstico rápido e visual em enlaces curtos", correct: true },
+        { text: "Facilita a identificação imediata de falhas visíveis durante instalações FTTH simples", correct: false },
+        { text: "Possui maior alcance que OTDR", correct: false },
+        { text: "Mede atenuação com precisão", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual é a função do clivador óptico incluído no FT KIT Básico?",
+    answers: [
+        { text: "Realizar o corte preciso da fibra antes da conectorização", correct: true },
+        { text: "Garantir clivagem adequada para correto alinhamento da fibra no conector", correct: false },
+        { text: "Fundir fibras", correct: false },
+        { text: "Inspecionar ferrolho", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual impacto uma clivagem mal executada pode causar?",
+    answers: [
+        { text: "Aumento da perda de inserção e falhas na conectorização", correct: true },
+        { text: "Comprometimento do desempenho óptico devido a desalinhamento da fibra no conector", correct: false },
+        { text: "Aumento da potência transmitida", correct: false },
+        { text: "Melhoria do enlace", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual é a função do decapador de cabo óptico presente no FT KIT Básico?",
+    answers: [
+        { text: "Remover a capa externa do cabo sem danificar a fibra", correct: true },
+        { text: "Preparar o cabo óptico para conectorização preservando a integridade da fibra", correct: false },
+        { text: "Cortar a fibra", correct: false },
+        { text: "Medir o núcleo", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual é a função do decapador de acrilato incluído no kit?",
+    answers: [
+        { text: "Remover o revestimento acrilato da fibra antes da clivagem", correct: true },
+        { text: "Preparar a fibra para clivagem sem causar danos ao núcleo óptico", correct: false },
+        { text: "Remover capa do cabo DROP", correct: false },
+        { text: "Polir fibra", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Por que itens de limpeza óptica são importantes mesmo em um kit básico?",
+    answers: [
+        { text: "Para evitar perdas ópticas causadas por sujeira e contaminação", correct: true },
+        { text: "Para garantir qualidade óptica mínima durante instalações FTTH básicas", correct: false },
+        { text: "Para aumentar potência do transmissor", correct: false },
+        { text: "Para eliminar refletância", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual é a função da bolsa ou maleta que acompanha o FT KIT Básico?",
+    answers: [
+        { text: "Organizar e facilitar o transporte das ferramentas essenciais", correct: true },
+        { text: "Garantir organização e mobilidade durante atendimentos FTTH simples", correct: false },
+        { text: "Atuar como caixa de emenda", correct: false },
+        { text: "Substituir equipamentos avançados", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Em qual etapa de uma instalação FTTH o FT KIT Básico é utilizado?",
+    answers: [
+        { text: "Na preparação do cabo, conectorização e verificação básica do sinal", correct: true },
+        { text: "Durante etapas iniciais de instalação e validação básica do enlace FTTH", correct: false },
+        { text: "Somente no projeto", correct: false },
+        { text: "Apenas em backbone", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual limitação técnica é esperada ao utilizar apenas o FT KIT Básico?",
+    answers: [
+        { text: "Diagnóstico limitado em comparação a kits com OTDR e fusão óptica", correct: true },
+        { text: "Limitação na análise avançada de falhas ópticas em comparação a kits profissionais", correct: false },
+        { text: "Impossibilidade de testes", correct: false },
+        { text: "Incompatibilidade FTTH", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Qual é o principal diferencial comercial do FT KIT Básico?",
+    answers: [
+        { text: "Baixo custo aliado às ferramentas essenciais para operação FTTH", correct: true },
+        { text: "Solução econômica para instalações FTTH simples e de rápida execução", correct: false },
+        { text: "Alta automação", correct: false },
+        { text: "Dependência de software", correct: false }
+    ]
+},
+{
+    category: "fiber",
+    product: "FT KIT BÁSICO – Kit de Ferramentas para Instalações FTTH",
+    question: "Quais itens compõem o FT KIT Básico de ferramentas para instalações FTTH?",
+    answers: [
+        {
+            text: "Maleta para transporte, medidor de potência óptica (power meter), caneta óptica para teste de luz, clivador óptico, decapador de cabo óptico Mini Flat Drop, decapador de acrilato e reservatório para álcool isopropílico",
+            correct: true
+        },
+        {
+            text: "Maleta para transporte, medidor de potência óptica, OTDR portátil para análise avançada de enlaces, máquina de fusão óptica profissional, clivador óptico automático de alta precisão, decapador universal de cabos, caneta de limpeza para conectores ópticos e bastões de limpeza para manutenção completa",
+            correct: false
+        },
+        {
+            text: "Bolsa de ferramentas, medidor de potência óptica, caneta óptica, máquina de fusão, decapador de acrilato, álcool isopropílico e tubetes",
+            correct: false
+        },
+        {
+            text: "Maleta rígida, medidor de potência, caneta VFL, clivador óptico, decapador circular, tesoura para aramida e bastões de limpeza",
+            correct: false
+        }
+    ]
+}
+
 ];
 
 /* =========================
