@@ -14,15 +14,16 @@ let questions = [];
 ==================================================
 */
 const allQuestions = [
+    
     {
         category: "cabling",
         product: "Cabo Lan Expert Turbo Link Cat5e UTP",
         question: "Qual é o material do condutor utilizado no cabo LAN Expert Cat5e?",
         answers: [
             { text: "Cobre eletrolítico nu 100% cobre virgem", correct: true },
-            { text: "Cobre eletrolítico estanhado com controle industrial de pureza", correct: false },
+            { text: "Liga de cobre estanhado com alma de aço", correct: false },
             { text: "Cobre CCA (Copper Clad Aluminum)", correct: false },
-            { text: "Alumínio com revestimento superficial de cobre para condução elétrica", correct: false }
+            { text: "Alumínio com banho de cobre em sua superfície", correct: false }
         ]
     },
     {
@@ -42,9 +43,9 @@ const allQuestions = [
         question: "Qual é o material do isolamento dos condutores?",
         answers: [
             { text: "Polietileno de Alta Densidade (PEAD)", correct: true },
-            { text: "Polietileno de média densidade para aplicações genéricas", correct: false },
             { text: "PVC flexível", correct: false },
-            { text: "Polipropileno retardante a chamas para cabos especiais", correct: false }
+            { text: "Polipropileno retardante a chamas", correct: false },
+            { text: "Borracha sintética", correct: false }
         ]
     },
     {
@@ -53,9 +54,9 @@ const allQuestions = [
         question: "Qual é o material da capa externa do cabo?",
         answers: [
             { text: "Policloreto de Vinila (PVC)", correct: true },
-            { text: "Policloreto de vinila com aditivos industriais", correct: false },
+            { text: "Polietileno de Alta Densidade (PEAD) com malha metálica", correct: false },
             { text: "LSZH halogen-free", correct: false },
-            { text: "PEAD com proteção mecânica para ambientes externos severos", correct: false }
+            { text: "Borracha nitrílica", correct: false }
         ]
     },
     {
@@ -64,31 +65,42 @@ const allQuestions = [
         question: "Quantos pares o cabo LAN Expert pode possuir?",
         answers: [
             { text: "4 pares (8 vias) ou 2 pares (4 vias)", correct: true },
-            { text: "4 pares (8 vias) para aplicações de rede estruturada", correct: false },
+            { text: "Somente 4 pares", correct: false },
             { text: "Somente 2 pares", correct: false },
-            { text: "6 pares utilizados em aplicações específicas de telefonia", correct: false }
+            { text: "6 pares (12 vias) ou 4 pares (8 vias) ou 2 pares (4 vias)", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Lan Expert Turbo Link Cat5e UTP",
-        question: "Qual é a classe de flamabilidade do cabo LAN Expert Cat5e?",
+        question: "Qual é a classe de flamabilidade do cabo?",
         answers: [
             { text: "CMX conforme IEC 60332-1 e ABNT NBR 14705", correct: true },
-            { text: "CMR conforme normas de instalação vertical interna", correct: false },
             { text: "CMP (Plenum)", correct: false },
-            { text: "LSZH halogen-free para ambientes de alta exigência", correct: false }
+            { text: "CMR (Riser)", correct: false },
+            { text: "LSZH", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Lan Expert Turbo Link Cat5e UTP",
-        question: "Qual é a faixa de temperatura de operação do cabo LAN Expert Cat5e?",
+        question: "Qual a faixa de temperatura de operação do cabo?",
         answers: [
             { text: "-20°C a 60°C", correct: true },
-            { text: "-10°C a 70°C", correct: false },
             { text: "0°C a 50°C", correct: false },
-            { text: "-40°C a 85°C", correct: false }
+            { text: "-40°C a 85°C", correct: false },
+            { text: "-10°C a 70°C", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Turbo Link Cat5e UTP",
+        question: "Quais são as principais cores disponíveis da capa externa?",
+        answers: [
+            { text: "Preta ou Azul", correct: true },
+            { text: "Roxo ou Branco", correct: false },
+            { text: "Amarelo ou Laranja", correct: false },
+            { text: "Verde ou Vermelho", correct: false }
         ]
     },
     {
@@ -97,163 +109,273 @@ const allQuestions = [
         question: "Qual o comprimento padrão da embalagem em caixa?",
         answers: [
             { text: "305 metros", correct: true },
-            { text: "300 metros", correct: false },
             { text: "200 metros", correct: false },
+            { text: "250 metros", correct: false },
             { text: "333 metros", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Lan Expert Turbo Link Cat5e UTP",
-        question: "Por que o cabo LAN Expert Cat5e pode ser utilizado com Gigabit Ethernet?",
+        question: "Qual é o diâmetro nominal do cabo em caixa de 305m?",
         answers: [
-            { text: "Porque atende parâmetros de desempenho como NEXT, ELFEXT e Delay Skew", correct: true },
-            { text: "Porque cumpre requisitos elétricos de transmissão até 100 MHz", correct: false },
-            { text: "Porque possui maior espessura mecânica externa", correct: false },
-            { text: "Porque utiliza materiais estruturais mais robustos na capa externa", correct: false }
+            { text: "5,20 mm", correct: true },
+            { text: "4,80 mm", correct: false },
+            { text: "6,00 mm", correct: false },
+            { text: "5,80 mm", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Lan Expert Turbo Link Cat5e UTP",
-        question: "Qual é a principal vantagem do trançamento dos pares no cabo LAN Expert?",
+        question: "Por que o cabo LAN Expert Turbo Link Cat5e pode ser utilizado com Gigabit Ethernet?",
         answers: [
-            { text: "Reduzir interferências eletromagnéticas e melhorar o desempenho do sinal", correct: true },
-            { text: "Reduzir ruídos elétricos entre os pares durante a transmissão", correct: false },
-            { text: "Facilitar o processo de crimpagem", correct: false },
-            { text: "Aumentar a robustez física do cabo durante a instalação", correct: false }
+            { text: "Porque atende os parâmetros de desempenho como NEXT, ELFEXT e Delay Skew", correct: true },
+            { text: "Porque parece robusto externamente", correct: false },
+            { text: "Porque possui blindagem metálica completa", correct: false },
+            { text: "Porque tem isolamento de borracha", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
-        question: "Por que o Hércules 1.0 é indicado para ambientes externos?",
+        product: "Cabo Lan Expert Turbo Link Cat5e UTP",
+        question: "Qual é uma das vantagens de trançar os pares par a par no cabo LAN Expert?",
         answers: [
-            { text: "Porque possui dupla camada (PVC + PEAD com proteção UV) e blindagem FTP", correct: true },
-            { text: "Porque possui apenas capa externa em PEAD sem necessidade de proteção adicional", correct: false }, // próximo (incompleto)
-            { text: "Porque suporta temperaturas negativas extremas", correct: false }, // curto (genérico e incorreto)
-            { text: "Porque sua construção elimina totalmente a ação do sol e da umidade", correct: false } // longo (afirmação absoluta falsa)
+            { text: "Reduzir interferências eletromagnéticas entre pares", correct: true },
+            { text: "Aumentar a resistência mecânica da capa", correct: false },
+            { text: "Facilitar o encaixe dos conectores RJ45 para melhor conexão", correct: false },
+            { text: "Melhorar o aterramento da rede", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
+        product: "Cabo Lan Expert Turbo Link Cat5e UTP",
+        question: "Quais aplicações de rede são suportadas pelo cabo LAN Expert Turbo Link Cat5e?",
+        answers: [
+            { text: "Fast Ethernet, 622 Mbps ATM e Gigabit Ethernet", correct: true },
+            { text: "622Mbps,  10G Ethernet, 40G Ethernet, 60G Ethernet", correct: false },
+            { text: "Somente Fast Ethernet", correct: false },
+            { text: "Conexões ópticas de fibra", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Turbo Link Cat5e UTP",
+        question: "O teste de qualidade desse cabo menciona conformidade com qual padrão de cabeamento?",
+        answers: [
+            { text: "EIA/TIA-568", correct: true },
+            { text: "IEEE 802.16", correct: false },
+            { text: "IEEE 802.11ax", correct: false },
+            { text: "USB-IF 3.2", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Turbo Link Cat5e UTP",
+        question: "O cabo Cat5e Turbo Link é tipicamente classificado como qual tipo físico?",
+        answers: [
+            { text: "Cabo UTP (Unshielded Twisted Pair)", correct: true },
+            { text: "Cabo UTP (Universal Transmission Path)", correct: false },
+            { text: "Cabo UTP (Unbalanced Twisted Plastic)", correct: false },
+            { text: "Cabo UTP (Ultra Transfer Protocol)", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Turbo Link Cat5e UTP",
+        question: "Qual é o propósito dos aditivos UV na capa externa do cabo LAN Expert Turbo Link Cat5e?",
+        answers: [
+            { text: "Proteção contra radiação ultravioleta para uso externo e interno", correct: true },
+            { text: "Aumentar a espessura do isolamento interno dos pares", correct: false },
+            { text: "Aumentar a velocidade de transmissão do sinal para maior alcance", correct: false },
+            { text: "Garantir compatibilidade com conectores ópticos", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Turbo Link Cat5e UTP",
+        question: "Qual é a vantagem de um cabo com cobre 100% virgem comparado a cabos CCA?",
+        answers: [
+            { text: "Maior condutividade e menor perda de sinal", correct: true },
+            { text: "Maior compatibilidade com fibra óptica multimodo", correct: false },
+            { text: "Melhor isolamento contra UV", correct: false },
+            { text: "Capacidade de transmissão acima de 40 Gbps", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Turbo Link Cat5e UTP",
+        question: "A temperatura de instalação especificada de 0ºC a 50ºC serve principalmente para:",
+        answers: [
+            { text: "Evitar deformação da capa durante a instalação", correct: true },
+            { text: "Melhorar a capacidade de transmissão a 10 Gbps", correct: false },
+            { text: "Aumentar a imunidade a interferências magnéticas", correct: false },
+            { text: "Garantir uso em fibra óptica sem adaptadores", correct: false }
+        ]
+    },
+        {
+        category: "cabling",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
+        question: "Qual é o principal objetivo da blindagem FTP no cabo Hércules 1.0?",
+        answers: [
+            { text: "Reduzir interferências eletromagnéticas e proteger a integridade do sinal", correct: true },
+            { text: "Aumentar a rigidez mecânica do cabo para suportar mais peso exercido", correct: false },
+            { text: "Substituir o isolamento de polietileno dos condutores", correct: false },
+            { text: "Permitir transmissão direta de fibra óptica", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
         question: "Qual o papel da fita de polietileno aluminizada presente na blindagem?",
         answers: [
             { text: "Reduzir ruídos eletromagnéticos e aumentar a estabilidade do sinal", correct: true },
-            { text: "Reduzir interferências mecânicas causadas por tração do cabo", correct: false }, // próximo (conceito errado)
-            { text: "Substituir a função do fio terra", correct: false }, // curto
-            { text: "Aumentar a capacidade de condução elétrica dos pares trançados", correct: false } // longo
+            { text: "Substituir a função do fio terra", correct: false },
+            { text: "Aumentar a capacidade de corrente elétrica do cabo para melhor transmissão", correct: false },
+            { text: "Transformar o cabo em STP completo", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
         question: "Qual é a função do fio terra presente na construção do cabo?",
         answers: [
             { text: "Drenar interferências captadas pela blindagem FTP", correct: true },
-            { text: "Distribuir cargas elétricas entre os pares de dados", correct: false }, // próximo
-            { text: "Fornecer alimentação elétrica aos dispositivos PoE", correct: false }, // curto
-            { text: "Eliminar a necessidade de aterramento em racks e painéis", correct: false } // longo
+            { text: "Fornecer alimentação elétrica aos dispositivos PoE", correct: false },
+            { text: "Substituir o par azul para aterramento", correct: false },
+            { text: "Eliminar a necessidade de conectores metálicos", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
         question: "Por que a segunda capa em PEAD com proteção UV aumenta a vida útil do cabo?",
         answers: [
             { text: "Porque protege contra degradação química, térmica e solar", correct: true },
-            { text: "Porque reduz a interferência eletromagnética externa no sinal", correct: false }, // próximo
-            { text: "Porque aumenta a taxa de transmissão de dados", correct: false }, // curto
-            { text: "Porque substitui completamente a função da blindagem metálica", correct: false } // longo
+            { text: "Porque aumenta a taxa de transmissão de dados por Mbps", correct: false },
+            { text: "Porque substitui a blindagem metálica", correct: false },
+            { text: "Porque elimina a necessidade de aterramento", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
         question: "O que a primeira capa interna em PVC cinza protege?",
         answers: [
             { text: "Contra poeira, sol, chuva e abrasão interna", correct: true },
-            { text: "Contra esforços mecânicos extremos durante tração contínua", correct: false }, // próximo
-            { text: "Contra interferência magnética de motores", correct: false }, // curto
-            { text: "Contra descargas elétricas diretas provenientes da rede elétrica", correct: false } // longo
+            { text: "Contra interferência magnética de motores", correct: false },
+            { text: "Contra descargas atmosféricas diretas", correct: false },
+            { text: "Contra curto-circuitos de PoE", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
+        question: "Qual é o benefício da espessura nominal de 1,50 mm da segunda capa externa?",
+        answers: [
+            { text: "Maior resistência mecânica e química contra intempéries", correct: true },
+            { text: "Maior largura de banda elétrica", correct: false },
+            { text: "Compatibilidade com redes 10G e fluxo de dados cada vez maiores", correct: false },
+            { text: "Redução de impedância elétrica", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
         question: "Por que um diâmetro externo nominal de 7,5 mm é relevante para instalação?",
         answers: [
             { text: "Impacta na robustez mecânica e no tipo de conduíte necessário", correct: true },
-            { text: "Define diretamente a categoria elétrica do cabo de rede", correct: false }, // próximo
-            { text: "Determina a velocidade de Gigabit Ethernet", correct: false }, // curto
-            { text: "Garante compatibilidade automática com conectores RJ45 industriais", correct: false } // longo
+            { text: "Define a categoria de transmissão de dados para maior eficiência", correct: false },
+            { text: "Determina a velocidade de Gigabit Ethernet", correct: false },
+            { text: "Define o tipo de conector RJ11 compatível", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
-        question: "Qual parâmetro elétrico garante compatibilidade com Cat5e?",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
+        question: "Por que o Hércules 1.0 é mais indicado para CFTV IP externo que um Cat5e comum?",
         answers: [
-            { text: "Par trançado de 100 Ohms até 100 MHz", correct: true },
-            { text: "Controle de impedância elétrica apenas no condutor central", correct: false }, // próximo
-            { text: "Resistência máxima de 900 N", correct: false }, // curto
-            { text: "Capa externa em PEAD com proteção UV para uso externo", correct: false } // longo
+            { text: "Porque possui blindagem FTP e dupla capa com proteção UV", correct: true },
+            { text: "Porque tem conectores blindados integrados", correct: false },
+            { text: "Porque suporta transmissão óptica com maior fluxo de dados", correct: false },
+            { text: "Porque é imune a raios", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
+        question: "Por que o uso de cobre virgem sólido 24 AWG é crítico em PoE?",
+        answers: [
+            { text: "Menor resistência elétrica e menor aquecimento", correct: true },
+            { text: "Maior flexibilidade mecânica para maior esforço", correct: false },
+            { text: "Menor custo por metro", correct: false },
+            { text: "Menor diâmetro externo", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
         question: "Qual a função do isolamento em polietileno de alta densidade dos pares?",
         answers: [
             { text: "Garantir estabilidade dielétrica e isolamento elétrico", correct: true },
-            { text: "Reduzir a interferência eletromagnética externa no cabo", correct: false }, // próximo
-            { text: "Aumentar a proteção UV", correct: false }, // curto
-            { text: "Reforçar mecanicamente o cabo contra impactos e tração", correct: false } // longo
+            { text: "Aumentar a proteção UV contra elementos climáticos externos", correct: false },
+            { text: "Substituir a blindagem metálica", correct: false },
+            { text: "Aumentar resistência mecânica externa", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
-        question: "Por que a gravação no cabo inclui a norma EIA/TIA 568?",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
+        question: "Por que a gravação no cabo inclui EIA/TIA 568?",
         answers: [
             { text: "Para indicar conformidade com normas de cabeamento estruturado", correct: true },
-            { text: "Para informar a categoria física e o diâmetro externo do cabo", correct: false }, // próximo
-            { text: "Para indicar compatibilidade com fibra óptica", correct: false }, // curto
-            { text: "Para identificar o tipo de blindagem e o nível de proteção UV", correct: false } // longo
+            { text: "Para indicar compatibilidade com fibra óptica do tipo monomodo", correct: false },
+            { text: "Para indicar potência PoE", correct: false },
+            { text: "Para indicar nível de blindagem STP", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
         question: "Por que o cabo utiliza 4 pares (8 vias)?",
         answers: [
             { text: "Para permitir Gigabit Ethernet e aplicações profissionais", correct: true },
-            { text: "Para garantir maior resistência mecânica durante a instalação", correct: false }, // próximo
-            { text: "Para alimentar dispositivos elétricos", correct: false }, // curto
-            { text: "Para permitir comunicação óptica híbrida sem conversores", correct: false } // longo
+            { text: "Para alimentar dispositivos elétricos de maneira eficiente", correct: false },
+            { text: "Para aumentar a resistência mecânica", correct: false },
+            { text: "Para permitir comunicação óptica", correct: false }
         ]
     },
     {
         category: "cabling",
-        product: "Cabo Lan Expert Hércules Cat5e STP",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
+        question: "Por que a blindagem FTP é mais eficiente que UTP em ambientes industriais?",
+        answers: [
+            { text: "Porque bloqueia campos eletromagnéticos externos", correct: true },
+            { text: "Porque aumenta a potência de transmissão de dados", correct: false },
+            { text: "Porque elimina a necessidade de aterramento", correct: false },
+            { text: "Porque substitui conduítes metálicos", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Cabo Lan Expert Hércules Cat5e FTP",
         question: "Qual vantagem comercial direta o Hércules 1.0 entrega frente a cabos Cat5e comuns?",
         answers: [
             { text: "Menos falhas, mais estabilidade e maior vida útil", correct: true },
-            { text: "Maior robustez mecânica sem impacto na performance elétrica", correct: false }, // próximo
-            { text: "Maior largura de banda que Cat6", correct: false }, // curto
-            { text: "Capacidade de transmissão óptica integrada ao cabo metálico", correct: false } // longo
+            { text: "Maior largura de banda que Cat6, com alta eficiência", correct: false },
+            { text: "Imunidade total a raios", correct: false },
+            { text: "Transmissão óptica sem conversores", correct: false }
         ]
     },
-    {
+        {
         category: "cabling",
         product: "Cabo de Rede GTS Cat5e UTP",
-        question: "Qual é a função das estrias presentes na capa externa do cabo GTS Cat5e?",
+        question: "Qual é a função das estrias (microfilamentos) presentes na capa externa do cabo GTS Cat5e?",
         answers: [
-            { text: "Aumentar a aderência no manuseio e reduzir o atrito durante a instalação", correct: true },
-            { text: "Aumentar a aderência no manuseio e facilitar a passagem em eletrodutos", correct: false },
-            { text: "Blindar o cabo contra interferências eletromagnéticas", correct: false },
-            { text: "Modificar as características elétricas do cabo durante a transmissão", correct: false }
+            { text: "Aumentar a aderência no manuseio e reduzir o atrito durante a instalação em eletrodutos", correct: true },
+            { text: "Blindar o cabo contra interferências eletromagnéticas externas e garantir resistência mecânica", correct: false },
+            { text: "Aumentar a impedância elétrica do condutor para longas distâncias", correct: false },
+            { text: "Transformar o cabo em categoria 6 automaticamente através da geometria", correct: false }
         ]
     },
     {
@@ -262,298 +384,243 @@ const allQuestions = [
         question: "Por que o cabo GTS Cat5e pode ser usado tanto em ambientes internos quanto externos?",
         answers: [
             { text: "Porque possui capa de PVC CMX resistente a UV e intempéries", correct: true },
-            { text: "Porque possui capa externa em PVC com proteção mecânica básica", correct: false },
-            { text: "Porque possui blindagem metálica FTP", correct: false },
-            { text: "Porque suporta temperaturas extremamente elevadas sem degradação", correct: false }
+            { text: "Porque possui blindagem metálica FTP em cada par", correct: false },
+            { text: "Porque tem condutores ópticos híbridos em sua composição", correct: false },
+            { text: "Porque suporta temperaturas extremas de congelamento até -80°C", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat5e UTP",
-        question: "Qual característica reduz a interferência eletromagnética entre os pares?",
+        question: "Qual característica reduz a interferência eletromagnética entre os pares (Crosstalk)?",
         answers: [
             { text: "O trançamento dos pares", correct: true },
-            { text: "A disposição alternada dos pares ao longo do cabo", correct: false },
-            { text: "A cor do isolamento", correct: false },
+            { text: "A estriação da capa externa", correct: false },
+            { text: "A cor do isolamento das vias", correct: false },
             { text: "O diâmetro externo total do cabo", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat5e UTP",
-        question: "Qual a função dos microfilamentos presentes na capa externa?",
+        question: "O que garante a classificação de flamabilidade CMX no cabo GTS Cat5e?",
         answers: [
-            { text: "Reduzir o atrito e facilitar o puxamento do cabo em eletrodutos", correct: true },
-            { text: "Reduzir o atrito durante o lançamento e manuseio do cabo", correct: false },
-            { text: "Blindar contra campos magnéticos", correct: false },
-            { text: "Aumentar a resistência elétrica dos condutores internos", correct: false }
+            { text: "Segurança contra propagação de chamas em tubulações metálicas e áreas restritas", correct: true },
+            { text: "Compatibilidade certificada para instalações submarinas de alta profundidade", correct: false },
+            { text: "Presença de blindagem eletromagnética total (folha de alumínio) em volta do cabo", correct: false },
+            { text: "Proteção integrada contra surtos elétricos induzidos", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat5e UTP",
-        question: "O que garante a classificação CMX no cabo GTS Cat5e?",
+        question: "Por que respeitar o raio mínimo de curvatura é vital em uma instalação de rede?",
         answers: [
-            { text: "Segurança contra propagação de chamas em tubulações metálicas", correct: true },
-            { text: "Atendimento a critérios básicos de resistência à propagação de chamas", correct: false },
-            { text: "Blindagem eletromagnética total do cabo", correct: false },
-            { text: "Proteção contra surtos elétricos e descargas atmosféricas", correct: false }
+            { text: "Evita microfissuras mecânicas e perda de desempenho por degradação elétrica", correct: true },
+            { text: "Aumenta a velocidade de propagação do sinal acima do nominal determinado", correct: false },
+            { text: "Impede o aquecimento excessivo do PVC em dias quentes", correct: false },
+            { text: "Melhora exclusivamente a estética visual do rack", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat5e UTP",
-        question: "Por que respeitar o raio mínimo de curvatura é importante?",
+        question: "O que tecnicamente define o cabo como sendo do tipo U/UTP?",
         answers: [
-            { text: "Evita danos mecânicos e perda de desempenho elétrico", correct: true },
-            { text: "Evita deformações físicas que afetam o desempenho do cabo", correct: false },
-            { text: "Aumenta a velocidade do sinal", correct: false },
-            { text: "Melhora a aparência visual da instalação", correct: false }
+            { text: "Cabo sem blindagem (Unshielded), composto por pares trançados", correct: true },
+            { text: "Cabo com blindagem em folha metálica para cada par individual", correct: false },
+            { text: "Cabo híbrido que utiliza condutores de cobre e fibras ópticas", correct: false },
+            { text: "Cabo projetado exclusivamente para enterramento direto no solo", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat5e UTP",
-        question: "O que significa o cabo ser U/UTP?",
+        question: "Qual a vantagem técnica de utilizar cobre eletrolítico virgem 24 AWG?",
         answers: [
-            { text: "Cabo sem blindagem, com pares trançados", correct: true },
-            { text: "Cabo sem blindagem individual nos pares de transmissão", correct: false },
-            { text: "Cabo com blindagem total em cada par", correct: false },
-            { text: "Cabo projetado para instalação subterrânea direta", correct: false }
+            { text: "Menor resistência elétrica e maior estabilidade na transmissão de dados", correct: true },
+            { text: "Maior flexibilidade mecânica para dobras em ângulos retos dentro da instalação", correct: false },
+            { text: "Redução drástica no custo final de produção da embalagem", correct: false },
+            { text: "Permite a redução do diâmetro externo total do cabo", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat5e UTP",
-        question: "Qual a vantagem do cobre eletrolítico virgem 24 AWG?",
-        answers: [
-            { text: "Menor resistência elétrica e maior estabilidade de transmissão", correct: true },
-            { text: "Menor resistência elétrica e melhor controle de sinal", correct: false },
-            { text: "Maior flexibilidade mecânica", correct: false },
-            { text: "Menor diâmetro externo do cabo", correct: false }
-        ]
-    },
-    {
-        category: "cabling",
-        product: "Cabo de Rede GTS Cat5e UTP",
-        question: "Qual norma garante compatibilidade com cabeamento estruturado?",
+        question: "Qual norma internacional garante que o cabo GTS é compatível com sistemas de cabeamento estruturado?",
         answers: [
             { text: "EIA/TIA 568-2-D", correct: true },
-            { text: "EIA/TIA 568 aplicada a padrões genéricos de rede", correct: false },
-            { text: "IEEE 802.11ax", correct: false },
-            { text: "USB 3.2", correct: false }
+            { text: "IEEE 802.11ax (Wi-Fi 6)", correct: false },
+            { text: "IEC 61850 (Automação de subestação)", correct: false },
+            { text: "USB 3.2 Specification", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat5e UTP",
-        question: "Qual a principal vantagem competitiva do GTS Cat5e frente a cabos genéricos?",
+        question: "Qual a principal vantagem competitiva do GTS Cat5e frente a cabos genéricos de mercado?",
         answers: [
-            { text: "Controle completo de parâmetros elétricos e mecânicos", correct: true },
-            { text: "Controle rigoroso de parâmetros técnicos durante a fabricação", correct: false },
-            { text: "Velocidade superior ao Cat6", correct: false },
-            { text: "Transmissão direta por fibra óptica sem conversores", correct: false }
+            { text: "Controle rigoroso de parâmetros elétricos e mecânicos em toda a extensão do cabo", correct: true },
+            { text: "Capacidade de operar em velocidades superiores à Categoria 6 com alto desempenho", correct: false },
+            { text: "Capacidade de transmissão nativa por fibra óptica", correct: false },
+            { text: "Dispensa totalmente o uso de conectores RJ45 padrões", correct: false }
+        ]
+    },
+        {
+        category: "cabling",
+        product: "Cabo de Rede GTS Cat6 UTP",
+        question: "Qual é a função da cruzeta (separador interno) presente no cabo GTS Cat6?",
+        answers: [
+            { text: "Separar fisicamente os pares para reduzir interferências eletromagnéticas e manter a geometria", correct: true },
+            { text: "Aumentar a espessura mecânica da capa externa para proteção UV e efeitos do clima e intempéries externas.", correct: false },
+            { text: "Substituir a blindagem metálica contra ruídos de rádio frequência que transitam em ambientes internos", correct: false },
+            { text: "Servir como canal de dissipação térmica para aplicações de alta potência", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat6 UTP",
-        question: "Qual é a função da cruzeta presente no cabo GTS Cat6?",
+        question: "Qual é a principal vantagem técnica da capa externa estriada em instalações de rede?",
         answers: [
-            { text: "Separar fisicamente os pares para reduzir interferências eletromagnéticas", correct: true },
-            { text: "Separar fisicamente os pares para organizar a disposição interna do cabo", correct: false },
-            { text: "Substituir a blindagem metálica do cabo", correct: false },
-            { text: "Atuar como estrutura mecânica para dissipação térmica", correct: false }
+            { text: "Reduzir o atrito durante o puxamento em conduítes e facilitar o manuseio", correct: true },
+            { text: "Aumentar a blindagem eletromagnética contra motores elétricos industriais", correct: false },
+            { text: "Reduzir a impedância elétrica nominal dos condutores internos", correct: false },
+            { text: "Permitir a dissipação de calor gerada por sistemas PoE de alta potência", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat6 UTP",
-        question: "Qual é a principal função da capa externa estriada no cabo GTS Cat6?",
+        question: "Por que o cobre eletrolítico virgem sólido 24 AWG é fundamental para aplicações PoE (Power over Ethernet)?",
         answers: [
-            { text: "Aumentar a aderência no manuseio e reduzir o atrito durante a instalação", correct: true },
-            { text: "Aumentar a aderência no manuseio e reduzir o esforço durante a instalação", correct: false },
-            { text: "Aumentar a blindagem eletromagnética", correct: false },
-            { text: "Auxiliar na dissipação de calor em aplicações PoE", correct: false }
+            { text: "Porque reduz perdas por resistência elétrica e evita o aquecimento excessivo do cabo", correct: true },
+            { text: "Porque aumenta a flexibilidade mecânica para curvas acentuadas e grandes ângulos ", correct: false },
+            { text: "Porque permite atingir velocidades de transmissão acima de 10 Gbps em curtas distâncias", correct: false },
+            { text: "Porque aumenta a imunidade da capa externa contra radiação UV", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat6 UTP",
-        question: "Qual é a implicação de o cabo ser classificado como PVC CM?",
-        answers: [
-            { text: "Retardância à chama adequada para instalações internas verticais e horizontais", correct: true },
-            { text: "Retardância à chama adequada para instalações internas em ambientes controlados", correct: false },
-            { text: "Blindagem metálica total em cada par", correct: false },
-            { text: "Uso exclusivo para ambientes submarinos", correct: false }
-        ]
-    },
-    {
-        category: "cabling",
-        product: "Cabo de Rede GTS Cat6 UTP",
-        question: "Por que o cobre eletrolítico virgem sólido 24 AWG é fundamental para aplicações PoE?",
-        answers: [
-            { text: "Reduz perdas por resistência elétrica e aquecimento", correct: true },
-            { text: "Reduz perdas elétricas e melhora a condução de corrente contínua", correct: false },
-            { text: "Permite maior velocidade de transmissão", correct: false },
-            { text: "Aumenta a resistência do cabo à radiação ultravioleta", correct: false }
-        ]
-    },
-    {
-        category: "cabling",
-        product: "Cabo de Rede GTS Cat6 UTP",
-        question: "Qual parâmetro elétrico indica a compatibilidade do cabo com a categoria Cat6?",
+        question: "Qual parâmetro de frequência indica a compatibilidade total com a Categoria 6?",
         answers: [
             { text: "Capacidade de transmissão de até 250 MHz", correct: true },
-            { text: "Capacidade de transmissão de sinais em frequências mais elevadas", correct: false },
-            { text: "Resistência à tração de 400 N", correct: false },
-            { text: "Espessura total da capa externa do cabo", correct: false }
+            { text: "Resistência mecânica à tração de 400 N", correct: false },
+            { text: "Espessura da capa externa superior a 1,5 mm", correct: false },
+            { text: "Peso nominal de 27 kg por quilômetro", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat6 UTP",
-        question: "Qual é a função do isolamento em polietileno de alta densidade (PEAD)?",
+        question: "Qual a função do isolamento em polietileno de alta densidade (PEAD) nos condutores?",
         answers: [
-            { text: "Garantir estabilidade dielétrica e isolamento elétrico dos pares", correct: true },
-            { text: "Garantir estabilidade dielétrica e separação elétrica entre os condutores", correct: false },
-            { text: "Substituir a cruzeta central", correct: false },
-            { text: "Blindar o cabo contra ruídos eletromagnéticos externos", correct: false }
+            { text: "Garantir a estabilidade dielétrica e o isolamento elétrico entre os pares", correct: true },
+            { text: "Aumentar a resistência mecânica da capa externa do cabo para maior impacto", correct: false },
+            { text: "Substituir a função da cruzeta central no controle de ruído", correct: false },
+            { text: "Atuar como blindagem contra ruídos eletromagnéticos externos", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat6 UTP",
-        question: "Por que o raio mínimo de curvatura sem tensão é definido como 4 vezes o diâmetro do cabo?",
+        question: "Por que o raio mínimo de curvatura sem tensão deve ser respeitado (4× o diâmetro)?",
         answers: [
-            { text: "Para evitar deformação da cruzeta e degradação do desempenho elétrico", correct: true },
-            { text: "Para evitar deformações da estrutura interna e perda de desempenho elétrico", correct: false },
-            { text: "Para reduzir o peso total do cabo", correct: false },
-            { text: "Para melhorar a estética visual da instalação final", correct: false }
+            { text: "Para evitar a deformação da cruzeta interna e a consequente degradação do desempenho elétrico", correct: true },
+            { text: "Para facilitar apenas o aspecto visual da organização no rack e manter a instalação visualmente agradável", correct: false },
+            { text: "Para reduzir o peso total do cabo durante a instalação aérea", correct: false },
+            { text: "Para melhorar a aderência dos conectores RJ45 durante a crimpagem", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo de Rede GTS Cat6 UTP",
-        question: "O que garante a conformidade do cabo GTS Cat6 com a norma EIA/TIA 568.2-D?",
+        question: "O que garante a conformidade do cabo GTS Cat6 com a norma internacional EIA/TIA 568.2-D?",
         answers: [
-            { text: "Compatibilidade com sistemas de cabeamento estruturado Cat6", correct: true },
-            { text: "Compatibilidade com requisitos técnicos para cabeamento estruturado Cat6", correct: false },
-            { text: "Imunidade total a surtos elétricos", correct: false },
-            { text: "Garantia automática de fornecimento de potência PoE", correct: false }
+            { text: "A plena compatibilidade com sistemas de cabeamento estruturado Categoria 6", correct: true },
+            { text: "A imunidade total contra surtos elétricos e descargas atmosféricas", correct: false },
+            { text: "A possibilidade de realizar emendas diretas em redes de fibra óptica", correct: false },
+            { text: "A garantia de que o cabo suporta qualquer nível de potência PoE sem switch", correct: false }
         ]
     },
-    {
-        category: "cabling",
-        product: "Cabo de Rede GTS Cat6 UTP",
-        question: "Por que o cabo GTS Cat6 é superior ao Cat5e em ambientes corporativos?",
-        answers: [
-            { text: "Maior largura de banda e melhor controle de ruído", correct: true },
-            { text: "Maior largura de banda e melhor desempenho em altas frequências", correct: false },
-            { text: "Maior espessura da capa externa", correct: false },
-            { text: "Maior resistência mecânica geral do cabo", correct: false }
-        ]
-    },
-    {
+        {
         category: "cabling",
         product: "Cabo Hard&Soft Gigamax GTS Cat5e",
         question: "Qual é a principal função da primeira capa interna em PVC emborrachado (Dencher)?",
         answers: [
-            { text: "Absorver impactos e aumentar a resistência mecânica do cabo", correct: true },
-            { text: "Absorver impactos e facilitar o posicionamento do cabo na instalação", correct: false },
-            { text: "Substituir a blindagem eletromagnética FTP", correct: false },
-            { text: "Permitir aterramento do cabo em sistemas elétricos", correct: false }
+            { text: "Absorver impactos e aumentar a resistência mecânica do cabo contra esmagamentos", correct: true },
+            { text: "Substituir a blindagem eletromagnética FTP em ambientes industriais", correct: false },
+            { text: "Aumentar a largura de banda elétrica para frequências acima de 500 MHz", correct: false },
+            { text: "Permitir o aterramento do cabo diretamente em sistemas elétricos prediais", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Hard&Soft Gigamax GTS Cat5e",
-        question: "Por que o cabo Hard&Soft Gigamax possui dupla capa?",
+        question: "Por que o cabo Hard&Soft Gigamax possui o sistema de dupla capa (PVC + PEAD)?",
         answers: [
-            { text: "Para amortecer impactos, resistir ao tempo e facilitar a instalação", correct: true },
-            { text: "Para amortecer impactos e melhorar a organização interna dos condutores", correct: false },
-            { text: "Para substituir a blindagem metálica", correct: false },
-            { text: "Para transformar o cabo automaticamente em categoria Cat6", correct: false }
+            { text: "Para amortecer impactos, resistir a intempéries/UV e facilitar o manuseio na instalação", correct: true },
+            { text: "Para permitir que o cabo atue como um condutor híbrido de fibra óptica do tipo monomodo", correct: false },
+            { text: "Para aumentar a impedância nominal do cabo para além de 120 Ohms", correct: false },
+            { text: "Para converter automaticamente a performance do cabo para a Categoria 6", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Hard&Soft Gigamax GTS Cat5e",
-        question: "Qual é o papel das estrias na capa externa?",
+        question: "Qual é o papel das estrias presentes na capa externa deste cabo?",
         answers: [
-            { text: "Aumentar aderência e reduzir atrito no puxamento", correct: true },
-            { text: "Aumentar aderência e facilitar o lançamento do cabo em eletrodutos", correct: false },
-            { text: "Aumentar a potência PoE", correct: false },
-            { text: "Criar blindagem magnética ao redor do cabo", correct: false }
+            { text: "Aumentar a aderência no manuseio e reduzir o atrito durante o puxamento em dutos", correct: true },
+            { text: "Aumentar a velocidade de transmissão de dados através de indução", correct: false },
+            { text: "Aumentar a capacidade de fornecimento de energia PoE para 100W e garantir estabilidade", correct: false },
+            { text: "Criar uma barreira física contra campos magnéticos de alta frequência", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Hard&Soft Gigamax GTS Cat5e",
-        question: "Por que o Hard&Soft é considerado um Cat5e \"TRUE 100 MHz\"?",
+        question: "Por que o Hard&Soft é comercializado como um Cat5e 'TRUE 100 MHz'?",
         answers: [
-            { text: "Porque garante largura de banda plena de 100 MHz com cobre virgem sólido", correct: true },
-            { text: "Porque garante operação estável em frequências elevadas de transmissão", correct: false },
-            { text: "Porque possui cruzeta interna", correct: false },
-            { text: "Porque possui blindagem metálica total", correct: false }
+            { text: "Porque garante largura de banda plena de 100 MHz utilizando cobre virgem sólido de alta pureza", correct: true },
+            { text: "Porque utiliza uma cruzeta interna para separação de pares como os cabos Cat6 de forma eficiente", correct: false },
+            { text: "Porque possui uma blindagem metálica total que impede qualquer perda de sinal", correct: false },
+            { text: "Porque o cabo foi projetado para realizar transmissões ópticas nativas", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Hard&Soft Gigamax GTS Cat5e",
-        question: "Qual vantagem o PVC emborrachado interno traz em obras?",
+        question: "Qual é a relevância do diâmetro nominal do condutor de 0,498 mm?",
         answers: [
-            { text: "Absorção de impacto e maior tolerância a tração", correct: true },
-            { text: "Absorção de impacto e melhor acomodação do cabo em dutos", correct: false },
-            { text: "Maior potência PoE", correct: false },
-            { text: "Compatibilidade direta com padrões de cabeamento Cat6A", correct: false }
+            { text: "Influencia diretamente na menor resistência elétrica e maior estabilidade do sinal em longas distâncias", correct: true },
+            { text: "Serve apenas para reduzir o peso final do cabo para instalações aéreas", correct: false },
+            { text: "Aumenta a velocidade de propagação do sinal para perto da velocidade da luz e sua velocidade nominal", correct: false },
+            { text: "Permite que o cabo seja utilizado como guia para lançamentos de fibra óptica", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Hard&Soft Gigamax GTS Cat5e",
-        question: "Por que o Hard&Soft é mais indicado para ambientes agressivos que Cat5e comuns?",
+        question: "Qual o benefício das gravações métricas sequenciais a cada 1 metro?",
         answers: [
-            { text: "Porque tem dupla capa, maior resistência mecânica e proteção UV", correct: true },
-            { text: "Porque possui dupla capa e maior robustez estrutural externa", correct: false },
-            { text: "Porque é blindado FTP", correct: false },
-            { text: "Porque suporta transmissão óptica", correct: false }
+            { text: "Permite o controle preciso do estoque e da metragem utilizada em cada trecho da obra", correct: true },
+            { text: "Aumenta a resistência química da capa contra agentes corrosivos que influenciam no sinal", correct: false },
+            { text: "Melhora a impedância característica através da marcação a laser", correct: false },
+            { text: "Expande a largura de banda disponível para aplicações Gigabit", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Cabo Hard&Soft Gigamax GTS Cat5e",
-        question: "Por que a temperatura operacional de -10°C a 60°C é importante?",
+        question: "Por que a embalagem em carretel MDF de 1000 metros é vantajosa para grandes infraestruturas?",
         answers: [
-            { text: "Permite uso em ambientes externos e internos", correct: true },
-            { text: "Permite operação do cabo em diferentes condições climáticas", correct: false },
-            { text: "Permite transmissão de dados em 10 Gbps", correct: false },
-            { text: "Permite instalação em ambientes submarinos", correct: false }
+            { text: "Reduz a quantidade de emendas, sobras e perdas financeiras durante a instalação", correct: true },
+            { text: "Aumenta a velocidade de transmissão de dados por metro linear", correct: false },
+            { text: "Aumenta a blindagem eletromagnética natural do cabo dentro do carretel", correct: false },
+            { text: "Elimina a necessidade de realizar testes de certificação após a instalação", correct: false }
         ]
     },
     {
-        category: "cabling",
-        product: "Cabo Hard&Soft Gigamax GTS Cat5e",
-        question: "Qual o benefício das gravações métricas a cada 1 metro no cabo?",
-        answers: [
-            { text: "Controle preciso de metragem durante a instalação", correct: true },
-            { text: "Controle preciso da metragem utilizada ao longo da instalação", correct: false },
-            { text: "Melhora da impedância elétrica", correct: false },
-            { text: "Maior largura de banda de transmissão", correct: false }
-        ]
-    },
-    {
-        category: "cabling",
-        product: "Cabo Hard&Soft Gigamax GTS Cat5e",
-        question: "Por que a embalagem em carretel MDF de 1000 m é relevante para grandes obras?",
-        answers: [
-            { text: "Reduz emendas e perdas durante a instalação", correct: true },
-            { text: "Reduz emendas e facilita o controle logístico da instalação", correct: false },
-            { text: "Aumenta a blindagem eletromagnética do cabo", correct: false },
-            { text: "Reduz interferência eletromagnética externa", correct: false }
-        ]
-    },
-        {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat5e",
         question: "O que identifica corretamente o conector macho RJ-45 Cat5e com código 41-045?",
