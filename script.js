@@ -611,79 +611,68 @@ const allQuestions = [
     },
     {
         category: "cabling",
-        product: "Cabo Hard&Soft Gigamax GTS Cat5e",
-        question: "Por que a embalagem em carretel MDF de 1000 metros é vantajosa para grandes infraestruturas?",
+        product: "Conector Macho RJ45 GTS Cat5e",
+        question: "O que identifica corretamente o conector macho RJ-45 Cat5e (41.045) e sua aplicação principal?",
         answers: [
-            { text: "Reduz a quantidade de emendas, sobras e perdas financeiras durante a instalação", correct: true },
-            { text: "Aumenta a velocidade de transmissão de dados por metro linear", correct: false },
-            { text: "Aumenta a blindagem eletromagnética natural do cabo dentro do carretel", correct: false },
-            { text: "Elimina a necessidade de realizar testes de certificação após a instalação", correct: false }
+            { text: "Conector macho para crimpagem em cabos UTP, ideal para confecção de patch cords e redes de dados", correct: true },
+            { text: "Conector fêmea (Keystone) para painéis de parede e terminação de backbone e estrutura externa de rede", correct: false },
+            { text: "Adaptador ativo ethernet para conversão de sinais analógicos em digitais com maior eficiência", correct: false },
+            { text: "Conector de pressão para cabos coaxiais RG-6 em sistemas de TV a cabo", correct: false }
         ]
     },
     {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat5e",
-        question: "O que identifica corretamente o conector macho RJ-45 Cat5e com código 41-045?",
-        answers: [
-            { text: "Conector macho RJ-45 adequado ao padrão Cat5e para crimpagem em cabos de rede", correct: true },
-            { text: "Conector macho RJ-45 projetado para aplicações genéricas em redes estruturadas", correct: false }, // tamanho próximo
-            { text: "Conector fêmea RJ-45 para painéis de parede", correct: false }, // menor
-            { text: "Adaptador de conexão para sistemas coaxiais e aplicações analógicas legadas", correct: false } // maior
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Conector Macho RJ45 GTS Cat5e",
-        question: "Qual é a composição dos contatos elétricos do conector RJ-45 Cat5e 41-045?",
+        question: "Qual é a composição detalhada dos contatos elétricos do conector RJ-45 Cat5e 41.045?",
         answers: [
             { text: "Contatos com tripla camada: 50 mícrons de ouro sobre 100 mícrons de prata sobre base de bronze fosfórico", correct: true },
-            { text: "Contatos com múltiplas camadas metálicas para aumento da durabilidade elétrica", correct: false }, // próximo
-            { text: "Contatos de cobre nu sem revestimento externo", correct: false }, // menor
-            { text: "Contatos metálicos reforçados com ligas industriais para uso geral em conectores", correct: false } // maior
+            { text: "Contatos de alumínio anodizado com revestimento superficial de aço carbono para uma maior conectividade", correct: false },
+            { text: "Contatos de cobre nu maciço sem nenhum tipo de revestimento metálico externo garantindo mais eficiência", correct: false },
+            { text: "Contatos de latão industrial com cobertura simples de níquel eletrolítico", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat5e",
-        question: "Qual a vantagem de ter ouro sobre prata nos contatos do conector RJ-45?",
+        question: "Qual é a vantagem técnica de utilizar a combinação de ouro sobre prata nos contatos do conector?",
         answers: [
-            { text: "Aumenta a durabilidade e melhora a condutividade elétrica ao longo do tempo", correct: true },
-            { text: "Melhora a estabilidade elétrica e reduz a degradação dos contatos metálicos", correct: false }, // próximo
-            { text: "Permite uso exclusivo em aplicações PoE++", correct: false }, // menor
-            { text: "Garante compatibilidade automática com padrões ópticos e industriais", correct: false } // maior
+            { text: "Aumenta a durabilidade contra oxidação e melhora a condutividade elétrica ao longo do tempo", correct: true },
+            { text: "Permite que o conector seja utilizado exclusivamente em aplicações PoE++ de alta voltagem", correct: false },
+            { text: "Serve como uma blindagem física que elimina a necessidade de cabos blindados (FTP)", correct: false },
+            { text: "Indica que o conector é compatível com portas USB-C e Thunderbolt 3 muito utilizadas", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat5e",
-        question: "Com qual padrão de cabeamento o conector RJ-45 Cat5e é compatível?",
+        question: "Com qual padrão de desempenho o conector RJ-45 41.045 é compatível e quais sinais suporta?",
         answers: [
-            { text: "Padrão Cat5e para redes Ethernet até 1 Gbps", correct: true },
-            { text: "Padrão Cat5e utilizado em infraestruturas de cabeamento estruturado", correct: false }, // próximo
-            { text: "Padrão Cat6A para 10 Gbps", correct: false }, // menor
-            { text: "Padrão proprietário para redes de alta velocidade fora das normas Ethernet", correct: false } // maior
+            { text: "Padrão Cat5e para voz, dados e vídeo em redes estruturadas de até 1 Gbps", correct: true },
+            { text: "Padrão Cat6A exclusivo para transmissões de 10 Gbps em data centers", correct: false },
+            { text: "Padrão Cat4 para redes legadas de baixa velocidade e telefonia analógica pura", correct: false },
+            { text: "Padrão coaxial BNC com impedância de 75 Ω para sistemas de CFTV analógico", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat5e",
-        question: "O conector RJ-45 Cat5e 41-045 pode ser usado para qual das seguintes aplicações?",
+        question: "Para qual processo de montagem o conector RJ-45 Cat5e é projetado?",
         answers: [
-            { text: "Voice, dados e vídeo em redes estruturadas até 1 Gbps", correct: true },
-            { text: "Transmissão de dados em redes cabeadas convencionais de baixa e média demanda", correct: false }, // próximo
-            { text: "Transmissão direta de sinais de fibra óptica", correct: false }, // menor
-            { text: "Distribuição de sinais elétricos e automação industrial de alta potência", correct: false } // maior
+            { text: "Crimpagem em cabo UTP utilizando alicate apropriado para fixação dos contatos e da capa", correct: true },
+            { text: "Soldagem manual direta dos fios de cobre aos contatos dourados", correct: false },
+            { text: "Conexão por parafusos em bloco terminal para facilitar a manutenção rápida e eficiente", correct: false },
+            { text: "Acoplamento por indução magnética que dispensa o contato físico entre os metais metálicos", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat5e",
-        question: "Para qual processo de montagem o conector RJ-45 Cat5e é mais utilizado?",
+        question: "Qual material e característica estrutural definem o corpo do conector Cat6 41.045?",
         answers: [
-            { text: "Crimpagem em cabo UTP com alicate apropriado", correct: true },
-            { text: "Crimpagem manual em cabos de par trançado para redes estruturadas", correct: false }, // próximo
-            { text: "Soldagem direta dos fios aos contatos", correct: false }, // menor
-            { text: "Fixação por pressão mecânica sem uso de ferramentas específicas", correct: false } // maior
+            { text: "Termoplástico de alto impacto com trava de grande resistência para encaixe firme", correct: true },
+            { text: "Metal fundido com cobertura de PVC flexível para maior maleabilidade e movimentos", correct: false },
+            { text: "Silicone isolante com propriedades magnéticas para evitar ruídos", correct: false },
+            { text: "Borracha antiestática com clips metálicos de fixação manual", correct: false }
         ]
     },
         {
@@ -691,87 +680,76 @@ const allQuestions = [
         product: "Conector Macho RJ45 GTS Cat6",
         question: "Qual vantagem um conector Cat6 tem sobre um Cat5e?",
         answers: [
-            { text: "Maior capacidade de desempenho elétrico com menor crosstalk e interferências", correct: true },
-            { text: "Maior capacidade de desempenho elétrico com foco em aplicações convencionais", correct: false }, // tamanho próximo
-            { text: "Capacidade de transmitir sinais ópticos sem conversores", correct: false }, // menor
-            { text: "Transforma a estrutura física do cabo para eliminar interferências externas", correct: false } // maior
+            { text: "Maior capacidade de desempenho elétrico com menor Interferência entre sinais", correct: true },
+            { text: "Maior capacidade de desempenho elétrico com foco em aplicações convencionais", correct: false },
+            { text: "Capacidade de transmitir sinais ópticos sem conversores", correct: false },
+            { text: "Transforma a estrutura física do cabo para eliminar interferências externas", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat6",
         question: "Qual é a composição dos contatos elétricos do conector RJ-45 Cat6 41-055?",
         answers: [
             { text: "Contatos com tripla camada: 50 mícrons de ouro sobre 100 mícrons de prata sobre base de bronze fosfórico", correct: true },
-            { text: "Contatos com múltiplas camadas metálicas voltadas à durabilidade elétrica", correct: false }, // próximo
-            { text: "Contatos de cobre nu sem revestimento externo", correct: false }, // menor
-            { text: "Contatos metálicos reforçados com ligas industriais para uso genérico", correct: false } // maior
+            { text: "Contatos de alumínio anodizado sobre aço carbono para uma maior condutividade e conectividade mais efetiva", correct: false },
+            { text: "Contatos de cobre nu sem revestimento externo garantindo mais eficiência para as aplicações diárias", correct: false },
+            { text: "Contatos de latão industrial com cobertura simples de níquel eletrolítico", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat6",
-        question: "O conector macho RJ-45 Cat6 41-055 ultrapassa quais padrões de desempenho?",
+        question: "O conector macho RJ-45 Cat6 41.055 ultrapassa quais padrões de desempenho?",
         answers: [
-            { text: "Excede os requerimentos EIA/TIA-568 de performance elétrica", correct: true },
-            { text: "Atende parâmetros técnicos superiores aos padrões básicos de cabeamento", correct: false }, // próximo
-            { text: "Está certificado para fibra óptica monomodo", correct: false }, // menor
-            { text: "Inclui processamento interno de sinal para amplificação Ethernet", correct: false } // maior
+            { text: "Excede os requerimentos EIA/TIA-568 de performance elétrica para Categoria 6", correct: true },
+            { text: "Atende apenas padrões analógicos de telefonia de baixa frequência", correct: false },
+            { text: "Está certificado para transmissão em fibra óptica monomodo com maiores distâncias", correct: false },
+            { text: "Inclui processamento ativo de sinal Ethernet para longas distâncias", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat6",
-        question: "Qual material caracteriza o corpo do conector Cat6 41-055?",
+        question: "Qual material e característica estrutural definem o corpo do conector Cat6 41.055?",
         answers: [
-            { text: "Termoplástico de alto impacto com precisão dimensional", correct: true },
-            { text: "Termoplástico técnico moldado para aplicações estruturadas de rede", correct: false }, // próximo
-            { text: "Metal fundido com cobertura de PVC flexível", correct: false }, // menor
-            { text: "Composto elastomérico com propriedades antiestáticas e reforço mecânico", correct: false } // maior
+            { text: "Termoplástico de alto impacto com trava de grande resistência para encaixe firme", correct: true },
+            { text: "Metal fundido com cobertura de PVC flexível para maior maleabilidade e movimentos", correct: false },
+            { text: "Silicone isolante com propriedades magnéticas para evitar ruídos", correct: false },
+            { text: "Borracha antiestática com clips metálicos de fixação manual", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat6",
-        question: "Qual característica estrutural é mencionada para o conector Cat6 41-055?",
+        question: "O conector Cat6 41-055 é projetado para quais níveis de rede e aplicações?",
         answers: [
-            { text: "Trava com grande resistência, garantindo encaixe firme", correct: true },
-            { text: "Sistema de trava reforçada para maior estabilidade mecânica na conexão", correct: false }, // próximo
-            { text: "Contatos soldáveis sem necessidade de crimpagem", correct: false }, // menor
-            { text: "Blindagem integral com malha metálica contínua ao redor do conector", correct: false } // maior
+            { text: "Redes Fast Ethernet (100 Mbps) e Gigabit Ethernet (1000 Mbps) de alto tráfego", correct: true },
+            { text: "Somente redes analógicas de voz e sistemas de telefonia rural de longas distâncias", correct: false },
+            { text: "Transmissão de vídeo SD sem necessidade de pares trançados", correct: false },
+            { text: "Circuitos de alimentação elétrica AC de alta potência para automação", correct: false }
         ]
     },
-        {
-        category: "cabling",
-        product: "Conector Macho RJ45 GTS Cat6",
-        question: "O conector Cat6 41-055 é projetado para quais níveis de rede?",
-        answers: [
-            { text: "Redes Fast Ethernet (100 Mbps) e Gigabit Ethernet (1000 Mbps)", correct: true },
-            { text: "Redes Ethernet cabeadas com requisitos padrão de desempenho", correct: false }, // próximo
-            { text: "Somente redes analógicas de voz", correct: false }, // menor
-            { text: "Circuitos dedicados à alimentação elétrica de equipamentos ativos", correct: false } // maior
-        ]
-    },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat6",
         question: "Em qual tipo de instalação o conector Cat6 41-055 é mais indicado que o Cat5e?",
         answers: [
-            { text: "Ambientes com tráfego maior e maiores exigências de desempenho de sinal", correct: true },
-            { text: "Ambientes corporativos com maior demanda por estabilidade de transmissão", correct: false }, // próximo
-            { text: "Instalações exclusivas de telefonia analógica", correct: false }, // menor
-            { text: "Sistemas de transmissão sem fio baseados em radiofrequência", correct: false } // maior
+            { text: "Ambientes com tráfego denso e maiores exigências de integridade de sinal", correct: true },
+            { text: "Instalações simplificadas focadas exclusivamente em telefonia analógica", correct: false },
+            { text: "Canais de alimentação elétrica 220 V para dispositivos industriais", correct: false },
+            { text: "Sistemas de antenas Bluetooth para comunicação sem fio de curto alcance", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho RJ45 GTS Cat6",
-        question: "Qual das seguintes aplicações representa uso inadequado para o conector Cat6 41-055?",
+        question: "Qual das seguintes situações representa um uso inadequado para o conector Cat6 41-055?",
         answers: [
-            { text: "Em um cabo coaxial de TV sem adaptador", correct: true },
-            { text: "Aplicação em sistemas que utilizam cabos não compatíveis com RJ-45", correct: false }, // próximo
-            { text: "Em montagem de patch cord Gigabit", correct: false }, // menor
-            { text: "Em infraestrutura de rede estruturada baseada em cabeamento Cat6", correct: false } // maior
+            { text: "Utilização em um cabo coaxial de TV sem o devido adaptador", correct: true },
+            { text: "Montagem de patch cords Gigabit para interligação de switches", correct: false },
+            { text: "Instalação em ambiente de rede estruturada com backbone Categoria 6", correct: false },
+            { text: "Uso em redes corporativas que utilizam switches gerenciáveis de alta performance", correct: false }
         ]
     },
         {
@@ -780,284 +758,229 @@ const allQuestions = [
         question: "O que diferencia o conector 41-065 de um conector RJ-45 Cat6 comum?",
         answers: [
             { text: "A presença de blindagem metálica para proteção contra interferências eletromagnéticas", correct: true },
-            { text: "A presença de estrutura metálica voltada à redução de ruídos externos", correct: false }, // próximo
-            { text: "A redução do número de vias elétricas internas", correct: false }, // menor
-            { text: "A modificação estrutural do conector para aplicações não padronizadas", correct: false } // maior
+            { text: "A presença de estrutura metálica voltada à redução de ruídos externos na conexão de rede", correct: false },
+            { text: "A redução do número de vias elétricas internas", correct: false },
+            { text: "A modificação estrutural do conector para aplicações não padronizadas pelas normas vigentes", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "A qual categoria de cabeamento estruturado o conector macho blindado 41-065 pertence?",
+        question: "A qual categoria de cabeamento e norma técnica o conector blindado 41-065 atende?",
         answers: [
-            { text: "Categoria 6 (Cat6)", correct: true },
-            { text: "Categoria 6 utilizada em sistemas de cabeamento estruturado", correct: false }, // próximo
-            { text: "Categoria 5e com tolerância estendida", correct: false }, // menor
-            { text: "Categoria proprietária desenvolvida para aplicações industriais específicas", correct: false } // maior
+            { text: "Categoria 6 (Cat6) atendendo aos requisitos da norma EIA/TIA-568", correct: true },
+            { text: "Categoria 5e com tolerância estendida para redes domésticas e corporativas", correct: false },
+            { text: "Categoria 6A exclusiva para data centers de 01 Gbps até 10 Gbps", correct: false },
+            { text: "Categoria 7 utilizando o padrão de interface GG45", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "Qual norma técnica de cabeamento este conector atende ou excede?",
+        question: "O termo STP associado a este conector indica qual característica técnica?",
         answers: [
-            { text: "EIA/TIA-568", correct: true },
-            { text: "Normas técnicas de cabeamento aplicadas a redes estruturadas modernas", correct: false }, // próximo
-            { text: "IEEE 1394 FireWire", correct: false }, // menor
-            { text: "Padrões proprietários de infraestrutura elétrica de alta complexidade", correct: false } // maior
+            { text: "Shielded Twisted Pair, indicando que o conector deve ser usado com cabos blindados", correct: true },
+            { text: "Simple Twisted Pair, indicando uma construção sem proteção contra ruído na rede", correct: false },
+            { text: "Single Transmission Protocol para redes de baixa complexidade", correct: false },
+            { text: "Shielded Terminal Plug, indicando que dispensa aterramento externo de alta proteção", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "Qual é a principal função da blindagem metálica no conector RJ-45 Cat6 41-065?",
+        question: "Por que a blindagem metálica contribui diretamente para um melhor desempenho elétrico?",
         answers: [
-            { text: "Reduzir interferências eletromagnéticas e melhorar a integridade do sinal", correct: true },
-            { text: "Reduzir ruídos externos e contribuir para maior estabilidade de transmissão", correct: false }, // próximo
-            { text: "Aumentar a flexibilidade mecânica do cabo", correct: false }, // menor
-            { text: "Permitir transmissão de energia elétrica em níveis industriais elevados", correct: false } // maior
+            { text: "Porque reduz a Interferência entre sinais e protege o sinal contra interferências externas (EMI/RFI)", correct: true },
+            { text: "Porque aumenta a espessura física do cabo garantindo maior rigidez e força mecânica no seu uso diário", correct: false },
+            { text: "Porque substitui tecnicamente a necessidade de os pares serem trançados dentro da extensão do cabo", correct: false },
+            { text: "Porque atua como um amplificador passivo do sinal elétrico de dados", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "Em qual tipo de ambiente o uso de um conector RJ-45 blindado é mais recomendado?",
+        question: "Qual é a composição correta dos contatos elétricos do conector blindado RJ-45 Cat6?",
         answers: [
-            { text: "Ambientes industriais ou com alto nível de interferência elétrica", correct: true },
-            { text: "Ambientes técnicos com maior exposição a ruídos eletromagnéticos", correct: false }, // próximo
-            { text: "Ambientes exclusivamente residenciais", correct: false }, // menor
-            { text: "Instalações sem cabeamento físico estruturado", correct: false } // maior
+            { text: "Tripla camada: 50 mícrons de ouro sobre 100 mícrons de prata sobre base de bronze fosfórico", correct: true },
+            { text: "Cobre nu sem revestimento para evitar a oxidação galvânica", correct: false },
+            { text: "Alumínio anodizado com banho de estanho para redução de custos", correct: false },
+            { text: "Latão industrial puro com revestimento polimérico isolante", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "O termo STP associado ao conector blindado indica o quê?",
+        question: "Qual é o papel fundamental do bronze fosfórico na base dos contatos?",
         answers: [
-            { text: "Shielded Twisted Pair, indicando uso com cabos blindados", correct: true },
-            { text: "Shielded Twisted Pair aplicado a sistemas de cabeamento estruturado", correct: false }, // próximo
-            { text: "Simple Twisted Pair", correct: false }, // menor
-            { text: "Sistema de terminação protegido sem padrão elétrico definido", correct: false } // maior
+            { text: "Garantir a resistência mecânica (mola) e estabilidade elétrica na conexão", correct: true },
+            { text: "Atuar como um isolante térmico para evitar superaquecimento em PoE", correct: false },
+            { text: "Servir como a blindagem principal contra interferências magnéticas", correct: false },
+            { text: "Substituir a função do ouro na interface de contato com o patch panel", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "Quais velocidades de transmissão o conector macho blindado Cat6 é projetado para suportar?",
+        question: "O uso do corpo metálico no conector exige atenção obrigatória a qual aspecto?",
         answers: [
-            { text: "Fast Ethernet (100 Mbps) e Gigabit Ethernet (1000 Mbps)", correct: true },
-            { text: "Transmissões Ethernet cabeadas em aplicações convencionais de rede", correct: false }, // próximo
-            { text: "Apenas 10 Mbps", correct: false }, // menor
-            { text: "Transmissões dedicadas a sinais analógicos e controle industrial", correct: false } // maior
+            { text: "A necessidade de um aterramento adequado da blindagem em todo o canal", correct: true },
+            { text: "O uso obrigatório de cabos UTP (não blindados) para evitar loops", correct: false },
+            { text: "A eliminação total do padrão de pinagem T568A ou T568B", correct: false },
+            { text: "A aplicação do conector exclusivamente em redes que não possuem switches", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "Qual é a composição correta dos contatos do conector macho blindado RJ-45 Cat6?",
+        question: "Por que este conector blindado exige o uso de ferramentas específicas para montagem?",
         answers: [
-            { text: "Tripla camada: ouro, prata e base de bronze fosfórico", correct: true },
-            { text: "Camadas metálicas combinadas para maior durabilidade e desempenho elétrico", correct: false }, // próximo
-            { text: "Cobre nu sem revestimento", correct: false }, // menor
-            { text: "Ligas metálicas genéricas aplicadas a conectores industriais", correct: false } // maior
+            { text: "Porque depende de crimpagem profissional para fixar os contatos e a continuidade da blindagem", correct: true },
+            { text: "Porque utiliza encaixe magnético que dispensa pressão mecânica comum em crimpagens de conectores", correct: false },
+            { text: "Porque os contatos não são metálicos e exigem fusão térmica", correct: false },
+            { text: "Porque o conector é 'toolless' e não aceita o uso de alicates comuns em sua crimpagem", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "Qual é o papel do bronze fosfórico na base dos contatos?",
+        question: "Qual aplicação justifica a escolha deste conector em vez de uma versão sem blindagem?",
         answers: [
-            { text: "Garantir resistência mecânica e estabilidade elétrica", correct: true },
-            { text: "Conferir estabilidade estrutural e suporte elétrico aos contatos", correct: false }, // próximo
-            { text: "Atuar como isolante térmico", correct: false }, // menor
-            { text: "Substituir o revestimento de ouro na superfície de contato", correct: false } // maior
+            { text: "Ambientes industriais com motores, máquinas ou cabos de alta tensão próximos", correct: true },
+            { text: "Ambientes residenciais simples com baixa densidade de dispositivos", correct: false },
+            { text: "Redes temporárias de escritório onde a velocidade não é crítica", correct: false },
+            { text: "Instalações básicas de telefonia analógica em prédios comerciais", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "O uso de corpo metálico no conector exige atenção a qual aspecto da instalação?",
+        question: "Qual das opções abaixo representa um uso inadequado para o conector RJ-45 41-065?",
         answers: [
-            { text: "Aterramento adequado da blindagem", correct: true },
-            { text: "A correta integração da blindagem ao sistema de aterramento da rede", correct: false }, // próximo
-            { text: "Uso obrigatório de cabos UTP", correct: false }, // menor
-            { text: "Eliminação do padrão de pinagem T568 na instalação", correct: false } // maior
+            { text: "Tentar realizar a crimpagem em cabos coaxiais de antena de TV", correct: true },
+            { text: "Montagem de patch cords blindados para redes Gigabit industriais", correct: false },
+            { text: "Instalação em infraestrutura de rede estruturada Cat6 com cabo STP", correct: false },
+            { text: "Uso em conexões corporativas de alto tráfego com switches gerenciáveis", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "Qual ferramenta é necessária para a instalação correta do conector macho blindado RJ-45 Cat6?",
+        question: "Por que o conector macho blindado Cat6 GTS é considerado superior em robustez?",
         answers: [
-            { text: "Alicate de crimpagem compatível com conectores RJ-45 blindados", correct: true },
-            { text: "Ferramenta de crimpagem adequada para conectores metálicos RJ-45", correct: false }, // próximo
-            { text: "Ferro de solda", correct: false }, // menor
-            { text: "Equipamento hidráulico para compressão de terminais industriais", correct: false } // maior
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "Qual aplicação justifica o uso do conector macho blindado Cat6 em vez de um não blindado?",
-        answers: [
-            { text: "Ambientes com motores, máquinas ou cabos de energia próximos", correct: true },
-            { text: "Ambientes técnicos com elevada presença de ruídos eletromagnéticos", correct: false }, // próximo
-            { text: "Ambientes domésticos simples", correct: false }, // menor
-            { text: "Redes temporárias de baixa criticidade operacional", correct: false } // maior
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Conector Macho Blindado RJ45 GTS Cat6",
-        question: "Qual das opções representa um uso inadequado para o conector RJ-45 blindado Cat6?",
-        answers: [
-            { text: "Crimpagem em cabos coaxiais de TV", correct: true },
-            { text: "Aplicação em sistemas que não utilizam cabos de par trançado", correct: false }, // próximo
-            { text: "Patch cords industriais", correct: false }, // menor
-            { text: "Instalações corporativas com infraestrutura de rede estruturada", correct: false } // maior
+            { text: "Pela união da proteção metálica externa com contatos de alta durabilidade (ouro/prata)", correct: true },
+            { text: "Porque o metal elimina 100% de qualquer perda de pacote em longas distâncias da rede de internet", correct: false },
+            { text: "Porque permite a instalação sem seguir normas de pinagem ou cores, sendo mais flexível", correct: false },
+            { text: "Porque sua estrutura metálica amplifica o sinal vindo do switch", correct: false }
         ]
     },
         {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
-        question: "Qual tipo de cabo é indicado para uso com este conector RJ45 Tooless?",
+        question: "Para qual categoria de rede e tipo de cabo o conector 41.075 foi projetado?",
         answers: [
-            { text: "Cabos de par trançado não blindado (UTP)", correct: true },
-            { text: "Cabos de par trançado com isolamento padrão para redes estruturadas", correct: false },
-            { text: "Cabos coaxiais adaptados para redes Ethernet", correct: false },
-            { text: "Cabos de fibra óptica multimodo com conversor passivo", correct: false }
+            { text: "Categoria Cat6, indicado para uso com cabos de par trançado não blindado (UTP)", correct: true },
+            { text: "Categoria Cat5e, indicado para cabos blindados do tipo S/FTP de redes comuns", correct: false },
+            { text: "Categoria Cat6A, exclusivo para ambientes industriais blindados mais exigentes", correct: false },
+            { text: "Categoria Cat7, compatível apenas com cabos de fibra óptica", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
-        question: "Qual a velocidade máxima de transmissão suportada pelo Conector RJ45 Cat6 Tooless?",
+        question: "Qual a velocidade máxima de transmissão e norma técnica atendida por este conector?",
         answers: [
-            { text: "Até 1 Gbps, ideal para aplicações que exigem alta performance e estabilidade", correct: true },
-            { text: "Até 1 Gbps em aplicações típicas de redes corporativas estruturadas", correct: false },
-            { text: "Até 100 Mbps com baixa latência garantida", correct: false },
-            { text: "Velocidade variável dependente do tipo de crimpagem manual", correct: false }
+            { text: "Até 1 Gbps, excedendo os requerimentos da norma EIA/TIA-568", correct: true },
+            { text: "Até 10 Gbps em enlaces superiores a 100 metros em redes internas", correct: false },
+            { text: "Até 100 Mbps, atendendo eficientemente a norma ISO/IEC 11801 Classe FA", correct: false },
+            { text: "Velocidade variável, limitada pela norma IEEE 802.3an", correct: false }
         ]
     },
-        {
-        category: "cabling",
-        product: "Conector RJ45 GTS Cat6 Tooless",
-        question: "O desempenho elétrico dos contatos do conector excede qual norma técnica?",
-        answers: [
-            { text: "EIA/TIA-568", correct: true },
-            { text: "EIA/TIA-568 aplicada a sistemas de cabeamento estruturado", correct: false },
-            { text: "IEEE 802.3an para 10GBASE-T", correct: false },
-            { text: "ANSI/TIA-942 para data centers Tier IV", correct: false }
-        ]
-    },
-        {
+    {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
         question: "Qual é a principal vantagem do sistema Tooless presente neste conector?",
         answers: [
             { text: "Dispensa o uso de ferramentas de crimpagem, tornando a instalação mais rápida e simples", correct: true },
-            { text: "Dispensa o uso de ferramentas de crimpagem durante o processo de montagem", correct: false },
-            { text: "Elimina a necessidade de padrão de pinagem T568A ou T568B", correct: false },
+            { text: "Permite a soldagem direta dos condutores aos contatos metálicos garantindo grande tráfego de dados", correct: false },
+            { text: "Elimina a necessidade de seguir os padrões de pinagem T568A ou T568B assim definidos", correct: false },
             { text: "Substitui completamente o uso de patch panels em redes estruturadas", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
         question: "Qual componente interno auxilia na correta organização dos fios durante a montagem?",
         answers: [
             { text: "Suporte IDC com guias de contato no padrão T568", correct: true },
-            { text: "Suporte interno com guias para organização dos condutores", correct: false },
+            { text: "Matriz de crimpagem integrada com lâminas metálicas", correct: false },
             { text: "Bloco de terminação por parafuso ajustável", correct: false },
             { text: "Conector modular com contatos autoajustáveis por pressão axial", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
         question: "Qual o comprimento recomendado para a decapagem dos fios condutores antes da montagem?",
         answers: [
             { text: "2 cm", correct: true },
-            { text: "2 cm para acomodação adequada dos condutores no conector", correct: false },
+            { text: "1 cm para evitar interferência eletromagnética", correct: false },
             { text: "3,5 cm para melhor acomodação no suporte IDC", correct: false },
             { text: "Comprimento variável conforme o diâmetro do cabo", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
         question: "Após posicionar os fios no suporte IDC, qual é a etapa seguinte correta?",
         answers: [
             { text: "Recortar o excesso dos fios condutores", correct: true },
-            { text: "Recortar o excesso dos fios para finalizar a acomodação interna", correct: false },
             { text: "Aplicar pressão com alicate de crimpagem", correct: false },
+            { text: "Soldar os condutores para fixação permanente", correct: false },
             { text: "Inserir resina isolante para proteção elétrica", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
         question: "Como é realizada a fixação final do cabo no conector?",
         answers: [
             { text: "Pressionando as tampas plásticas e rosqueando o pino na base do conector", correct: true },
-            { text: "Pressionando as tampas plásticas para travamento mecânico do conjunto", correct: false },
-            { text: "Utilizando presilhas externas de nylon", correct: false },
+            { text: "Através de trava metálica com aperto por torque controlado e efifaz", correct: false },
+            { text: "Utilizando presilhas externas de nylon para garantir maior resistência", correct: false },
             { text: "Por compressão térmica do corpo plástico", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
-        question: "Qual material é utilizado no corpo plástico do conector RJ45 Cat6 Tooless?",
+        question: "Qual material é utilizado no corpo plástico do conector para garantir alta resistência?",
         answers: [
             { text: "Termoplástico NEW PC de alta resistência elétrica", correct: true },
-            { text: "Termoplástico PC com características isolantes para aplicações de rede", correct: false },
+            { text: "Policarbonato ABS reciclado com aditivo anti-chama", correct: false },
             { text: "Nylon reforçado com fibra de vidro", correct: false },
             { text: "PVC flexível com proteção UV", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
         question: "Qual é a composição das camadas metálicas dos contatos do conector?",
         answers: [
             { text: "50 mícrons de ouro sobre 100 mícrons de prata sobre base de bronze fosfórico", correct: true },
-            { text: "Camadas de ouro e prata aplicadas sobre base metálica condutiva", correct: false },
+            { text: "30 mícrons de ouro sobre níquel com base de latão", correct: false },
             { text: "Prata pura com núcleo de cobre estanhado", correct: false },
             { text: "Ouro eletrolítico direto sobre aço inoxidável", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Conector RJ45 GTS Cat6 Tooless",
         question: "Qual benefício direto o uso de bronze fosfórico na base dos contatos proporciona?",
         answers: [
-            { text: "Maior desempenho elétrico e durabilidade do conector", correct: true },
-            { text: "Maior desempenho elétrico e estabilidade mecânica dos contatos", correct: false },
+            { text: "Maior desempenho elétrico e durabilidade (mola) do contato", correct: true },
+            { text: "Redução total da oxidação sem necessidade de revestimento de ouro", correct: false },
             { text: "Flexibilidade mecânica para aplicações móveis", correct: false },
-            { text: "Compatibilidade exclusiva com cabos blindados", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Conector RJ45 GTS Cat6 Tooless",
-        question: "Em quais tipos de ambiente este conector pode ser utilizado?",
-        answers: [
-            { text: "Ambientes residenciais e comerciais", correct: true },
-            { text: "Ambientes residenciais e comerciais de redes estruturadas", correct: false },
-            { text: "Somente data centers certificados Tier III ou IV", correct: false },
-            { text: "Exclusivamente instalações externas subterrâneas", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Keystone Jack RJ-45 GTS Cat5e Conector Fêmea",
-        question: "Com qual categoria de cabeamento estruturado este Keystone Jack é compatível?",
-        answers: [
-            { text: "Categoria 5e (Cat5e)", correct: true },
-            { text: "Categoria 5e utilizada em sistemas de cabeamento estruturado", correct: false },
-            { text: "Categoria 6A com suporte a 10 Gbps", correct: false },
-            { text: "Categoria 7 com conectores GG45", correct: false }
+            { text: "Compatibilidade exclusiva com cabos blindados do tipo STP", correct: false }
         ]
     },
         {
@@ -1066,97 +989,75 @@ const allQuestions = [
         question: "Qual velocidade de rede é tipicamente suportada por um Keystone Jack Cat5e corretamente instalado?",
         answers: [
             { text: "Até 1 Gbps em enlaces Ethernet padrão", correct: true },
-            { text: "Até 1 Gbps em enlaces Ethernet de redes estruturadas", correct: false },
+            { text: "Até 10 Gbps em distâncias acima de 100 metros", correct: false },
             { text: "Limitado a 100 Mbps por definição da categoria", correct: false },
             { text: "Velocidade variável dependendo da cor do conector", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat5e Conector Fêmea",
-        question: "Por que este produto é classificado como um conector fêmea RJ-45?",
+        question: "Por que este produto é classificado como um conector fêmea e quantas vias ele possui?",
         answers: [
-            { text: "Porque recebe plugs RJ-45 macho para conexão de equipamentos ou patch cords", correct: true },
-            { text: "Porque recebe conectores RJ-45 macho para interligação de cabos de rede", correct: false },
-            { text: "Porque possui pinos expostos para crimpagem direta", correct: false },
-            { text: "Porque substitui conectores macho em patch cords", correct: false }
+            { text: "Porque recebe plugs RJ-45 macho e possui 8 vias elétricas (8P8C)", correct: true },
+            { text: "Porque transmite sinal de energia e possui 4 vias internas de dados", correct: false },
+            { text: "Porque possui pinos expostos e 6 vias com reservas mecânicas", correct: false },
+            { text: "Porque substitui conectores em patch cords e possui 10 vias", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat5e Conector Fêmea",
-        question: "Quantas vias elétricas estão presentes em um conector RJ-45 Cat5e padrão?",
+        question: "Qual a função do revestimento metálico nos contatos e do corpo termoplástico?",
         answers: [
-            { text: "8 vias (8P8C)", correct: true },
-            { text: "8 vias elétricas utilizadas em conectores padrão de rede", correct: false },
-            { text: "6 vias com duas reservas mecânicas", correct: false },
-            { text: "10 vias para compatibilidade futura", correct: false }
+            { text: "Reduzir oxidação, melhorar condutividade e garantir isolamento elétrico/resistência", correct: true },
+            { text: "Permitir condução elétrica entre pares e dissipação térmica ativa", correct: false },
+            { text: "Elevar e aumentar a espessura para funcionar como blindagem eletromagnética", correct: false },
+            { text: "Atuar como ímã interno para alinhamento de pinos de silicone", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat5e Conector Fêmea",
-        question: "Qual característica dos contatos metálicos contribui diretamente para a qualidade da transmissão de dados?",
+        question: "Onde este Keystone Jack pode ser instalado e qual a vantagem do seu padrão físico?",
         answers: [
-            { text: "Revestimento metálico que reduz oxidação e melhora a condutividade", correct: true },
-            { text: "Revestimento metálico aplicado para garantir estabilidade elétrica", correct: false },
-            { text: "Espessura elevada do corpo plástico", correct: false },
-            { text: "Uso de silicone isolante nos pinos", correct: false }
+            { text: "Em espelhos de parede, patch panels e racks; oferecendo modularidade e padrão universal", correct: true },
+            { text: "Somente em placas de parede soldadas; com formato proprietário exclusivo e dentro das normas exigidas", correct: false },
+            { text: "Apenas em switches gerenciáveis; com formato híbrido RJ-45/RJ-11", correct: false },
+            { text: "Exclusivamente em ambientes externos; com antena integrada no módulo", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat5e Conector Fêmea",
-        question: "Por que o corpo do Keystone Jack é fabricado em material termoplástico?",
+        question: "Por que a correta terminação do cabo no Keystone é essencial em redes estruturadas?",
         answers: [
-            { text: "Para garantir isolamento elétrico, resistência mecânica e durabilidade", correct: true },
-            { text: "Para garantir isolamento elétrico e resistência mecânica ao conjunto", correct: false },
-            { text: "Para facilitar a dissipação térmica ativa", correct: false },
-            { text: "Para funcionar como blindagem eletromagnética", correct: false }
+            { text: "Para garantir desempenho, reduzir perdas de sinal e evitar erros de conexão", correct: true },
+            { text: "Apenas para garantir a estética e organização do rack e ter melhor definição visual", correct: false },
+            { text: "Para aumentar o consumo de energia e a voltagem do enlace", correct: false },
+            { text: "Para permitir o funcionamento do cabo sem seguir um padrão de pinagem", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat5e Conector Fêmea",
-        question: "Onde este Keystone Jack RJ-45 Cat5e pode ser instalado?",
+        question: "Qual cenário de uso é o mais adequado para o Keystone Jack Cat5e 31.090BK?",
         answers: [
-            { text: "Em faceplates, painéis de patch, caixas de superfície e racks", correct: true },
-            { text: "Em faceplates e painéis modulares de redes estruturadas", correct: false },
-            { text: "Apenas em switches gerenciáveis", correct: false },
-            { text: "Exclusivamente em ambientes externos subterrâneos", correct: false }
+            { text: "Redes residenciais, comerciais e corporativas que utilizam cabeamento Cat5e", correct: true },
+            { text: "Redes de longa distância baseadas em fibra óptica monomodo que alcança longa distâncias", correct: false },
+            { text: "Sistemas industriais de alta potência elétrica e motores", correct: false },
+            { text: "Backbones metropolitanos de operadoras de telecomunicações", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat5e Conector Fêmea",
-        question: "Qual é a principal vantagem do padrão Keystone em instalações de rede?",
+        question: "O que as imagens e especificações indicam sobre o padrão de montagem deste Keystone?",
         answers: [
-            { text: "Facilidade de substituição, modularidade e padronização", correct: true },
-            { text: "Facilidade de substituição e padronização em sistemas de rede", correct: false },
-            { text: "Aumento automático da velocidade da rede", correct: false },
-            { text: "Eliminação total de interferência eletromagnética", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Keystone Jack RJ-45 GTS Cat5e Conector Fêmea",
-        question: "Por que a cor preta pode ser vantajosa em determinadas instalações de rede?",
-        answers: [
-            { text: "Porque combina com racks, painéis e ambientes corporativos escuros", correct: true },
-            { text: "Porque combina visualmente com racks e painéis de redes estruturadas", correct: false },
-            { text: "Porque melhora a condutividade elétrica do conector", correct: false },
-            { text: "Porque indica suporte nativo a PoE++", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Keystone Jack RJ-45 GTS Cat5e Conector Fêmea",
-        question: "Por que a correta terminação do cabo é essencial ao usar um Keystone Jack Cat5e?",
-        answers: [
-            { text: "Para garantir desempenho, reduzir perdas e evitar erros de conexão", correct: true },
-            { text: "Para garantir desempenho e reduzir falhas na comunicação de dados", correct: false },
-            { text: "Apenas para fins estéticos da instalação", correct: false },
-            { text: "Para permitir funcionamento sem padrão de pinagem", correct: false }
+            { text: "Formato universal Keystone compatível com espelhos de parede de diversos fabricantes", correct: true },
+            { text: "Necessidade de soldagem direta na placa-mãe do switch para garantir melhor tráfego", correct: false },
+            { text: "Uso obrigatório de resina isolante após a crimpagem para ter maior aderência e bom uso", correct: false },
+            { text: "Conector compatível apenas com cabos coaxiais de TV", correct: false }
         ]
     },
         {
@@ -1165,97 +1066,86 @@ const allQuestions = [
         question: "Qual é a principal finalidade do Keystone Jack RJ-45 Cat6?",
         answers: [
             { text: "Permitir terminação e conexão de cabos de rede Cat6 em painéis, tomadas e adaptadores modulares", correct: true },
-            { text: "Permitir terminação e conexão de cabos de rede em painéis e módulos estruturados", correct: false },
+            { text: "Permitir terminação e conexão de cabos de rede em painéis e módulos estruturados e bem montados", correct: false },
             { text: "Servir como repetidor ativo de sinal Ethernet até 100 metros", correct: false },
-            { text: "Realizar controle e gerenciamento de potência PoE nos dispositivos finais", correct: false }
+            { text: "Realizar controle e gerenciamento de potência PoE nos dispositivos finais para garantir tráfego", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat6 Conector Fêmea",
-        question: "Qual tipo de conector é este Keystone Jack Cat6?",
+        question: "O que garante o alto desempenho em redes Gigabit neste Keystone Jack Cat6?",
         answers: [
-            { text: "Conector fêmea RJ45 8 vias padrão Cat6", correct: true },
-            { text: "Conector fêmea RJ45 8 vias para aplicações de rede estruturada", correct: false },
-            { text: "Adaptador USB para conexão de rede Ethernet", correct: false },
-            { text: "Terminal coaxial BNC utilizado em sistemas de vídeo", correct: false }
+            { text: "Uso de placa de circuito impresso (PCB) moderna e contatos com tripla camada metálica", correct: true },
+            { text: "Revestimento de plástico PVC com blindagem magnética integrada nas 8 vias de sua estrutura", correct: false },
+            { text: "Presença de um módulo com processador de sinal digital (DSP) interno", correct: false },
+            { text: "Filtro RF ativo incluso para limitar o ruído em baixas frequências", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat6 Conector Fêmea",
-        question: "Quais materiais compõem a tripla camada dos contatos elétricos do Keystone Jack Cat6?",
+        question: "Quais materiais compõem a tripla camada dos contatos elétricos deste Keystone?",
         answers: [
-            { text: "Bronze fosfórico, prata e ouro, oferecendo bom desempenho elétrico", correct: true },
-            { text: "Bronze fosfórico, prata e ouro aplicados para condução elétrica", correct: false },
-            { text: "Cobre nu revestido apenas com verniz isolante", correct: false },
-            { text: "Ligas metálicas especiais com aditivos condutivos sintéticos", correct: false }
+            { text: "Bronze fosfórico, prata e ouro, oferecendo alta condutividade e resistência à oxidação", correct: true },
+            { text: "Alumínio, níquel e estanho, escolhidos pela flexibilidade mecânica e eficiência tecnológica", correct: false },
+            { text: "Cobre nu revestido apenas com verniz isolante para proteção térmica para melhor tráfego", correct: false },
+            { text: "Ligas de prata intensificadas com grafeno para ultra-condução", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat6 Conector Fêmea",
-        question: "Este Keystone Jack Cat6 é compatível com qual padrão de cabeamento estruturado?",
+        question: "Qual a vantagem logística e técnica de utilizar o padrão Keystone na infraestrutura?",
         answers: [
-            { text: "Categoria 6 conforme as especificações de redes Ethernet até 1 Gbps", correct: true },
-            { text: "Categoria 6 conforme requisitos básicos de redes estruturadas", correct: false },
-            { text: "Exclusivamente com cabos de fibra óptica multimodo", correct: false },
-            { text: "Somente com conexões coaxiais do tipo RG-6", correct: false }
+            { text: "Garante modularidade, facilitando a organização e troca rápida de módulos em painéis", correct: true },
+            { text: "Executa funções de roteamento sem a necessidade de switches centrais na rede ethernet", correct: false },
+            { text: "Amplifica o sinal de rede passivamente para distâncias superiores a 200 metros", correct: false },
+            { text: "Substitui a necessidade de cabos de backbone metálicos entre racks", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat6 Conector Fêmea",
-        question: "Qual a vantagem de ter um Keystone Jack Cat6 em uma infraestrutura de rede?",
+        question: "Como o Keystone Jack Cat6 é fisicamente instalado?",
         answers: [
-            { text: "Permite manter a organização da rede e facilitar trocas de módulos em painéis e placas", correct: true },
-            { text: "Permite manter a organização da rede e facilitar alterações na infraestrutura", correct: false },
-            { text: "Amplifica o sinal de rede para longas distâncias sem repetidor", correct: false },
-            { text: "Substitui completamente a necessidade de cabos de backbone", correct: false }
+            { text: "Encaixado por pressão na abertura padrão universal de espelhos de parede e patch panels", correct: true },
+            { text: "Soldado em adaptadores SMD antes da fixação no espelho de parede para melhor desempenho", correct: false },
+            { text: "Fixado obrigatoriamente com parafusos de aterramento em caixas de metal", correct: false },
+            { text: "Conectado via interface DB-25 em blocos de terminação do tipo 110 IDC", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat6 Conector Fêmea",
-        question: "Como o Keystone Jack Cat6 normalmente é instalado em uma infraestrutura de rede?",
+        question: "Por que a cor branca e o formato deste modelo (31.100WH) são relevantes para o instalador?",
         answers: [
-            { text: "Inserido na abertura padrão Keystone de painéis, faceplates e caixas modulares", correct: true },
-            { text: "Inserido na abertura padrão Keystone de painéis e placas modulares", correct: false },
-            { text: "Fixado com parafusos metálicos e isolamento de borracha", correct: false },
-            { text: "Conectado por meio de adaptador DB-25 externo", correct: false }
+            { text: "O formato universal permite o encaixe em diversos fabricantes e a cor branca mantém a estética de espelhos de parede padrão", correct: true },
+            { text: "A cor branca indica que o conector possui blindagem eletromagnética superior as demais cores disponíveis", correct: false },
+            { text: "O formato retangular permite a transferência de corrente elétrica PoE extra garantindo uma rede com maior eficiência", correct: false },
+            { text: "A cor branca reflete o calor, aumentando a performance da rede em 15%", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat6 Conector Fêmea",
-        question: "O que a presença de uma placa de circuito impresso moderna neste Keystone Jack indica?",
+        question: "A presença de uma placa de circuito impresso (PCB) interna indica o quê?",
         answers: [
-            { text: "Maior estabilidade e melhor desempenho na transmissão de dados", correct: true },
-            { text: "Maior estabilidade e controle elétrico durante a transmissão", correct: false },
-            { text: "Presença de amplificadores ativos de sinal integrados", correct: false },
-            { text: "Funcionamento adicional como ponto de acesso sem fio", correct: false }
+            { text: "Que o conector foi projetado para maior estabilidade e redução de Interferência eletromagnética em altas frequências", correct: true },
+            { text: "Que o conector possui componentes ativos para amplificação de sinal da mesma forma que um repetidor eletrônico", correct: false },
+            { text: "Que o conector pode gerenciar endereços IP como um mini-switch", correct: false },
+            { text: "Que o dispositivo funciona como um ponto de acesso Wi-Fi integrado", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Keystone Jack RJ-45 GTS Cat6 Conector Fêmea",
-        question: "Quais tipos de ambiente este Keystone Jack Cat6 é mais adequado?",
+        question: "Qual cenário representa o uso ideal para este conector fêmea Cat6?",
         answers: [
-            { text: "Redes residenciais, comerciais e corporativas com cabeamento estruturado Cat6", correct: true },
-            { text: "Redes residenciais, comerciais e corporativas de cabeamento estruturado", correct: false },
-            { text: "Sistemas analógicos legados de telecomunicação", correct: false },
-            { text: "Redes industriais exclusivamente baseadas em fibra óptica ativa", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Alicate de Inserção IDC 110 GTS",
-        question: "Qual é a principal função do Alicate de Inserção IDC 110?",
-        answers: [
-            { text: "Inserir e cortar fios em blocos IDC 110 de patch panels e keystones", correct: true },
-            { text: "Inserir e fixar fios em blocos de terminação usados em redes estruturadas", correct: false }, // próximo
-            { text: "Crimpar terminais RJ-45 diretamente sem corte de fios", correct: false }, // menor
-            { text: "Realizar múltiplas funções elétricas em sistemas ativos de comunicação", correct: false } // maior
+            { text: "Redes corporativas e comerciais de alto tráfego Cat6", correct: true },
+            { text: "Conexões elétricas residenciais de 220V para automação", correct: false },
+            { text: "Sistemas de telefonia analógica legada em prédios antigos", correct: false },
+            { text: "Interligação direta de backbones industriais de fibra óptica", correct: false }
         ]
     },
         {
@@ -1264,108 +1154,108 @@ const allQuestions = [
         question: "O termo “IDC 110” está relacionado principalmente a qual característica?",
         answers: [
             { text: "Tipo de bloco de terminação e lâmina compatível usada para inserir fios em conexões", correct: true },
-            { text: "Tipo de sistema de terminação utilizado em blocos de conexão de redes", correct: false }, // próximo
-            { text: "Norma de velocidade de transmissão de 1 Gbps", correct: false }, // menor
-            { text: "Classificação estrutural aplicada a conectores especiais de telecomunicações", correct: false } // maior
+            { text: "Tipo de sistema de terminação utilizado em blocos de conexão de redes de comunicação", correct: false },
+            { text: "Norma de velocidade de transmissão de 1 Gbps", correct: false },
+            { text: "Classificação estrutural aplicada a conectores especiais de telecomunicações", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção IDC 110 GTS",
-        question: "Por que o Alicate de Inserção IDC 110 é considerado uma ferramenta Punch Down?",
+        question: "Qual é a principal função do Alicate de Inserção IDC 110 no cabeamento estruturado?",
         answers: [
-            { text: "Porque utiliza impacto para inserir o fio nos terminais e cortar o excesso", correct: true },
-            { text: "Porque aplica força controlada para acomodar o fio nos contatos metálicos", correct: false }, // próximo
-            { text: "Porque utiliza laser para fixar o fio", correct: false }, // menor
-            { text: "Porque realiza perfuração mecânica contínua em terminais industriais", correct: false } // maior
+            { text: "Inserir e cortar fios em blocos IDC 110 de patch panels e keystones", correct: true },
+            { text: "Crimpar terminais RJ-45 diretamente sem a necessidade de corte de fios de cobre", correct: false },
+            { text: "Soldar fios de rede a conectores metálicos para evitar oxidação", correct: false },
+            { text: "Medir a impedância e continuidade do cabo de rede durante a instalação", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção IDC 110 GTS",
-        question: "Como ocorre o corte do fio durante a utilização do alicate?",
+        question: "Como a ferramenta realiza o corte dos fios durante o processo de inserção?",
         answers: [
-            { text: "A lâmina corta o excesso após o fio ser inserido no bloco IDC", correct: true },
-            { text: "O excesso do fio é removido mecanicamente após a inserção no terminal", correct: false }, // próximo
-            { text: "O fio é fundido por calor", correct: false }, // menor
-            { text: "O corte ocorre por pressão térmica controlada eletronicamente", correct: false } // maior
+            { text: "A lâmina corta o excesso do fio automaticamente após ele ser empurrado para o fundo do bloco IDC", correct: true },
+            { text: "O alicate tritura o fio antes da inserção para reduzir a tensão mecânica que existe nos materiais de conexão", correct: false },
+            { text: "A lâmina funde o fio ao conector através de calor gerado por fricção", correct: false },
+            { text: "A lâmina realiza uma micro-perfuração no metal de contato para soldagem a frio de maneira eficiente", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção IDC 110 GTS",
-        question: "Que tipo de bloco de terminação este alicate foi projetado para trabalhar?",
+        question: "Por que o Alicate de Inserção IDC 110 é tecnicamente chamado de ferramenta ‘Punch Down’?",
         answers: [
-            { text: "Blocos IDC 110 usados em keystones e patch panels RJ-45", correct: true },
-            { text: "Blocos de terminação aplicados em sistemas de cabeamento estruturado", correct: false }, // próximo
-            { text: "Blocos para fibra óptica monomodo", correct: false }, // menor
-            { text: "Conectores industriais de alta potência elétrica", correct: false } // maior
+            { text: "Porque utiliza um sistema de impacto para empurrar o fio nos terminais e cortá-lo simultaneamente", correct: true },
+            { text: "Porque utiliza um laser de baixa potência para selar o fio no conector plástico e garantir melhor conexão", correct: false },
+            { text: "Porque amassa a capa externa do cabo para garantir a fixação sem cortar o condutor que existe dentro dele", correct: false },
+            { text: "Porque perfura os contatos metálicos com uma microbroca rotativa", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção IDC 110 GTS",
-        question: "O que significa dizer que a lâmina do alicate é removível?",
+        question: "Qual característica do cabo e da construção da ferramenta favorece o uso prolongado?",
         answers: [
-            { text: "Pode ser retirada e substituída quando estiver gasta ou por outro tipo compatível", correct: true },
-            { text: "Permite a substituição da lâmina para manter a eficiência da ferramenta", correct: false }, // próximo
-            { text: "Pode ser estendida para medição do cabo", correct: false }, // menor
-            { text: "Permite alteração automática do padrão de terminação elétrica", correct: false } // maior
+            { text: "O cabo anatômico que garante maior conforto e controle manual ao instalador", correct: true },
+            { text: "A lâmina de corte temperada que dispensa o uso de força física", correct: false },
+            { text: "Os dentes de crimpagem integrados que distribuem o peso da ferramenta", correct: false },
+            { text: "O guia de medição embutido que automatiza o posicionamento dos fios de conexão", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção IDC 110 GTS",
-        question: "Qual recurso comum em ferramentas Punch Down ajuda a regular a força aplicada?",
+        question: "O que significa o recurso de lâmina ‘removível e intercambiável’ nesta ferramenta?",
         answers: [
-            { text: "Impacto ajustável", correct: true },
-            { text: "Sistema de ajuste mecânico da força de inserção", correct: false }, // próximo
-            { text: "Diagnóstico automático de rede", correct: false }, // menor
-            { text: "Comunicação sem fio integrada à ferramenta", correct: false } // maior
+            { text: "Permite a substituição por desgaste ou a troca por outros padrões de lâmina (como a 66)", correct: true },
+            { text: "Permite estender a lâmina para medir a profundidade do conduíte", correct: false },
+            { text: "Controla a velocidade da crimpagem através de um ajuste de comprimento fixo bem definido", correct: false },
+            { text: "Possibilita trocar o cabo anatômico por um cabo de teste ativo", correct: false }
         ]
     },
-        {
+    {
+        category: "cabling",
+        product: "Alicate de Inserção IDC 110 GTS",
+        question: "Qual recurso mecânico permite regular a força de inserção do fio no bloco IDC?",
+        answers: [
+            { text: "O ajuste de impacto (Hi/Lo), que regula a pressão da mola interna", correct: true },
+            { text: "A transmissão de dados digital via sensor piezoelétrico no gatilho", correct: false },
+            { text: "O diagnóstico automático de continuidade por LED no corpo da ferramenta", correct: false },
+            { text: "O sistema de antena Wi-Fi que monitora a pressão da mão do técnico", correct: false }
+        ]
+    },
+    {
         category: "cabling",
         product: "Alicate de Inserção IDC 110 GTS",
         question: "Para que serve o compartimento localizado na parte posterior do alicate?",
         answers: [
-            { text: "Armazenar lâmina sobressalente", correct: true },
-            { text: "Guardar componentes auxiliares utilizados durante a instalação", correct: false }, // próximo
-            { text: "Travar cabos durante medição", correct: false }, // menor
-            { text: "Abrigar sistema eletrônico de controle de impacto", correct: false } // maior
+            { text: "Para o armazenamento de uma lâmina sobressalente ou de outro padrão", correct: true },
+            { text: "Para travar o cabo UTP enquanto se realiza a decapagem da via de forma eficaz", correct: false },
+            { text: "Para abrigar baterias que alimentam uma lanterna LED auxiliar", correct: false },
+            { text: "Para guardar o manual de instruções e tabelas de pinagem T568A/B bem definidas", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção IDC 110 GTS",
-        question: "Em qual ambiente essa ferramenta é mais frequentemente utilizada?",
+        question: "Por que a precisão da lâmina no padrão IDC 110 é crítica para a integridade da rede?",
         answers: [
-            { text: "Instalações de cabeamento estruturado e montagem de painéis de rede", correct: true },
-            { text: "Ambientes técnicos voltados à implantação de infraestrutura de rede", correct: false }, // próximo
-            { text: "Ajuste de antenas RF", correct: false }, // menor
-            { text: "Instalações elétricas de alta tensão industrial", correct: false } // maior
+            { text: "Para garantir que o fio se aloje corretamente no terminal sem danificar as 'fendas' do bloco", correct: true },
+            { text: "Para garantir que ocorra a transmissão de sinal óptico pelo núcleo de cobre mantendo a eficácia de transmissão", correct: false },
+            { text: "Para definir eletronicamente a velocidade de 10 Gbps no enlace instalado e bem estruturado", correct: false },
+            { text: "Para incorporar automaticamente uma blindagem metálica ao redor do contato fêmea", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção IDC 110 GTS",
-        question: "Qual é a principal vantagem de um cabo anatômico em um alicate de inserção?",
+        question: "Em quais componentes de rede este alicate é utilizado com maior frequência?",
         answers: [
-            { text: "Maior conforto e controle durante o uso prolongado", correct: true },
-            { text: "Melhor ergonomia para reduzir fadiga em operações contínuas", correct: false }, // próximo
-            { text: "Maior capacidade de crimpagem", correct: false }, // menor
-            { text: "Integração direta com sistemas automatizados de rede", correct: false } // maior
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Alicate de Inserção IDC 110 GTS",
-        question: "Por que é importante que a lâmina seja compatível com o padrão IDC 110?",
-        answers: [
-            { text: "Para inserir corretamente o fio e realizar o corte sem danificar os terminais", correct: true },
-            { text: "Para garantir a correta terminação dos fios nos blocos compatíveis", correct: false }, // próximo
-            { text: "Para garantir transmissão óptica", correct: false }, // menor
-            { text: "Para definir automaticamente o padrão de rede utilizado", correct: false } // maior
+            { text: "Patch panels e Keystone Jacks que possuam terminais de conexão traseira tipo 110", correct: true },
+            { text: "Conectores de fibra óptica do tipo LC ou SC para emendas mecânicas eficientes e bem definidas", correct: false },
+            { text: "Conectores coaxiais BNC e RG-6 em sistemas de rádio frequência", correct: false },
+            { text: "Módulos de tomada USB e HDMI para automação residencial", correct: false }
         ]
     },
         {
@@ -1374,86 +1264,108 @@ const allQuestions = [
         question: "Qual é a principal finalidade do Alicate de Inserção para Telefonia Tipo Borgoa?",
         answers: [
             { text: "Inserir e cortar fios em blocos de terminação usados em sistemas de telefonia", correct: true },
-            { text: "Inserir e fixar fios em blocos de conexão utilizados em sistemas telefônicos", correct: false }, // próximo
-            { text: "Crimpar conectores RJ-45 em cabos de rede", correct: false }, // menor
-            { text: "Realizar medições elétricas completas em infraestruturas de telecomunicações", correct: false } // maior
+            { text: "Inserir e fixar fios em blocos de conexão utilizados em sistemas telefônicos", correct: false },
+            { text: "Crimpar conectores RJ-45 em cabos de rede", correct: false },
+            { text: "Realizar medições elétricas completas em infraestruturas de telecomunicações", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção para Telefonia Tipo Borgoa GTS",
-        question: "O termo “Tipo Borgoa” está relacionado a quê?",
+        question: "O termo “Tipo Borgoa” está relacionado a quê no contexto de telecomunicações?",
         answers: [
-            { text: "Ao padrão de lâmina e ao tipo de bloco de terminação utilizado em telefonia", correct: true },
-            { text: "Ao modelo de lâmina compatível com blocos tradicionais de sistemas telefônicos", correct: false }, // próximo
-            { text: "A uma categoria de cabeamento de rede", correct: false }, // menor
-            { text: "A um protocolo avançado de comunicação digital para redes híbridas", correct: false } // maior
+            { text: "Ao padrão de lâmina e ao tipo de bloco de terminação (IDC) utilizado em telefonia", correct: true },
+            { text: "A uma nova categoria de cabeamento de rede para tráfego Gigabit", correct: false },
+            { text: "A um protocolo de comunicação digital exclusivo para telefonia IP (VoIP) e utiliza SIP", correct: false },
+            { text: "A um tipo específico de conector coaxial para sistemas de rádio frequência", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção para Telefonia Tipo Borgoa GTS",
-        question: "Em quais sistemas o alicate Tipo Borgoa é mais comumente utilizado?",
+        question: "Em quais infraestruturas o alicate Tipo Borgoa é a ferramenta de uso padrão?",
         answers: [
-            { text: "Sistemas de telefonia analógica e PABX", correct: true },
-            { text: "Infraestruturas de telefonia tradicional e centrais PABX convencionais", correct: false }, // próximo
-            { text: "Redes Ethernet Cat6A e Cat7", correct: false }, // menor
-            { text: "Sistemas ópticos de alta capacidade para transmissão de dados", correct: false } // maior
+            { text: "Sistemas de telefonia analógica, blocos de distribuição e centrais PABX", correct: true },
+            { text: "Redes de dados de alta performance como Cat6A e Cat7 que oferecem grande tráfego de dados", correct: false },
+            { text: "Redes de backbone que utilizam fibras ópticas monomodo", correct: false },
+            { text: "Sistemas de distribuição de TV a cabo e antenas UHF/VHF", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção para Telefonia Tipo Borgoa GTS",
-        question: "Como o alicate Tipo Borgoa realiza a terminação dos fios?",
+        question: "Como o alicate realiza a conexão e o acabamento dos fios no bloco terminal?",
         answers: [
-            { text: "Empurrando o fio para dentro do contato e cortando automaticamente o excesso", correct: true },
-            { text: "Inserindo o fio no terminal metálico e removendo o excesso durante o impacto", correct: false }, // próximo
-            { text: "Derretendo o isolamento do fio", correct: false }, // menor
-            { text: "Fixando o fio por compressão mecânica contínua sem corte", correct: false } // maior
+            { text: "Através de impacto que empurra o fio no contato e corta o excesso automaticamente", correct: true },
+            { text: "Derretendo a isolação do fio através de indução térmica controlada e direcionada", correct: false },
+            { text: "Pressionando o fio contra o terminal para posterior soldagem manual", correct: false },
+            { text: "Prendendo o condutor através de parafusos de pressão ajustáveis", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção para Telefonia Tipo Borgoa GTS",
-        question: "Por que este tipo de ferramenta é classificada como Punch Down?",
+        question: "Por que o corte automático do excesso de fio é uma função crítica nesta ferramenta?",
         answers: [
-            { text: "Porque utiliza impacto para inserir e fixar o fio no contato metálico", correct: true },
-            { text: "Porque aplica força de impacto controlada para acomodar o fio no terminal", correct: false }, // próximo
-            { text: "Porque perfura o fio com broca interna", correct: false }, // menor
-            { text: "Porque realiza prensagem hidráulica em terminais telefônicos", correct: false } // maior
+            { text: "Para não deixar pontas de fio que encostem umas nas outras, causando curto ou interferência na ligação", correct: true },
+            { text: "Apenas para garantir que a estética do DG (Distribuidor Geral) seja mantida em todo o procedimento de uso", correct: false },
+            { text: "Para aumentar a tensão elétrica e a potência do sinal na linha telefônica", correct: false },
+            { text: "Para preparar o terminal para futuras transmissões de dados em alta velocidade", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção para Telefonia Tipo Borgoa GTS",
-        question: "Qual é a função principal da lâmina no alicate Tipo Borgoa?",
+        question: "Qual característica construtiva da ferramenta GTS favorece trabalhos de grande escala?",
         answers: [
-            { text: "Inserir o fio no terminal e cortar o excesso de forma precisa", correct: true },
-            { text: "Realizar a inserção do fio no contato e eliminar o excesso automaticamente", correct: false }, // próximo
-            { text: "Remover o isolamento do cabo", correct: false }, // menor
-            { text: "Executar ajustes dimensionais no bloco de terminação", correct: false } // maior
+            { text: "Design ergonômico focado em reduzir a fadiga durante terminações repetitivas", correct: true },
+            { text: "Revestimento metálico condutivo para auxiliar no teste de sinal", correct: false },
+            { text: "Estrutura rígida sem áreas de apoio para aumentar a força de impacto e tração", correct: false },
+            { text: "Sistema de ventilação interna para resfriar a lâmina durante o uso", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção para Telefonia Tipo Borgoa GTS",
-        question: "Qual prática é recomendada ao utilizar o alicate Tipo Borgoa?",
+        question: "Que tipo de condutor é compatível com o sistema de inserção Borgoa?",
         answers: [
-            { text: "Garantir o posicionamento correto do fio antes do impacto", correct: true },
-            { text: "Verificar o correto alinhamento do fio antes de aplicar a força de inserção", correct: false }, // próximo
-            { text: "Aplicar força excessiva no impacto", correct: false }, // menor
-            { text: "Utilizar a ferramenta como cortador universal", correct: false } // maior
+            { text: "Fios de cobre sólido com bitola adequada para encaixe por pressão nos contatos", correct: true },
+            { text: "Cabos de fibra óptica com revestimento primário de acrílico", correct: false },
+            { text: "Cabos coaxiais de malha dupla para sistemas de vídeo e CFTV", correct: false },
+            { text: "Cabos USB blindados para interligação de periféricos de informática", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de Inserção para Telefonia Tipo Borgoa GTS",
-        question: "Por que o alicate Tipo Borgoa não é indicado para redes de dados Ethernet?",
+        question: "Qual é o principal risco de utilizar ferramentas inadequadas em blocos de telefonia?",
         answers: [
-            { text: "Porque foi projetado para blocos de telefonia, não para IDC de redes", correct: true },
-            { text: "Porque sua lâmina é compatível apenas com blocos usados em telefonia", correct: false }, // próximo
-            { text: "Porque não suporta altas velocidades", correct: false }, // menor
-            { text: "Porque exige conectores e padrões exclusivos de fibra óptica", correct: false } // maior
+            { text: "Danos permanentes aos contatos metálicos e geração de falhas intermitentes no sinal", correct: true },
+            { text: "Aumento não planejado da velocidade de transmissão da linha analógica gerando falhas", correct: false },
+            { text: "Conversão acidental do sinal analógico da operadora em sinal digital IP", correct: false },
+            { text: "Criação de uma blindagem natural contra ruídos eletromagnéticos externos", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Alicate de Inserção para Telefonia Tipo Borgoa GTS",
+        question: "Por que este alicate não deve ser utilizado em instalações de redes de dados (Ethernet)?",
+        answers: [
+            { text: "Porque sua lâmina é específica para o perfil dos blocos de telefonia e não se ajusta aos blocos IDC 110", correct: true },
+            { text: "Porque ferramentas de impacto de telefonia limitam a velocidade da rede a 10 Mbps e não consegue ser maior que isso", correct: false },
+            { text: "Porque a ferramenta Borgoa é incompatível com condutores feitos de cobre", correct: false },
+            { text: "Porque redes de dados exigem obrigatoriamente conectores ópticos e emendas por fusão", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Alicate de Inserção para Telefonia Tipo Borgoa GTS",
+        question: "Qual prática garante a longevidade da ferramenta e a qualidade da conexão?",
+        answers: [
+            { text: "Garantir o alinhamento perpendicular da lâmina em relação ao bloco antes do disparo", correct: true },
+            { text: "Aplicar força física extra sobre o cabo anatômico após o estalo do impacto então executado", correct: false },
+            { text: "Dobrar o fio em formato de 'U' antes de posicioná-lo no terminal do bloco", correct: false },
+            { text: "Utilizar o bico da lâmina para cortar capas externas de cabos multipares", correct: false }
         ]
     },
         {
@@ -1467,81 +1379,103 @@ const allQuestions = [
             { text: "Testar continuidade e certificação elétrica de redes estruturadas", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca e cabo emborrachado GTS",
         question: "Por que este alicate é classificado como uma ferramenta de crimpagem?",
         answers: [
-            { text: "Porque prensa mecanicamente os contatos do conector contra os condutores do cabo", correct: true },
-            { text: "Porque prensa mecanicamente os terminais sobre os fios durante a montagem", correct: false },
-            { text: "Porque corta e insere fios por impacto", correct: false },
-            { text: "Porque realiza conexão sem contato físico", correct: false }
+            { text: "Porque prensa mecanicamente os contatos do conector contra os condutores do cabo para dar contato", correct: true },
+            { text: "Porque derrete o isolamento do fio para garantir a fixação térmica e o melhor controle de temperatura", correct: false },
+            { text: "Porque corta e insere fios por impacto em blocos de rede", correct: false },
+            { text: "Porque realiza a conexão sem a necessidade de contato físico entre metais", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca e cabo emborrachado GTS",
-        question: "Quais tipos de conectores podem ser crimados com este alicate?",
+        question: "Qual a diferença técnica entre RJ11 e RJ45 no uso desta ferramenta?",
         answers: [
-            { text: "Conectores RJ11 e RJ45", correct: true },
-            { text: "Conectores RJ12 e RJ48 usados em sistemas digitais", correct: false },
-            { text: "Conectores ópticos SC e LC", correct: false },
-            { text: "Conectores USB-C e HDMI", correct: false }
+            { text: "Ambos usam o mesmo princípio de pressão, mas o RJ11 tem menos vias que o RJ45", correct: true },
+            { text: "O RJ11 exige soldagem interna enquanto o RJ45 é apenas por pressão", correct: false },
+            { text: "O RJ45 funciona com cabos coaxiais e o RJ11 com pares trançados", correct: false },
+            { text: "O RJ11 é usado apenas para fibra óptica e o RJ45 para cobre", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca e cabo emborrachado GTS",
-        question: "Qual é a principal vantagem do sistema de catraca presente neste alicate?",
+        question: "Como o sistema de catraca garante a qualidade da crimpagem?",
         answers: [
-            { text: "Garantir crimpagem completa e uniforme antes da liberação do alicate", correct: true },
-            { text: "Garantir pressão total no conector antes da liberação da ferramenta", correct: false },
-            { text: "Permitir uso sem aplicação de força manual", correct: false },
-            { text: "Eliminar a necessidade de alinhamento do conector", correct: false }
+            { text: "Impede que o alicate abra antes de atingir a pressão total, garantindo uma conexão uniforme", correct: true },
+            { text: "Ajusta automaticamente a pinagem dos fios no padrão T568A ou T568B", correct: false },
+            { text: "Aumenta a flexibilidade do cabo após a fixação do conector, facilitando o manuseio durante a instalação", correct: false },
+            { text: "Permite que o alicate funcione sem que o usuário precise aplicar força manual", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca e cabo emborrachado GTS",
-        question: "Por que a ergonomia é importante em ferramentas de crimpagem?",
+        question: "Qual a importância do cabo emborrachado e do design ergonômico nesta ferramenta?",
         answers: [
-            { text: "Porque a atividade envolve repetição de movimentos e aplicação de força manual", correct: true },
-            { text: "Porque a atividade exige controle constante e esforço repetitivo do operador", correct: false },
-            { text: "Porque influencia diretamente a velocidade da rede", correct: false },
-            { text: "Porque define o padrão de pinagem do cabo", correct: false }
+            { text: "Garantir aderência e reduzir a fadiga do técnico em trabalhos repetitivos de grande escala", correct: true },
+            { text: "Atuar como um isolante para crimpagem em cabos energizados de alta tensão", correct: false },
+            { text: "Aumentar a rigidez da ferramenta para permitir o corte eficiente de arames de aço com maior precisão", correct: false },
+            { text: "Melhorar a condução elétrica entre a mão do operador e o conector", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca e cabo emborrachado GTS",
-        question: "Por que a precisão mecânica é essencial em um alicate de crimpagem?",
+        question: "Por que a precisão mecânica do corpo metálico é essencial neste modelo profissional?",
         answers: [
-            { text: "Para garantir que os contatos do conector perfurem corretamente os condutores", correct: true },
-            { text: "Para garantir que os terminais atinjam corretamente os fios do cabo", correct: false },
-            { text: "Para alterar automaticamente a impedância do cabo", correct: false },
-            { text: "Para reduzir a quantidade de pares trançados", correct: false }
+            { text: "Para garantir que os pinos do conector perfurem os condutores de forma centralizada e correta", correct: true },
+            { text: "Para permitir que o alicate transmita luz através do cabo de cobre", correct: false },
+            { text: "Para reduzir o peso da ferramenta utilizando alumínio oco na estrutura", correct: false },
+            { text: "Para evitar que o conector aqueça excessivamente durante o processo de prensagem", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca e cabo emborrachado GTS",
-        question: "Em quais tipos de instalação este alicate é mais utilizado?",
+        question: "Em quais tipos de cenário este alicate é a ferramenta de uso padrão?",
         answers: [
-            { text: "Instalações de redes de dados e sistemas de telefonia", correct: true },
-            { text: "Instalações de infraestrutura de telecomunicações e cabeamento interno", correct: false },
-            { text: "Instalações de fibra óptica de longa distância", correct: false },
-            { text: "Configuração de redes Wi-Fi sem fio", correct: false }
+            { text: "Instalações de redes de dados Ethernet e sistemas de telefonia analógica ou digital", correct: true },
+            { text: "Emendas de cabos de fibra óptica e conectores de alta frequência BNC", correct: false },
+            { text: "Montagem de quadros elétricos e sistemas de CFTV com cabos coaxiais", correct: false },
+            { text: "Configuração de antenas parabólicas e roteadores Wi-Fi sem fio, garantindo conectividade estável", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca e cabo emborrachado GTS",
-        question: "Qual das situações abaixo representa um uso inadequado do alicate 21-030?",
+        question: "Qual das situações abaixo representa um uso inadequado ou tecnicamente incorreto desta ferramenta?",
         answers: [
-            { text: "Crimpagem de conectores coaxiais de TV", correct: true },
-            { text: "Crimpagem de conectores metálicos fora do padrão RJ", correct: false },
-            { text: "Crimpagem de RJ45 em cabos de rede", correct: false },
-            { text: "Montagem de patch cords", correct: false }
+            { text: "Tentar crimpar conectores coaxiais de TV ou conectores de fibra óptica", correct: true },
+            { text: "Utilizar a ferramenta para montar patch cords de rede Cat5e ou Cat6", correct: false },
+            { text: "Crimpar conectores RJ11 em cabos telefônicos lisos ou trançados", correct: false },
+            { text: "Usar as lâminas internas do alicate para cortar ou decapar cabos UTP", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Alicate de crimpar com catraca e cabo emborrachado GTS",
+        question: "Qual prática de montagem garante o sucesso da conexão antes de acionar a catraca?",
+        answers: [
+            { text: "Verificar se as pontas dos fios chegaram ao fim do conector e estão na ordem correta", correct: true },
+            { text: "Aplicar óleo lubrificante nos pinos do conector para facilitar a entrada", correct: false },
+            { text: "Dobrar os fios em formato de “V” para que ocupem mais espaço dentro do conector, garantindo boa acomodação", correct: false },
+            { text: "Acionar a catraca rapidamente para que o impacto seja mais forte", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Alicate de crimpar com catraca e cabo emborrachado GTS",
+        question: "Qual é o principal problema causado por uma crimpagem incompleta ou mal feita?",
+        answers: [
+            { text: "Mau contato elétrico, gerando quedas de rede e falhas intermitentes", correct: true },
+            { text: "Aumento descontrolado da velocidade de transmissão do sinal", correct: false },
+            { text: "Transformação do sinal de cobre em sinal de rádio frequência (Wi-Fi)", correct: false },
+            { text: "Criação de uma proteção natural contra qualquer tipo de interferência", correct: false }
         ]
     },
         {
@@ -1555,103 +1489,103 @@ const allQuestions = [
             { text: "Certificar enlaces de rede com testes de desempenho", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca, profissional GTS",
-        question: "Por que este alicate é classificado como profissional?",
+        question: "O que caracteriza tecnicamente este alicate como uma ferramenta 'Profissional'?",
         answers: [
-            { text: "Porque possui sistema de catraca, construção robusta e maior precisão de crimpagem", correct: true },
-            { text: "Porque possui mecanismo reforçado e melhor controle mecânico durante a crimpagem", correct: false },
-            { text: "Porque funciona sem necessidade de força manual", correct: false },
-            { text: "Porque é exclusivo para cabos blindados industriais", correct: false }
+            { text: "Sua construção robusta em metal, sistema de catraca para pressão constante e matriz de alta precisão", correct: true },
+            { text: "A capacidade de funcionar de forma automática sem aplicação de força manual", correct: false },
+            { text: "O fato de possuir testadores de continuidade e analisadores de protocolo integrados", correct: false },
+            { text: "Uso exclusivo em cabos de fibra óptica e blindagens industriais, assegurando maior eficiência e confiabilidade", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca, profissional GTS",
-        question: "Quais tipos de conectores podem ser corretamente crimados com o alicate 21-040?",
+        question: "Qual é o principal diferencial da matriz de crimpagem do modelo 21-040 em relação aos alicates comuns?",
         answers: [
-            { text: "RJ9, RJ11 e RJ45", correct: true },
-            { text: "RJ9, RJ11 e conectores modulares de telefonia digital", correct: false },
-            { text: "RJ45, BNC e F", correct: false },
-            { text: "RJ9, HDMI e DisplayPort", correct: false }
+            { text: "A inclusão da entrada para conectores RJ9 (4 vias), usados em fones e headsets", correct: true },
+            { text: "O suporte para conectores BNC e conectores F de sistemas de TV", correct: false },
+            { text: "A entrada universal para cabos USB-C e conectores HDMI", correct: false },
+            { text: "Capacidade de crimpar apenas conectores blindados da categoria Cat7, garantindo desempenho adequado.", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca, profissional GTS",
-        question: "Qual é a principal diferença entre os conectores RJ9, RJ11 e RJ45?",
+        question: "Qual é a principal diferença prática entre os conectores RJ9, RJ11 e RJ45 suportados por este alicate?",
         answers: [
-            { text: "Quantidade de vias e aplicações específicas em telefonia, headsets e redes", correct: true },
-            { text: "Quantidade de vias e uso específico em sistemas de comunicação cabeada", correct: false },
-            { text: "Presença obrigatória de blindagem metálica", correct: false },
-            { text: "Uso exclusivo em redes de fibra óptica", correct: false }
+            { text: "A quantidade de vias (4, 6 e 8 respectivamente) e suas aplicações em headsets, telefonia e redes", correct: true },
+            { text: "O material plástico utilizado na fabricação de cada um dos conectores", correct: false },
+            { text: "A necessidade de usar ferramentas de impacto diferentes para cada um", correct: false },
+            { text: "O fato de o RJ9 ser o único padrão compatível com fibras ópticas, garantindo adequação técnica para a aplicação", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca, profissional GTS",
-        question: "Qual é a principal função do sistema de catraca no alicate de crimpagem 21-040?",
+        question: "Como o sistema de catraca ajuda a padronizar a qualidade da instalação?",
         answers: [
-            { text: "Garantir que a crimpagem só seja liberada após atingir a pressão correta", correct: true },
-            { text: "Garantir que a ferramenta complete o ciclo antes da liberação da crimpagem", correct: false },
-            { text: "Ajustar automaticamente o padrão de pinagem", correct: false },
-            { text: "Permitir crimpagem sem posicionamento prévio do conector", correct: false }
+            { text: "Ele impede a abertura do alicate antes que a pressão ideal de crimpagem tenha sido atingida", correct: true },
+            { text: "Ele aumenta a velocidade de transmissão de dados no cabo finalizado, proporcionando eficiência", correct: false },
+            { text: "Ele corrige automaticamente a ordem dos fios caso o técnico os insira errado", correct: false },
+            { text: "Ele corta o cabo automaticamente se houver alguma via interrompida", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca, profissional GTS",
-        question: "Qual característica do alicate melhora o conforto durante o uso prolongado?",
+        question: "Por que a construção robusta e ergonômica é vital para o profissional de cabeamento?",
         answers: [
-            { text: "Cabos ergonômicos projetados para melhor empunhadura", correct: true },
-            { text: "Empunhadura anatômica que reduz fadiga durante longos períodos de uso", correct: false },
-            { text: "Lâmina de corte aquecida", correct: false },
-            { text: "Sistema de vibração assistida", correct: false }
+            { text: "Para suportar o esforço mecânico repetitivo e garantir conforto em jornadas de trabalho extensas", correct: true },
+            { text: "Para permitir que o alicate seja utilizado como ferramenta de medição de sinal", correct: false },
+            { text: "Para garantir que o sinal de rede passe de 100 Mbps para 1000 Mbps, assegurando capacidade de transmissão", correct: false },
+            { text: "Para que o alicate possa ser utilizado em instalações elétricas de média tensão", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca, profissional GTS",
-        question: "Por que a construção robusta é importante em um alicate de crimpagem profissional?",
+        question: "Em qual cenário este alicate 3 em 1 (RJ9/11/45) oferece a melhor vantagem competitiva?",
         answers: [
-            { text: "Porque a ferramenta sofre esforço mecânico repetitivo durante a crimpagem", correct: true },
-            { text: "Porque a ferramenta é submetida a ciclos repetidos de pressão mecânica", correct: false },
-            { text: "Porque permite uso em cabos ópticos", correct: false },
-            { text: "Porque elimina a necessidade de conectores padronizados", correct: false }
+            { text: "Ambientes de manutenção de TI e Call Centers, onde se lida com redes, telefones e fones de ouvido", correct: true },
+            { text: "Instalações de backbones metropolitanos utilizando exclusivamente fibras monomodo", correct: false },
+            { text: "Instalação doméstica simples de apenas um ponto de internet Wi-Fi, atendendo a necessidades básicas de conectividade", correct: false },
+            { text: "Montagem de sistemas de segurança que utilizam apenas cabos coaxiais", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca, profissional GTS",
-        question: "Em quais tipos de instalação o alicate 21-040 é mais indicado?",
+        question: "Qual problema técnico é evitado ao usar o encaixe específico de RJ9 deste alicate profissional?",
         answers: [
-            { text: "Telefonia, redes de dados e montagem de cabos de headset", correct: true },
-            { text: "Instalações de comunicação cabeada e montagem de cabos de telecomunicações", correct: false },
-            { text: "Backbones de fibra óptica monomodo", correct: false },
-            { text: "Configuração de redes Wi-Fi sem fio", correct: false }
+            { text: "Evita o mau contato e falhas de áudio em headsets por falta de pressão correta nos pinos", correct: true },
+            { text: "Evita que a rede perca pacotes em transmissões de vídeo 4K", correct: false },
+            { text: "Evita a queima do switch por excesso de tensão nos pares de dados", correct: false },
+            { text: "Evita que o cabo UTP sofra interferência eletromagnética externa, preservando a integridade do sinal", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca, profissional GTS",
-        question: "Qual prática é essencial para garantir uma crimpagem correta com o alicate 21-040?",
+        question: "Qual prática é essencial para garantir uma crimpagem perfeita com este modelo?",
         answers: [
-            { text: "Posicionar corretamente os fios no conector antes de acionar a catraca", correct: true },
-            { text: "Garantir o correto alinhamento dos condutores antes do acionamento da ferramenta", correct: false },
-            { text: "Dobrar os fios para aumentar a área de contato", correct: false },
-            { text: "Cortar o conector após a crimpagem", correct: false }
+            { text: "Verificar o alinhamento total dos fios no fundo do conector antes de fechar a catraca", correct: true },
+            { text: "Aplicar força máxima mesmo após o alicate destravar a catraca, garantindo a prensagem completa", correct: false },
+            { text: "Dobrar os condutores de cobre para que fiquem mais grossos dentro do pino", correct: false },
+            { text: "Lixar os contatos metálicos do conector antes da inserção no alicate", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Alicate de crimpar com catraca, profissional GTS",
-        question: "Qual vantagem o alicate 21-040 tem em relação a um alicate que crimpa apenas RJ45?",
+        question: "Qual a vantagem do alicate 21-040 sobre modelos que crimpam apenas RJ45?",
         answers: [
-            { text: "Maior versatilidade para diferentes tipos de conectores e aplicações", correct: true },
-            { text: "Maior flexibilidade de uso em diferentes cenários de telecomunicações", correct: false },
-            { text: "Maior velocidade de transmissão de dados", correct: false },
-            { text: "Compatibilidade automática com fibra óptica", correct: false }
+            { text: "Versatilidade para atender todas as demandas de conectividade modular em uma única ferramenta", correct: true },
+            { text: "Garantia de que o cabo não precisará ser testado após a crimpagem", correct: false },
+            { text: "Capacidade de crimpar conectores sem a necessidade de decapar o cabo, otimizando a instalação", correct: false },
+            { text: "Redução do custo da infraestrutura por utilizar menos pares trançados", correct: false }
         ]
     },
         {
@@ -1662,73 +1596,84 @@ const allQuestions = [
             { text: "Remover a capa externa de cabos de par trançado deixando os fios expostos no comprimento ideal para conectorização", correct: true },
             { text: "Remover a capa externa do cabo deixando os condutores prontos para montagem", correct: false },
             { text: "Cortar e crimpar conectores RJ-45 diretamente no cabo", correct: false },
-            { text: "Aplicar blindagem metálica adicional ao cabo", correct: false }
+            { text: "Aplicar blindagem metálica adicional ao cabo, reforçando a proteção contra interferências eletromagnéticas externas", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Decapador de Cabo UTP GTS",
-        question: "Qual tipo de cabo é compatível com o Decapador 21-050?",
+        question: "Qual o principal benefício técnico de utilizar o decapador especializado 21-050 em vez de ferramentas genéricas?",
         answers: [
-            { text: "Cabo UTP de rede (par trançado sem blindagem)", correct: true },
-            { text: "Cabo de par trançado utilizado em redes de dados sem blindagem metálica", correct: false },
-            { text: "Cabo coaxial RG-6", correct: false },
-            { text: "Cabo elétrico de alta tensão", correct: false }
+            { text: "Garantir uma decapagem precisa que preserva a integridade dos condutores internos e evita cortes acidentais", correct: true },
+            { text: "Garantir que o cabo receba um revestimento extra de proteção contra raios UV", correct: false },
+            { text: "Remover apenas a blindagem de fios coaxiais preservando a capa plástica externa", correct: false },
+            { text: "Aumentar automaticamente a velocidade de transmissão de dados do cabo para até 10 Gbps garantindo maior desempenho.", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Decapador de Cabo UTP GTS",
-        question: "Qual benefício o uso de um decapador especializado como o 21-050 oferece ao instalador?",
+        question: "Por qual motivo é fundamental expor os fios no comprimento correto antes da conectorização?",
         answers: [
-            { text: "Decapagem precisa e consistente que evita danos aos condutores internos", correct: true },
-            { text: "Decapagem uniforme que reduz o risco de danificar os fios do cabo", correct: false },
-            { text: "Aumento automático da velocidade da rede", correct: false },
-            { text: "Amplificação de sinal sem equipamentos", correct: false }
+            { text: "Para permitir que os condutores cheguem ao fundo do conector e assegurem o contato elétrico e a fixação mecânica ideal", correct: true },
+            { text: "Para reduzir o diâmetro total do cabo facilitando a passagem por conduítes estreitos", correct: false },
+            { text: "Para permitir que o instalador adicione uma camada de solda em cada ponta de cobre", correct: false },
+            { text: "Para fazer com que o cabo suporte tensões elétricas de alta voltagem sem derreter, oferecendo maior resistência térmica", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Decapador de Cabo UTP GTS",
-        question: "Por que decapar o cabo manualmente sem a ferramenta adequada pode ser problemático?",
+        question: "O que define a compatibilidade do Decapador 21-050 com cabos do tipo UTP?",
         answers: [
-            { text: "Porque pode danificar os fios internos e comprometer a qualidade da conexão", correct: true },
-            { text: "Porque pode causar cortes irregulares que afetam o desempenho da ligação", correct: false },
-            { text: "Porque transforma o cabo em STP", correct: false },
-            { text: "Porque limita o cabo a 10 Mbps", correct: false }
+            { text: "Sua lâmina ajustada para cabos de par trançado sem blindagem (Unshielded Twisted Pair)", correct: true },
+            { text: "Sua capacidade de decapar fibras ópticas monomodo com revestimento acrílico", correct: false },
+            { text: "Sua compatibilidade exclusiva com cabos coaxiais do tipo RG-6 e RG-59", correct: false },
+            { text: "Sua estrutura projetada para decapar cabos elétricos de alta tensão com dupla isolação", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Decapador de Cabo UTP GTS",
-        question: "Qual cuidado ajuda a evitar danos aos fios ao usar o Decapador UTP 21-050?",
+        question: "Por que decapar o cabo de rede manualmente (com estiletes ou facas) é considerado uma má prática?",
         answers: [
-            { text: "Aplicar apenas a pressão necessária para remover a capa sem cortar os condutores", correct: true },
-            { text: "Aplicar pressão controlada para retirar a capa sem atingir os fios internos", correct: false },
-            { text: "Usar força máxima para garantir o corte", correct: false },
-            { text: "Substituir a ferramenta por uma lâmina", correct: false }
+            { text: "Porque há alto risco de ferir o isolamento dos fios internos, gerando perda de pacotes ou falhas na rede", correct: true },
+            { text: "Porque o corte manual transforma instantaneamente o cabo UTP em um cabo de categoria inferior", correct: false },
+            { text: "Porque retira a blindagem magnética que todos os cabos UTP possuem internamente", correct: false },
+            { text: "Porque impede que o cabo seja reconhecido por switches gerenciáveis, comprometendo a conexão", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Decapador de Cabo UTP GTS",
-        question: "Qual é o passo essencial após a decapagem e antes da crimpagem?",
+        question: "Qual é o procedimento essencial a ser realizado imediatamente após o uso do decapador?",
         answers: [
-            { text: "Organizar e alinhar os pares de fios conforme o padrão de pinagem", correct: true },
-            { text: "Organizar os condutores respeitando o padrão de montagem do conector", correct: false },
-            { text: "Aplicar fita isolante nos fios", correct: false },
-            { text: "Conectar o cabo diretamente ao switch", correct: false }
+            { text: "Organizar, destrançar parcialmente e alinhar os fios conforme o padrão de pinagem (T568A ou T568B)", correct: true },
+            { text: "Enrolar fita isolante nos fios expostos para garantir que não encostem uns nos outros", correct: false },
+            { text: "Aplicar calor nas pontas dos fios para facilitar a entrada no conector RJ-45, melhorando o encaixe dos condutores", correct: false },
+            { text: "Conectar o cabo diretamente à porta do computador para testar o sinal antes de crimpar", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Decapador de Cabo UTP GTS",
-        question: "Em qual etapa da instalação de um cabo de rede o decapador 21-050 é utilizado?",
+        question: "Ao utilizar o Decapador 21-050, qual técnica de manuseio garante o melhor resultado?",
         answers: [
-            { text: "Antes da crimpagem do conector, para preparar os fios", correct: true },
-            { text: "Na preparação do cabo antes da montagem do conector RJ-45", correct: false },
-            { text: "Após a crimpagem para testar o enlace", correct: false },
-            { text: "Com o cabo conectado ao equipamento ativo", correct: false }
+            { text: "Girar a ferramenta ao redor do cabo aplicando apenas a pressão necessária para marcar e retirar a capa", correct: true },
+            { text: "Pressionar a ferramenta com força máxima para garantir que o corte chegue até o cobre", correct: false },
+            { text: "Dobrar o cabo em um ângulo de 90 graus antes de inserir na lâmina de corte, assegurando maior eficiência do processo", correct: false },
+            { text: "Puxar o cabo violentamente enquanto a ferramenta estiver fechada para rasgar a isolação", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Decapador de Cabo UTP GTS",
+        question: "Em qual fase do cronograma de instalação de cabeamento estruturado o decapador é utilizado?",
+        answers: [
+            { text: "Na etapa de preparação para a terminação, seja em conectores RJ-45, Patch Panels ou Keystones", correct: true },
+            { text: "Na fase final de certificação e teste de continuidade elétrica do enlace", correct: false },
+            { text: "Durante o lançamento dos cabos (passagem) por dentro de calhas e eletrodutos", correct: false },
+            { text: "Apenas quando o cabo apresenta defeitos e precisa ser emendado com fita isolante", correct: false }
         ]
     },
         {
@@ -1737,163 +1682,218 @@ const allQuestions = [
         question: "Qual é a principal função de um patch cord de rede?",
         answers: [
             { text: "Interligar equipamentos de rede, como computadores, switches e roteadores", correct: true },
-            { text: "Interligar dispositivos de rede em pontos próximos da infraestrutura", correct: false },
-            { text: "Fornecer energia elétrica à porta PoE", correct: false },
+            { text: "Interligar ferramentas da rede em pontos próximos da infraestrutura", correct: false },
+            { text: "Fornecer exclusivamente energia elétrica à porta PoE", correct: false },
             { text: "Atuar como cabo de fibra óptica em links de longa distância", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat5e GTS",
-        question: "Que tipo de conectores este patch cord possui nas extremidades?",
+        question: "O que caracteriza tecnicamente o Patch Cord GTS sob a especificação Cat5e?",
         answers: [
-            { text: "Conectores RJ45 macho Cat5e em ambas as extremidades", correct: true },
-            { text: "Conectores RJ45 macho compatíveis com a categoria Cat5e", correct: false },
-            { text: "Conectores USB-C para adaptação", correct: false },
-            { text: "Conectores SC para fibra óptica", correct: false }
+            { text: "Atende requisitos de desempenho para redes Ethernet de até 1 Gbps (Gigabit)", correct: true },
+            { text: "É uma categoria estendida exclusiva para tráfego de voz analógica", correct: false },
+            { text: "Possui 5 vias de cobre sólido para transmissão de sinal de TV", correct: false },
+            { text: "Trata-se de um padrão de fibra óptica multimodo para curtas distâncias", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat5e GTS",
-        question: "Por que cores diferentes de patch cords são utilizadas em redes estruturadas?",
+        question: "Qual é a principal vantagem de utilizar um patch cord pronto (injetado) em vez de um montado manualmente no local?",
         answers: [
-            { text: "Para facilitar a identificação e organização de diferentes segmentos de rede", correct: true },
-            { text: "Para facilitar a organização visual e identificação lógica da rede", correct: false },
-            { text: "Para aumentar a velocidade de transmissão", correct: false },
-            { text: "Para indicar automaticamente o tipo de switch", correct: false }
+            { text: "Garantia de que o cabo foi testado em fábrica quanto à continuidade e performance elétrica", correct: true },
+            { text: "O cabo injetado ajusta seu comprimento automaticamente conforme a distância", correct: false },
+            { text: "Ele possui um sistema interno que dobra os pares para anular interferências", correct: false },
+            { text: "Dispensa a necessidade de alinhar os fios nos padrões T568A ou T568B", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat5e GTS",
-        question: "Qual principal vantagem de um patch cord pronto comparado a um cabo crimpado em campo?",
+        question: "Por que a organização por cores é recomendada em racks e data centers?",
         answers: [
-            { text: "Já vem testado e garante conectividade e continuidade elétrica", correct: true },
-            { text: "Já vem montado e testado em fábrica garantindo funcionamento adequado", correct: false },
-            { text: "Ajusta automaticamente o comprimento", correct: false },
-            { text: "Elimina completamente interferências", correct: false }
+            { text: "Para facilitar a identificação visual de diferentes serviços ou segmentos de rede", correct: true },
+            { text: "Porque algumas cores possuem uma frequência que aumenta a velocidade dos dados", correct: false },
+            { text: "Para indicar que o cabo possui blindagem contra interferência eletromagnética", correct: false },
+            { text: "Para garantir compatibilidade com switches de fabricantes específicos", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat5e GTS",
-        question: "Qual é a principal aplicação de um patch cord Cat5e GTS?",
+        question: "Qual o impacto de utilizar um patch cord de comprimento adequado (ex: 2,5m) em vez de cabos excessivamente longos?",
         answers: [
-            { text: "Ligação de equipamentos próximos, como computador, switch ou roteador", correct: true },
-            { text: "Ligação de dispositivos de rede em curtas distâncias", correct: false },
-            { text: "Backbone de edifícios", correct: false },
-            { text: "Conexões elétricas de alta potência", correct: false }
+            { text: "Evita o acúmulo de sobras de cabos, melhorando a ventilação do rack e reduzindo interferências", correct: true },
+            { text: "Aumenta a velocidade de transmissão da porta para 10 Gbps", correct: false },
+            { text: "Transforma o sinal elétrico em sinal óptico para evitar perdas, garantindo integridade do sinal", correct: false },
+            { text: "Elimina a necessidade de utilizar patch panels na infraestrutura", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat5e GTS",
-        question: "Qual prática ajuda a aumentar a durabilidade de um patch cord?",
+        question: "Quais conectores são encontrados nas extremidades do Patch Cord Cat5e GTS?",
         answers: [
-            { text: "Evitar dobras excessivas e tração constante no cabo", correct: true },
-            { text: "Evitar esforços mecânicos excessivos e tensão contínua no cabo", correct: false },
-            { text: "Remover a capa externa para inspeção", correct: false },
-            { text: "Dobrar o cabo em ângulos de 90°", correct: false }
+            { text: "Conectores RJ45 macho em ambas as extremidades", correct: true },
+            { text: "Um conector RJ11 para telefone e um RJ45 para o switch", correct: false },
+            { text: "Conectores USB-C para conexão direta em notebooks modernos", correct: false },
+            { text: "Conectores SC ou LC para interfaces de fibra óptica", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat5e GTS",
-        question: "Qual diferença fundamental existe entre Cat5e e Cat6 ao comparar patch cords?",
+        question: "Qual fator físico pode comprometer o desempenho máximo deste patch cord?",
         answers: [
-            { text: "Cat6 possui requisitos de desempenho elétrico mais rigorosos e melhor controle de interferências", correct: true },
-            { text: "Cat6 possui especificações elétricas mais rígidas e menor sensibilidade a ruídos", correct: false },
-            { text: "Cat5e suporta 10 Gbps em qualquer distância", correct: false },
-            { text: "Cat6 não utiliza conectores RJ45", correct: false }
+            { text: "Dobras excessivas (vincos) ou tração mecânica que danifique a torção dos pares internos", correct: true },
+            { text: "A utilização de etiquetas de identificação presas ao corpo do cabo", correct: false },
+            { text: "Conectar o cabo em um switch de cor diferente da capa do patch cord, auxiliando na identificação da conexão", correct: false },
+            { text: "O uso de patch cords de cores variadas no mesmo patch panel", correct: false }
         ]
     },
-        {
+    {
+        category: "cabling",
+        product: "Patch Cord Cat5e GTS",
+        question: "Qual das seguintes situações representa um uso INCORRETO deste produto?",
+        answers: [
+            { text: "Tentar utilizá-lo como link de fibra óptica entre dois conversores de mídia", correct: true },
+            { text: "Conectar um computador pessoal a uma tomada de rede na parede", correct: false },
+            { text: "Interligar um Patch Panel a um Switch dentro de um rack metálico", correct: false },
+            { text: "Conectar um Access Point (AP) para fornecer sinal Wi-Fi", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Patch Cord Cat5e GTS",
+        question: "Como a durabilidade do Patch Cord pode ser estendida durante a manutenção?",
+        answers: [
+            { text: "Respeitando o raio de curvatura e evitando que o cabo fique sob tensão esticada", correct: true },
+            { text: "Removendo a capa externa para garantir que os fios não estão oxidados", correct: false },
+            { text: "Limpando os contatos metálicos com fita isolante regularmente, mantendo o contato funcional", correct: false },
+            { text: "Enrolando o cabo em volta de cabos de energia para estabilizar o sinal", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Patch Cord Cat5e GTS",
+        question: "Qual a principal diferença técnica entre os patch cords Cat5e e Cat6?",
+        answers: [
+            { text: "O Cat6 possui requisitos mais rígidos contra ruído e suporta frequências maiores", correct: true },
+            { text: "O Cat5e é o único que permite a passagem de energia via PoE, possibilitando a alimentação de dispositivos pela própria rede", correct: false },
+            { text: "O Cat6 não utiliza o conector padrão RJ45, exigindo adaptadores", correct: false },
+            { text: "O Cat5e suporta apenas 100 Mbps, enquanto o Cat6 suporta 1 Gbps", correct: false }
+        ]
+    },
+    {
         category: "cabling",
         product: "Patch Cord Cat6 GTS",
-        question: "O que caracteriza corretamente o produto Patch Cord Cat6 GTS?",
+        question: "Qual é a capacidade de transmissão de dados suportada por Patch Cord Cat6 de 1,5m e 2,5m?",
         answers: [
-            { text: "Cabo de rede pronto para uso, com conectores RJ45 em ambas as extremidades", correct: true },
-            { text: "Cabo de rede já montado com conectores RJ45 nas duas pontas", correct: false },
-            { text: "Adaptador ativo de rede com amplificação de sinal", correct: false },
-            { text: "Cabo coaxial utilizado para sistemas de TV", correct: false }
+            { text: "Suportam transmissões de até 10 Gbps devido ao curto comprimento e alta performance da categoria", correct: true },
+            { text: "São limitados a 100 Mbps por serem cabos de conexão curta", correct: false },
+            { text: "Suportam apenas sinais analógicos de telefonia por não possuírem pares trançados", correct: false },
+            { text: "Atuam exclusivamente na transmissão de sinais de vídeo analógico (CFTV)", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat6 GTS",
         question: "Qual é a principal função de um patch cord em uma rede estruturada?",
         answers: [
             { text: "Interligar equipamentos e pontos de rede de forma prática e padronizada", correct: true },
-            { text: "Interligar dispositivos de rede seguindo padrões de cabeamento estruturado", correct: false },
-            { text: "Converter sinal elétrico em sinal óptico", correct: false },
-            { text: "Aumentar automaticamente a velocidade da rede", correct: false }
+            { text: "Substituir a necessidade de switches e roteadores na rede", correct: false },
+            { text: "Converter o sinal elétrico do cabo de cobre em sinal óptico, permitindo a transmissão por fibra", correct: false },
+            { text: "Aumentar a velocidade da rede acima do limite da placa de rede", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat6 GTS",
-        question: "Quais opções de comprimento do Patch Cord Cat6?",
+        question: "Qual a principal vantagem técnica da Categoria 6 (Cat6) em relação à Cat5e?",
         answers: [
-            { text: "1,5 metros e 2,5 metros", correct: true },
-            { text: "Comprimentos padronizados de 1,5 m e 2,5 m", correct: false },
-            { text: "25 metros", correct: false },
-            { text: "Comprimento variável ajustável", correct: false }
+            { text: "Maior largura de banda e melhor desempenho contra interferências", correct: true },
+            { text: "Suporte exclusivo para conexões de telefonia analógica antiga", correct: false },
+            { text: "Utilização de conectores GG45 em vez do padrão RJ45", correct: false },
+            { text: "A capacidade de transmitir sinal de TV a cabo sem adaptadores", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat6 GTS",
-        question: "Que tipo de conector está presente nas extremidades deste patch cord?",
+        question: "Por que a especificação de comprimento (como o de 2,5m) é importante na organização de um rack?",
         answers: [
-            { text: "Conectores RJ45 macho", correct: true },
-            { text: "Conectores RJ45 do tipo macho em ambas as extremidades", correct: false },
-            { text: "Conectores BNC coaxiais", correct: false },
-            { text: "Conectores ópticos SC", correct: false }
+            { text: "Para evitar sobras excessivas que prejudicam a ventilação e a organização dos cabos", correct: true },
+            { text: "Porque o comprimento define se o cabo é de categoria 6 ou categoria 5", correct: false },
+            { text: "Porque cabos mais curtos aumentam fisicamente a velocidade de tráfego", correct: false },
+            { text: "Para permitir que o cabo funcione sem a necessidade de patch panels", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat6 GTS",
-        question: "Qual vantagem um patch cord Cat6 oferece em relação a cabos improvisados?",
+        question: "Por que o uso de conectores RJ45 macho é o padrão absoluto para patch cords?",
         answers: [
-            { text: "Maior confiabilidade, padronização e desempenho elétrico", correct: true },
-            { text: "Maior confiabilidade e desempenho por seguir padrões de fabricação", correct: false },
-            { text: "Capacidade de conversão de sinal", correct: false },
-            { text: "Eliminação total de interferências sem blindagem", correct: false }
+            { text: "Porque permitem a conexão direta em portas de switches, roteadores e patch panels", correct: true },
+            { text: "Porque este tipo de conector permite a soldagem fria dos pares internos", correct: false },
+            { text: "Porque são os únicos que suportam a transmissão de sinais via fibra óptica", correct: false },
+            { text: "Porque evitam que o técnico precise alinhar os fios nos padrões T568A/B", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat6 GTS",
-        question: "Qual é uma aplicação típica para este Patch Cord Cat6?",
+        question: "Qual a vantagem de utilizar patch cords coloridos na identificação da rede?",
         answers: [
-            { text: "Conectar computadores, switches, roteadores ou patch panels", correct: true },
-            { text: "Conectar equipamentos de rede em racks e pontos estruturados", correct: false },
-            { text: "Interligar antenas de rádio frequência", correct: false },
-            { text: "Distribuir energia elétrica em racks", correct: false }
+            { text: "Facilitar a gestão visual e a separação de serviços (ex: dados, voz, câmeras)", correct: true },
+            { text: "Reduzir o aquecimento do cabo durante a transmissão de dados", correct: false },
+            { text: "Indicar que o cabo possui uma blindagem metálica interna especial", correct: false },
+            { text: "Configurar automaticamente a prioridade do tráfego (QoS) no switch VLAN", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat6 GTS",
-        question: "Qual prática ajuda a preservar a vida útil de um patch cord?",
+        question: "Por que um patch cord GTS é superior a um cabo 'feito à mão' no local da obra?",
         answers: [
-            { text: "Evitar dobras excessivas e tração nos conectores", correct: true },
-            { text: "Evitar esforço mecânico excessivo e puxões nos conectores", correct: false },
-            { text: "Remover a capa externa para melhor ventilação", correct: false },
-            { text: "Utilizar o cabo como elemento de sustentação", correct: false }
+            { text: "Porque é pré-fabricado e testado em laboratório para garantir o desempenho da categoria", correct: true },
+            { text: "Porque possui um chip interno que corrige erros de transmissão, garantindo integridade dos dados", correct: false },
+            { text: "Porque não possui pares trançados, facilitando a crimpagem", correct: false },
+            { text: "Porque pode ser esticado até o dobro do seu comprimento nominal", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Cord Cat6 GTS",
-        question: "Qual problema pode ocorrer ao utilizar um patch cord danificado?",
+        question: "Em qual cenário o Patch Cord Cat6 de 2,5m é mais comumente aplicado?",
         answers: [
-            { text: "Falhas de conexão, perda de desempenho ou intermitência na rede", correct: true },
-            { text: "Problemas de conexão e instabilidade na comunicação de dados", correct: false },
-            { text: "Conversão do sinal em fibra óptica", correct: false },
-            { text: "Blindagem adicional contra interferências", correct: false }
+            { text: "Na interligação de patch panels a switches ou de computadores a tomadas de parede", correct: true },
+            { text: "Como cabo de backbone principal entre dois prédios diferentes, garantindo a interligação da rede", correct: false },
+            { text: "Para conexões externas de longa distância em postes de energia", correct: false },
+            { text: "Como substituto para cabos de alimentação elétrica de servidores", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Patch Cord Cat6 GTS",
+        question: "Qual prática de instalação deve ser evitada para não danificar o patch cord?",
+        answers: [
+            { text: "Fazer dobras acentuadas (vincos) ou puxar o cabo com força excessiva", correct: true },
+            { text: "Colocar etiquetas de identificação plásticas em volta do cabo", correct: false },
+            { text: "Conectar e desconectar o cabo da porta RJ45 com o equipamento ligado", correct: false },
+            { text: "Utilizar o cabo em ambientes com iluminação LED", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Patch Cord Cat6 GTS",
+        question: "Quais são as consequências típicas de utilizar um patch cord de baixa qualidade ou danificado?",
+        answers: [
+            { text: "Perda de pacotes, lentidão na rede e quedas intermitentes de conexão", correct: true },
+            { text: "Aumento repentino da largura de banda contratada", correct: false },
+            { text: "Transformação do sinal elétrico em ruído audível nos alto-falantes", correct: false },
+            { text: "Queima imediata de todas as portas do switch conectado", correct: false }
         ]
     },
         {
@@ -1902,394 +1902,350 @@ const allQuestions = [
         question: "O que define corretamente o produto Patch Panel 24 Portas Cat5e Fast Track Aluminium?",
         answers: [
             { text: "Painel de distribuição para terminação e organização de cabos de rede Cat5e em racks", correct: true },
-            { text: "Painel destinado à terminação e organização física de cabos de rede Cat5e", correct: false },
             { text: "Equipamento ativo responsável por comutação de pacotes de rede", correct: false },
-            { text: "Adaptador de mídia para conversão de cobre em fibra óptica", correct: false }
+            { text: "Cabo de interligação direta entre computadores e switches", correct: false },
+            { text: "Adaptador de mídia para conversão de cobre em fibra óptica, permitindo a integração entre redes", correct: false }
         ]
     },
-        {
-        category: "cabling",
-        product: "Patch Panel 24 portas Cat5e GTS",
-        question: "Quantas portas RJ45 estão disponíveis neste patch panel?",
-        answers: [
-            { text: "24 portas", correct: true },
-            { text: "Vinte e quatro portas físicas para conexão de rede", correct: false },
-            { text: "48 portas utilizando conexão em cascata", correct: false },
-            { text: "16 portas físicas e 8 virtuais", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Patch Panel 24 portas Cat5e GTS",
-        question: "A qual categoria de cabeamento estruturado este patch panel pertence?",
-        answers: [
-            { text: "Categoria 5e (Cat5e)", correct: true },
-            { text: "Categoria Cat5e conforme padrões de cabeamento estruturado", correct: false },
-            { text: "Categoria 7 com conectores GG45", correct: false },
-            { text: "Categoria 3 para telefonia analógica", correct: false }
-        ]
-    },
-        {
+    {
         category: "cabling",
         product: "Patch Panel 24 portas Cat5e GTS",
         question: "Qual é a principal função de um patch panel em uma rede estruturada?",
         answers: [
-            { text: "Centralizar, organizar e facilitar a administração dos pontos de rede", correct: true },
-            { text: "Centralizar e organizar os pontos de rede em um único local", correct: false },
-            { text: "Substituir switches e roteadores", correct: false },
-            { text: "Atuar como amplificador ativo de sinal", correct: false }
+            { text: "Centralizar, organizar e facilitar a administração e manutenções dos pontos de rede", correct: true },
+            { text: "Aumentar exclusivamente a velocidade de transmissão da rede acima de 1 Gbps", correct: false },
+            { text: "Substituir o uso de switches e roteadores na central de dados", correct: false },
+            { text: "Atuar como um amplificador de sinal para longas distâncias principalmente em áreas rurais", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Panel 24 portas Cat5e GTS",
-        question: "O que caracteriza o sistema Fast Track presente neste patch panel?",
+        question: "O que representa cada uma das 24 portas frontais deste equipamento?",
         answers: [
-            { text: "Facilidade e rapidez na terminação dos cabos, reduzindo tempo de instalação", correct: true },
-            { text: "Sistema que facilita e agiliza o processo de terminação dos cabos", correct: false },
-            { text: "Mecanismo ativo de amplificação de sinal", correct: false },
-            { text: "Tecnologia sem fio para conexão dos cabos", correct: false }
+            { text: "Um ponto de rede individual correspondente a um cabo vindo da infraestrutura", correct: true },
+            { text: "Um canal de comunicação virtual sem necessidade de fios", correct: false },
+            { text: "Uma porta de backbone exclusiva para cabos ópticos, destinada à interligação principal da rede", correct: false },
+            { text: "Uma saída de alimentação elétrica de alta tensão", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Panel 24 portas Cat5e GTS",
-        question: "Qual é a principal vantagem do uso de alumínio na estrutura do patch panel?",
+        question: "Qual o diferencial tecnológico do sistema 'Fast Track' presente neste modelo?",
         answers: [
-            { text: "Maior resistência mecânica e durabilidade com menor peso", correct: true },
-            { text: "Estrutura mais leve e resistente para instalação em racks", correct: false },
-            { text: "Eliminação da necessidade de aterramento", correct: false },
-            { text: "Transformação do patch panel em equipamento ativo", correct: false }
+            { text: "Design que proporciona maior rapidez na terminação dos fios, reduzindo o tempo de instalação", correct: true },
+            { text: "Sistema de software para autoidentificação de portas no switch", correct: false },
+            { text: "Mecanismo de resfriamento ativo para as conexões metálicas", correct: false },
+            { text: "Tecnologia de conexão sem fio para os dispositivos instalados no rack", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Panel 24 portas Cat5e GTS",
-        question: "Que tipo de conector está presente na parte frontal do patch panel?",
+        question: "Quais são as vantagens de o corpo deste patch panel ser construído em alumínio?",
         answers: [
-            { text: "Conectores RJ45 fêmea Cat5e", correct: true },
-            { text: "Conectores RJ45 fêmea compatíveis com categoria Cat5e", correct: false },
-            { text: "Conectores RJ11 de telefonia", correct: false },
-            { text: "Conectores ópticos SC", correct: false }
+            { text: "Garante alta resistência mecânica, durabilidade e leveza, além de auxiliar na dissipação de calor", correct: true },
+            { text: "Melhora a condutividade elétrica dos dados trafegados no cabo", correct: false },
+            { text: "Elimina a necessidade de realizar o aterramento do rack, simplificando a instalação da infraestrutura.", correct: false },
+            { text: "Permite que o painel funcione como um switch sem precisar de energia", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Panel 24 portas Cat5e GTS",
-        question: "Onde este patch panel é normalmente instalado?",
+        question: "Como é composta a interface de conexão deste patch panel (Frente e Verso)?",
         answers: [
-            { text: "Em racks ou armários de telecomunicações padrão", correct: true },
-            { text: "Em racks e armários próprios para infraestrutura de rede", correct: false },
-            { text: "Diretamente em computadores desktop", correct: false },
-            { text: "Em ambientes externos sem proteção", correct: false }
+            { text: "Frontal com conectores RJ45 fêmea e traseira com blocos IDC para inserção dos fios", correct: true },
+            { text: "Frontal com conectores RJ45 macho e traseira com bornes de parafuso", correct: false },
+            { text: "Ambos os lados com conectores RJ45 fêmea para patch cords", correct: false },
+            { text: "Frontal com portas USB e traseira com solda direta, garantindo conexão mais segura", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Patch Panel 24 portas Cat5e GTS",
-        question: "Qual recurso do patch panel auxilia na identificação dos pontos de rede?",
+        question: "Por que a utilização de patch panels é preferível em vez de ligar os cabos da rua direto no switch?",
         answers: [
-            { text: "Numeração das portas na parte frontal", correct: true },
-            { text: "Identificação numérica das portas no painel frontal", correct: false },
-            { text: "Iluminação LED por porta", correct: false },
-            { text: "Identificação automática via software", correct: false }
+            { text: "Protege as portas do switch contra desgaste e facilita a reorganização e identificação da rede", correct: true },
+            { text: "Reduz drasticamente o custo total da obra por usar menos cabos", correct: false },
+            { text: "Aumenta a potência elétrica disponível para dispositivos PoE", correct: false },
+            { text: "Transforma automaticamente cabos Cat5e em cabos Cat6, elevando a categoria do cabeamento utilizado", correct: false }
         ]
     },
-        {
+    {
+        category: "cabling",
+        product: "Patch Panel 24 portas Cat5e GTS",
+        question: "Qual recurso do painel auxilia o técnico no troubleshooting (resolução de problemas)?",
+        answers: [
+            { text: "A numeração e áreas de identificação das portas na parte frontal", correct: true },
+            { text: "Os LEDs de diagnóstico integrados em cada porta passiva", correct: false },
+            { text: "O software de gerenciamento remoto via Wi-Fi", correct: false },
+            { text: "As cores variadas dos conectores internos, cada cor representa um problema", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Patch Panel 24 portas Cat5e GTS",
+        question: "Qual boa prática de instalação é crucial na terminação traseira do patch panel?",
+        answers: [
+            { text: "Manter a torção dos pares o mais próximo possível do contato IDC para evitar interferências", correct: true },
+            { text: "Destrançar os fios em pelo menos 10 cm para facilitar o manuseio", correct: false },
+            { text: "Misturar cabos de categorias diferentes no mesmo bloco IDC, garantindo a padronização da conexão", correct: false },
+            { text: "Utilizar fita isolante entre cada par de fios inserido", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Patch Panel 24 portas Cat5e GTS",
+        question: "O que acontece se a inserção dos fios no bloco IDC for feita de forma inadequada?",
+        answers: [
+            { text: "Pode gerar mau contato, perda de pacotes e lentidão intermitente na rede", correct: true },
+            { text: "O patch panel converte automaticamente o sinal para fibra óptica, permitindo a integração de transmissão", correct: false },
+            { text: "O switch aumenta a voltagem para compensar o erro", correct: false },
+            { text: "O cabo UTP passa a emitir sinal de rádio Wi-Fi", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Patch Panel 24 portas Cat5e GTS",
+        question: "Qual o padrão de instalação física (tamanho) deste equipamento para racks?",
+        answers: [
+            { text: "Padrão 19 polegadas com altura de 1U (uma unidade de rack)", correct: true },
+            { text: "Padrão doméstico para fixação direta em paredes de alvenaria", correct: false },
+            { text: "Tamanho ajustável entre 10 e 15 polegadas", correct: false },
+            { text: "Padrão industrial de 2 unidades de rack (2U) obrigatórias", correct: false }
+        ]
+    },
+    {
         category: "cabling",
         product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
         question: "O que define corretamente a Régua Vazia Patch Panel 24 Portas Cat6?",
         answers: [
             { text: "Estrutura para instalação de keystone jacks, utilizada na organização de redes Cat6 em racks", correct: true },
-            { text: "Estrutura destinada à instalação modular de keystone jacks em redes Cat6", correct: false },
-            { text: "Equipamento ativo responsável pela comutação de dados", correct: false },
+            { text: "Patch panel completo com conectores RJ45 já instalados de fábrica", correct: false },
+            { text: "Equipamento ativo responsável pela comutação de dados, direcionando o tráfego entre dispositivos", correct: false },
             { text: "Cabo de rede pronto com 24 conectores integrados", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
-        question: "Por que o termo “régua vazia” é utilizado na descrição deste produto?",
+        question: "Por que o termo 'régua vazia' é utilizado na descrição deste produto?",
         answers: [
-            { text: "Porque não possui conectores instalados, permitindo personalização com keystone jacks", correct: true },
-            { text: "Porque não possui conectores instalados e depende de keystones para uso", correct: false },
-            { text: "Porque não suporta passagem de sinal elétrico", correct: false },
-            { text: "Porque é destinada apenas à organização estética dos cabos", correct: false }
+            { text: "Porque não possui conectores pré-instalados, permitindo total personalização com keystone jacks", correct: true },
+            { text: "Porque não suporta a passagem de sinal elétrico entre os cabos, impedindo a continuidade da transmissão", correct: false },
+            { text: "Porque é uma peça destinada apenas ao fechamento estético do rack", correct: false },
+            { text: "Porque é um trilho de fixação que não permite a numeração de portas", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
+        question: "O que cada uma das 24 aberturas (slots) da régua representa em uma instalação profissional?",
+        answers: [
+            { text: "Um compartimento individual para o encaixe modular de um keystone jack de dados ou voz", correct: true },
+            { text: "Um canal de comunicação virtual que dispensa o uso de cabeamento, permitindo a transmissão de dados sem fios", correct: false },
+            { text: "Uma porta de ventilação para o switch que será instalado abaixo", correct: false },
+            { text: "Um ponto exclusivo para a conexão de cabos de energia PoE", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
+        question: "Qual é a principal vantagem estratégica de utilizar uma régua vazia em vez de um patch panel fixo?",
+        answers: [
+            { text: "Flexibilidade para escolher a categoria dos conectores e facilitar a substituição individual em caso de defeito", correct: true },
+            { text: "Aumento direto da potência elétrica disponível para os dispositivos conectados", correct: false },
+            { text: "Eliminação da necessidade de identificar os cabos com etiquetas", correct: false },
+            { text: "Capacidade de converter automaticamente sinais de cobre em fibra óptica", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
+        question: "Qual tipo de conector é compatível e indicado para preencher esta régua?",
+        answers: [
+            { text: "Keystone jacks RJ45 (Cat5e, Cat6 ou Cat6A) padrão de mercado", correct: true },
+            { text: "Conectores RJ45 macho para crimpagem direta", correct: false },
+            { text: "Apenas conectores ópticos do tipo LC duplex", correct: false },
+            { text: "Terminais de parafuso para cabos elétricos", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
+        question: "Por que a rigidez da estrutura metálica é um fator crítico para este produto?",
+        answers: [
+            { text: "Para suportar a força de inserção dos patch cords e o peso dos cabos traseiros sem deformar", correct: true },
+            { text: "Para atuar como um dissipador de calor ativo para o servidor", correct: false },
+            { text: "Para garantir que o sinal de 10 Gbps não sofra atenuação metálica", correct: false },
+            { text: "Para permitir que a régua seja dobrada conforme o ângulo do rack, garantindo melhor encaixe e adaptação à estrutura", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
+        question: "Como a numeração das portas na régua auxilia na gestão da infraestrutura?",
+        answers: [
+            { text: "Facilita a identificação, o mapeamento lógico e a manutenção rápida dos pontos de rede", correct: true },
+            { text: "Define automaticamente a velocidade de tráfego de cada porta no switch", correct: false },
+            { text: "Indica ao sistema operacional qual tipo de dispositivo está conectado", correct: false },
+            { text: "Permite que a rede funcione sem seguir as normas TIA/EIA", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
+        question: "Em qual cenário a régua vazia é a solução mais recomendada para um Data Center?",
+        answers: [
+            { text: "Quando se deseja uma instalação modular que permita expansões graduais e manutenção facilitada", correct: true },
+            { text: "Quando o projeto exige uma solução sem qualquer tipo de cabeamento físico", correct: false },
+            { text: "Quando se busca um equipamento ativo para gerenciar o tráfego de dados de forma eficiente", correct: false },
+            { text: "Quando não há espaço para instalação de switches no rack", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
+        question: "Qual boa prática de instalação deve ser seguida ao montar os keystones nesta régua?",
+        answers: [
+            { text: "Garantir o correto encaixe ('click') do keystone e manter a reserva técnica de cabo organizada", correct: true },
+            { text: "Destrançar os pares de fios o máximo possível para aliviar a tensão na régua", correct: false },
+            { text: "Colar os conectores com adesivos para evitar que saiam da régua, mantendo-os firmes e posicionados corretamente", correct: false },
+            { text: "Instalar os keystones apenas após conectar os patch cords frontais", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
+        question: "O que caracteriza a compatibilidade 'Cat6' nesta régua metálica?",
+        answers: [
+            { text: "O dimensionamento e espaçamento projetados para keystones que atendem a performance Cat6", correct: true },
+            { text: "A presença de uma placa de circuito impresso Cat6 interna", correct: false },
+            { text: "A obrigatoriedade de usar apenas cabos blindados de alumínio, garantindo conformidade na instalação", correct: false },
+            { text: "A cor da régua, que deve ser obrigatoriamente azul conforme a norma", correct: false }
         ]
     },
         {
         category: "cabling",
-        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
-        question: "Quantos pontos de conexão podem ser montados nesta régua vazia?",
+        product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
+        question: "Qual é a principal finalidade do Testador de Cabo código 22.010?",
         answers: [
-            { text: "Até 24 portas, conforme a quantidade de keystone jacks instalados", correct: true },
-            { text: "Até vinte e quatro pontos de conexão com uso de keystone jacks", correct: false },
-            { text: "48 portas utilizando cabos em Y", correct: false },
-            { text: "Quantidade indefinida sem limite físico", correct: false }
+            { text: "Verificar continuidade, sequência e possíveis falhas em cabos de diferentes padrões", correct: true },
+            { text: "Crimpar conectores RJ11 e RJ45 automaticamente, garantindo rapidez e padronização no processo", correct: false },
+            { text: "Certificar enlaces de rede conforme normas ANSI/TIA", correct: false },
+            { text: "Amplificar sinal de dados e vídeo em cabos longos", correct: false }
         ]
     },
-        {
-        category: "cabling",
-        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
-        question: "Por que esta régua é classificada como Cat6?",
-        answers: [
-            { text: "Porque foi projetada para suportar componentes e desempenho compatíveis com redes Cat6", correct: true },
-            { text: "Porque foi desenvolvida para uso com componentes compatíveis com a categoria Cat6", correct: false },
-            { text: "Porque converte automaticamente cabos Cat5e em Cat6", correct: false },
-            { text: "Porque só funciona com conectores blindados STP", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
-        question: "Qual tipo de conector deve ser utilizado nesta régua vazia?",
-        answers: [
-            { text: "Keystone jack RJ45 compatível com Cat6", correct: true },
-            { text: "Keystone jack RJ45 projetado para categoria Cat6", correct: false },
-            { text: "Conector RJ11 de telefonia fixa", correct: false },
-            { text: "Conector óptico SC ou LC", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
-        question: "Onde a régua vazia patch panel 24 portas Cat6 é normalmente instalada?",
-        answers: [
-            { text: "Em racks ou armários de telecomunicações padrão", correct: true },
-            { text: "Em racks e armários próprios para infraestrutura de rede", correct: false },
-            { text: "Diretamente em computadores ou servidores", correct: false },
-            { text: "Em ambientes externos sem proteção", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
-        question: "Qual é a principal função da régua vazia dentro de um rack?",
-        answers: [
-            { text: "Organizar e concentrar os pontos de rede de forma modular", correct: true },
-            { text: "Centralizar e organizar os pontos de rede de forma modular", correct: false },
-            { text: "Distribuir energia elétrica entre equipamentos", correct: false },
-            { text: "Atuar como switch de rede passivo", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
-        question: "Qual característica estrutural é esperada em uma régua vazia para patch panel?",
-        answers: [
-            { text: "Estrutura metálica resistente para fixação em rack", correct: true },
-            { text: "Estrutura metálica projetada para instalação firme em rack padrão", correct: false },
-            { text: "Estrutura emborrachada para uso portátil", correct: false },
-            { text: "Revestimento cerâmico para isolamento térmico", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
-        question: "Qual é a principal diferença entre uma régua vazia e um patch panel completo?",
-        answers: [
-            { text: "A régua vazia não possui conectores instalados, permitindo customização", correct: true },
-            { text: "A régua vazia permite customização por não possuir conectores instalados", correct: false },
-            { text: "O patch panel completo não pode ser instalado em rack", correct: false },
-            { text: "A régua vazia funciona apenas para telefonia", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Régua Vazia para Patch Panel 24 portas Cat6 GTS",
-        question: "Qual boa prática deve ser adotada ao instalar keystone jacks nesta régua vazia?",
-        answers: [
-            { text: "Manter os pares trançados o mais próximo possível do ponto de terminação", correct: true },
-            { text: "Manter o trançamento dos pares próximo ao ponto de terminação", correct: false },
-            { text: "Misturar categorias diferentes de conectores no mesmo enlace", correct: false },
-            { text: "Dobrar os cabos em ângulos fechados atrás da régua", correct: false }
-        ]
-    },
-        {
+    {
         category: "cabling",
         product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
         question: "Por que o testador de cabos é considerado um equipamento passivo?",
         answers: [
             { text: "Porque apenas analisa conexões elétricas sem interferir no sinal do cabo", correct: true },
-            { text: "Porque apenas verifica conexões elétricas sem atuar no sinal do cabo", correct: false },
-            { text: "Porque funciona sem qualquer fonte de energia", correct: false },
+            { text: "Porque funciona sem qualquer fonte de energia, dispensando alimentação elétrica", correct: false },
+            { text: "Porque substitui switches e roteadores", correct: false },
             { text: "Porque converte sinais analógicos em digitais", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
         question: "Quais tipos de cabos podem ser testados com o equipamento 22.010?",
         answers: [
             { text: "Cabos RJ11, RJ45, BNC e USB", correct: true },
-            { text: "Cabos RJ11, RJ45, BNC e conexões USB", correct: false },
+            { text: "Apenas cabos de rede Cat6A blindados", correct: false },
             { text: "Somente cabos ópticos SC e LC", correct: false },
             { text: "Cabos de energia elétrica de baixa tensão", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
         question: "A presença do conector BNC no testador indica compatibilidade com qual aplicação?",
         answers: [
-            { text: "Testes de cabos coaxiais usados em CFTV e vídeo", correct: true },
-            { text: "Testes de cabos coaxiais utilizados em sistemas de vídeo e CFTV", correct: false },
+            { text: "Testes de cabos coaxiais usados em CFTV e sistemas de vídeo analógico", correct: true },
+            { text: "Testes de cabos de fibra óptica monomodo, verificando a integridade do sinal", correct: false },
             { text: "Testes de cabos HDMI de alta definição", correct: false },
             { text: "Testes de cabos de áudio balanceado XLR", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
-        question: "Ao testar um cabo RJ45, que tipo de falhas o testador 22.010 consegue identificar?",
+        question: "Ao testar um cabo RJ45, quais problemas específicos este equipamento consegue identificar?",
         answers: [
-            { text: "Fios rompidos, invertidos, em curto ou com sequência incorreta", correct: true },
-            { text: "Fios rompidos, invertidos, em curto ou fora da sequência correta", correct: false },
-            { text: "Latência e jitter da conexão", correct: false },
-            { text: "Configuração lógica de VLANs", correct: false }
+            { text: "Fio rompido (aberto), par invertido ou condutores em curto-circuito", correct: true },
+            { text: "Excesso de tráfego de rede e latência de pacotes", correct: false },
+            { text: "Configuração incorreta de endereçamento IP e gateway, identificando falhas ocultas", correct: false },
+            { text: "Nível de alimentação PoE fornecido pelo switch", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
-        question: "Qual é o principal objetivo do teste de cabos RJ11 neste equipamento?",
+        question: "Por que testar um cabo RJ11 é uma etapa fundamental em sistemas de telefonia?",
         answers: [
-            { text: "Verificar continuidade e ligação correta em sistemas de telefonia", correct: true },
-            { text: "Verificar continuidade e conexão correta em sistemas de telefonia", correct: false },
-            { text: "Certificar enlaces de dados Ethernet", correct: false },
-            { text: "Converter sinal analógico em digital", correct: false }
+            { text: "Para evitar falhas de linha, ruídos e interrupções causadas por mau contato ou pinagem errada", correct: true },
+            { text: "Para aumentar a velocidade de transmissão de dados da banda larga", correct: false },
+            { text: "Para garantir que o cabo suporte sinais de fibra óptica", correct: false },
+            { text: "Para reduzir o consumo de energia elétrica dos aparelhos telefônicos", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
-        question: "Qual é o limite de teste de cabos USB neste tipo de testador?",
+        question: "O teste de cabos USB neste equipamento possui qual limitação técnica?",
         answers: [
-            { text: "Ele verifica apenas continuidade elétrica, não desempenho ou velocidade de transmissão", correct: true },
-            { text: "Ele verifica apenas a continuidade elétrica, sem medir desempenho ou velocidade", correct: false },
-            { text: "Ele só funciona com cabos longos", correct: false },
-            { text: "Ele converte sinais USB em Ethernet", correct: false }
+            { text: "Ele verifica apenas a continuidade elétrica, não medindo a taxa de transferência ou versão USB", correct: true },
+            { text: "Ele não consegue identificar se há rompimento nos fios internos", correct: false },
+            { text: "Ele exige que o cabo USB esteja conectado a um computador ligado para que o diagnóstico seja possível", correct: false },
+            { text: "Ele converte automaticamente sinais USB em protocolos Ethernet", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
-        question: "Qual é a função dos LEDs presentes no testador de cabos 22.010?",
+        question: "O que o instalador deve interpretar quando um dos LEDs de sequência não acende durante o teste?",
         answers: [
-            { text: "Indicar continuidade, sequência correta e possíveis falhas nos fios", correct: true },
-            { text: "Indicar continuidade, sequência dos fios e possíveis falhas de conexão", correct: false },
-            { text: "Mostrar endereços IP automaticamente", correct: false },
-            { text: "Iluminar o ambiente de trabalho", correct: false }
+            { text: "Indica um rompimento ou falha de conexão no condutor correspondente àquele número", correct: true },
+            { text: "Indica que a rede está operando em velocidade máxima, com desempenho otimizado", correct: false },
+            { text: "Indica que o switch remoto está bloqueando o sinal de teste", correct: false },
+            { text: "Indica que o cabo utilizado é de uma categoria superior à suportada", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
-        question: "Qual a vantagem de um testador possuir unidade principal e módulo remoto?",
+        question: "Qual a principal vantagem de o testador possuir uma unidade principal e um módulo remoto destacável?",
         answers: [
-            { text: "Permitir testes em cabos já instalados e com extremidades distantes", correct: true },
-            { text: "Permitir testes em cabos instalados com extremidades separadas", correct: false },
-            { text: "Transformar o testador em equipamento ativo", correct: false },
-            { text: "Aumentar a velocidade da rede", correct: false }
+            { text: "Permitir o teste de cabos cujas extremidades estão em locais ou salas diferentes", correct: true },
+            { text: "Aumentar a voltagem do sinal para testar cabos de alta tensão, verificando sua resistência elétrica", correct: false },
+            { text: "Permitir que dois técnicos conversem através do cabo de rede", correct: false },
+            { text: "Eliminar a necessidade de baterias na unidade principal", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
-        question: "Qual problema pode ser evitado ao utilizar o testador de cabos antes da entrega da instalação?",
+        question: "Qual funcionalidade diferencia um testador de continuidade (como o 22.010) de um certificador de rede?",
         answers: [
-            { text: "Falhas de conexão e retrabalho causados por cabos mal montados", correct: true },
-            { text: "Falhas de conexão e retrabalho decorrentes de cabos montados incorretamente", correct: false },
-            { text: "Configuração incorreta de endereçamento IP", correct: false },
-            { text: "Necessidade de equipamentos ativos adicionais", correct: false }
+            { text: "O testador verifica apenas o mapa de fios e continuidade, enquanto o certificador analisa parâmetros de interferência e normas", correct: true },
+            { text: "O testador é o único que consegue identificar fios rompidos", correct: false },
+            { text: "O certificador não possui LEDs para indicação visual", correct: false },
+            { text: "O testador é utilizado apenas para cabos de fibra óptica", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
-        product: "Testador de Cabo RJ11 e RJ45 - GTS",
-        question: "Quais tipos de cabos físicos este testador é projetado para analisar?",
+        product: "Testador de Cabo RJ11 / RJ45 / BNC / USB - GTS",
+        question: "Qual é uma boa prática essencial ao utilizar este equipamento de teste?",
         answers: [
-            { text: "Cabos com conectores RJ11 e RJ45 já crimpados", correct: true },
-            { text: "Cabos com conectores RJ11 e RJ45 previamente crimpados", correct: false },
-            { text: "Cabos HDMI e DisplayPort", correct: false },
-            { text: "Cabos de alimentação elétrica em corrente alternada", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Testador de Cabo RJ11 e RJ45 - GTS",
-        question: "Que tipos de cabos RJ11 podem ser testados com o equipamento 22-006?",
-        answers: [
-            { text: "Cabos RJ11 de 2, 4 e 6 vias", correct: true },
-            { text: "Cabos RJ11 com 2, 4 ou 6 vias de conexão", correct: false },
-            { text: "Somente RJ11 de 8 vias", correct: false },
-            { text: "Somente cabos de uma via", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Testador de Cabo RJ11 e RJ45 - GTS",
-        question: "Ao testar um cabo RJ45, que tipo de problema o testador consegue identificar?",
-        answers: [
-            { text: "Fios rompidos, invertidos, em curto ou com sequência incorreta", correct: true },
-            { text: "Fios rompidos, invertidos, em curto ou fora da sequência correta", correct: false },
-            { text: "Configuração lógica de IP ou VLAN", correct: false },
-            { text: "Disponibilidade de PoE no switch", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Testador de Cabo RJ11 e RJ45 - GTS",
-        question: "Qual é a função dos LEDs no Testador de Cabo 22-006?",
-        answers: [
-            { text: "Indicar continuidade, ordem correta dos fios e falhas de conexão", correct: true },
-            { text: "Indicar continuidade, sequência dos fios e possíveis falhas", correct: false },
-            { text: "Fornecer iluminação ao local de trabalho", correct: false },
-            { text: "Mostrar configuração do roteador", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Testador de Cabo RJ11 e RJ45 - GTS",
-        question: "O que normalmente indica um LED que não acende ou uma sequência incorreta durante o teste?",
-        answers: [
-            { text: "Erro de crimpagem, fio rompido ou pinagem incorreta", correct: true },
-            { text: "Erro de crimpagem, fio danificado ou ligação fora do padrão", correct: false },
-            { text: "Problema de configuração no switch", correct: false },
-            { text: "Baixa luminosidade do ambiente", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Testador de Cabo RJ11 e RJ45 - GTS",
-        question: "Quando o Testador de Cabo 22-006 deve ser utilizado durante uma instalação?",
-        answers: [
-            { text: "Após a crimpagem dos conectores, antes da entrega ou conexão aos equipamentos", correct: true },
-            { text: "Após a crimpagem dos conectores e antes da ligação aos equipamentos", correct: false },
-            { text: "Durante a configuração lógica da rede", correct: false },
-            { text: "Somente após ativar a rede Wi-Fi", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Testador de Cabo RJ11 e RJ45 - GTS",
-        question: "Qual é uma limitação esperada desse tipo de testador?",
-        answers: [
-            { text: "Ele não mede desempenho real de transmissão, apenas continuidade e sequência", correct: true },
-            { text: "Ele não mede desempenho de transmissão, apenas continuidade e sequência elétrica", correct: false },
-            { text: "Ele corrige automaticamente erros de pinagem", correct: false },
-            { text: "Ele testa cabos coaxiais sem adaptadores", correct: false }
-        ]
-    },
-        {
-        category: "cabling",
-        product: "Testador de Cabo RJ11 e RJ45 - GTS",
-        question: "Por que é importante testar o cabo sem desmontar ou alterar a instalação física?",
-        answers: [
-            { text: "Porque permite diagnóstico rápido sem interferir na montagem do cabo", correct: true },
-            { text: "Porque permite identificar falhas rapidamente sem alterar a montagem", correct: false },
-            { text: "Porque elimina a necessidade de ferramentas de crimpagem", correct: false },
-            { text: "Porque converte sinais analógicos em digitais", correct: false }
+            { text: "Nunca testar cabos que estejam conectados a equipamentos energizados (switches ou PABX ativos)", correct: true },
+            { text: "Utilizar o corpo do testador para pressionar conectores mal crimpados", correct: false },
+            { text: "Realizar o teste apenas após o fechamento de todos os espelhos e calhas", correct: false },
+            { text: "Nunca substituir a bateria, mesmo quando o aparelho parar de emitir luz, mantendo o equipamento fora de operação", correct: false }
         ]
     },
         {
@@ -2298,97 +2254,108 @@ const allQuestions = [
         question: "O que caracteriza corretamente o produto 73.3008K?",
         answers: [
             { text: "Switch de mesa Plug and Play com 8 portas Gigabit Ethernet", correct: true },
-            { text: "Switch de mesa com 8 portas Ethernet para conexão de dispositivos", correct: false },
-            { text: "Hub de rede Fast Ethernet", correct: false },
-            { text: "Conversor de mídia óptico industrial gerenciável", correct: false }
+            { text: "Roteador wireless com antenas internas e NAT pré configurado", correct: false },
+            { text: "Hub de rede 10/100 Mbps sem auto-negociação", correct: false },
+            { text: "Conversor de mídia óptico para Ethernet", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Switch de Mesa 8 Portas GTS",
-        question: "Por que o switch 73.3008K é classificado como Plug and Play?",
+        question: "Por que o equipamento é classificado como 'Plug and Play'?",
         answers: [
-            { text: "Porque funciona automaticamente sem necessidade de configuração de software", correct: true },
-            { text: "Porque opera automaticamente sem exigir ajustes ou configurações iniciais", correct: false },
-            { text: "Porque exige firmware personalizado", correct: false },
-            { text: "Porque depende de VLANs previamente configuradas", correct: false }
+            { text: "Porque não requer configuração de software para funcionamento, bastando conectar os cabos", correct: true },
+            { text: "Porque se auto-configura automaticamente como roteador de borda, dispensando configurações manuais iniciais", correct: false },
+            { text: "Porque exige atualização de firmware obrigatória para cada nova rede", correct: false },
+            { text: "Porque depende de VLANs pré-configuradas para liberar o tráfego", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Switch de Mesa 8 Portas GTS",
-        question: "Quantas portas Ethernet e quais velocidades são suportadas pelo switch?",
+        question: "Quais velocidades são suportadas pelas 8 portas deste switch?",
         answers: [
-            { text: "8 portas Ethernet com suporte a 10, 100 e 1000 Mbps", correct: true },
-            { text: "8 portas Ethernet compatíveis com múltiplas velocidades de transmissão", correct: false },
-            { text: "8 portas apenas Fast Ethernet", correct: false },
-            { text: "8 portas ópticas SFP", correct: false }
+            { text: "10 Mbps, 100 Mbps e 1000 Mbps com auto-negociação em todas as portas", correct: true },
+            { text: "Apenas 1000 Mbps (Gigabit) em modo fixo, sem variação automática de velocidade", correct: false },
+            { text: "Somente 10 e 100 Mbps, sendo limitado a redes Fast Ethernet", correct: false },
+            { text: "Velocidades definidas manualmente via interface web de gerenciamento", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Switch de Mesa 8 Portas GTS",
-        question: "O que é a função NWay (auto-negociação) e qual seu benefício?",
+        question: "O que significa a função NWay e qual sua vantagem prática?",
         answers: [
-            { text: "Ajusta automaticamente velocidade e duplex conforme o dispositivo conectado", correct: true },
-            { text: "Ajusta automaticamente parâmetros de conexão conforme o equipamento ligado", correct: false },
-            { text: "Cria VLANs automaticamente", correct: false },
-            { text: "Converte sinal elétrico em óptico", correct: false }
+            { text: "Auto-negociação de velocidade e duplex, garantindo conexão ideal com qualquer dispositivo sem ajustes manuais", correct: true },
+            { text: "Criação automática de túneis VPN entre switches de outras marcas, permitindo a comunicação entre diferentes fabricantes", correct: false },
+            { text: "Balanceamento de carga dinâmico entre dois links de internet", correct: false },
+            { text: "Conversão automática de sinais elétricos em sinais de rádio Wi-Fi", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Switch de Mesa 8 Portas GTS",
-        question: "Qual a função dos LEDs no switch 73.3008K?",
+        question: "Qual a função dos indicadores visuais (LEDs) nas portas do switch?",
         answers: [
-            { text: "Indicar status de energia, link ativo e tráfego de dados", correct: true },
-            { text: "Indicar energia, atividade de link e movimentação de dados", correct: false },
-            { text: "Exibir consumo elétrico em tempo real", correct: false },
-            { text: "Apontar falhas internas de firmware", correct: false }
+            { text: "Indicar a presença de link físico e a atividade de tráfego de dados na respectiva porta", correct: true },
+            { text: "Mostrar se o endereço IP do dispositivo conectado está correto", correct: false },
+            { text: "Alertar sobre colisões elétricas permanentes no segmento de rede, indicando falhas na comunicação", correct: false },
+            { text: "Exibir o consumo de energia em Watts de cada computador conectado", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Switch de Mesa 8 Portas GTS",
-        question: "O que significa o switch operar em Full Duplex?",
+        question: "O que caracteriza o modo de operação Full Duplex suportado pelo switch?",
         answers: [
-            { text: "Enviar e receber dados simultaneamente na mesma porta", correct: true },
-            { text: "Transmitir e receber dados ao mesmo tempo em uma única porta", correct: false },
-            { text: "Utilizar metade da largura de banda", correct: false },
-            { text: "Exigir configuração manual de comunicação", correct: false }
+            { text: "Capacidade de enviar e receber dados simultaneamente, dobrando a eficiência e eliminando colisões", correct: true },
+            { text: "Transmissão de dados em apenas um sentido por vez para economizar energia", correct: false },
+            { text: "Necessidade de utilizar dois cabos de rede físicos para a mesma conexão", correct: false },
+            { text: "Redução da largura de banda pela metade para garantir a estabilidade do sinal", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Switch de Mesa 8 Portas GTS",
-        question: "Para que servem a tabela MAC e o buffer de memória do switch?",
+        question: "Como funciona o método 'Store and Forward' e qual sua importância?",
         answers: [
-            { text: "Aprender endereços dos dispositivos e gerenciar pacotes em picos de tráfego", correct: true },
-            { text: "Registrar dispositivos conectados e administrar pacotes durante congestionamentos", correct: false },
-            { text: "Atribuir endereços IP automaticamente", correct: false },
-            { text: "Armazenar logs permanentes de usuários", correct: false }
+            { text: "O switch recebe o pacote de dados inteiro, verifica se não há erros e só então o envia ao destino", correct: true },
+            { text: "O switch encaminha os pacotes sem conferência, priorizando a redução máxima de latência na transmissão", correct: false },
+            { text: "O switch envia todos os dados para todas as portas simultaneamente como um Hub", correct: false },
+            { text: "O switch reduz o tamanho dos pacotes para facilitar o tráfego em cabos antigos", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Switch de Mesa 8 Portas GTS",
-        question: "Como é feita a alimentação elétrica do switch e qual seu benefício?",
+        question: "Qual a função do buffer de memória interna de 2,048 MB no processamento de dados?",
         answers: [
-            { text: "Fonte externa bivolt auto sense, que se adapta à tensão automaticamente", correct: true },
-            { text: "Fonte externa bivolt com adaptação automática à tensão de entrada", correct: false },
-            { text: "Alimentação via PoE", correct: false },
-            { text: "Bateria interna recarregável", correct: false }
+            { text: "Armazenar temporariamente pacotes de dados durante picos de tráfego para evitar perdas", correct: true },
+            { text: "Salvar as configurações personalizadas feitas pelo administrador da rede", correct: false },
+            { text: "Aumentar o espaço de armazenamento de arquivos para os computadores da rede", correct: false },
+            { text: "Armazenar o sistema operacional (firmware) para permitir a execução de funções avançadas do equipamento.", correct: false }
         ]
     },
-        {
+    {
         category: "cabling",
         product: "Switch de Mesa 8 Portas GTS",
-        question: "Em quais ambientes o switch 73.3008K é mais indicado?",
+        question: "Como funciona o sistema de alimentação elétrica deste switch?",
         answers: [
-            { text: "Pequenos escritórios, redes residenciais e redes de acesso", correct: true },
-            { text: "Pequenos ambientes corporativos, residenciais e redes de acesso locais", correct: false },
-            { text: "Backbone de data centers", correct: false },
-            { text: "Ambientes externos sem proteção climática", correct: false }
+            { text: "Utiliza fonte externa bivolt automática (auto-sense), compatível com 110V e 220V", correct: true },
+            { text: "Possui fonte interna fixa que exige chaveamento manual de voltagem, sendo necessário ajustar conforme a rede elétrica utilizada", correct: false },
+            { text: "É alimentado exclusivamente através de cabos PoE vindos de outro switch", correct: false },
+            { text: "Depende de uma bateria interna recarregável para operar sem tomada", correct: false }
+        ]
+    },
+    {
+        category: "cabling",
+        product: "Switch de Mesa 8 Portas GTS",
+        question: "Qual o ambiente de aplicação mais indicado para este modelo compacto?",
+        answers: [
+            { text: "Pequenos escritórios (SOHO), ambientes residenciais e redes de acesso", correct: true },
+            { text: "Núcleos (Core) de grandes Data Centers corporativos que exigem grande tráfego de dados", correct: false },
+            { text: "Backbone principal de provedores de internet (ISP)", correct: false },
+            { text: "Instalações externas expostas a sol e chuva sem proteção", correct: false }
         ]
     },
 
